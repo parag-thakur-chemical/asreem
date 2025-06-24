@@ -1,333 +1,384 @@
 {
-    "designSystemProfile": {
-      "name": "Environmental Organization Design System",
-      "version": "1.0",
-      "description": "A comprehensive design system for environmental/sustainability organizations with organic, nature-inspired aesthetics",
-      
-      "colorPalette": {
+  "designSystemProfile": {
+    "name": "Environmental Organization Design System",
+    "version": "1.0",
+    "description": "A comprehensive design system for environmental/sustainability organizations with organic, nature-inspired aesthetics",
+    
+    "colorPalette": {
+      "primary": {
+        "darkGreen": "#2D5016",
+        "forestGreen": "#4A7C59",
+        "sageGreen": "#7BA05B",
+        "lightGreen": "#A8C686",
+        "mintGreen": "#C8E6C9"
+      },
+      "secondary": {
+        "earthyBrown": "#8D6E63",
+        "warmBeige": "#F5F5DC",
+        "softCream": "#FFFEF7"
+      },
+      "neutrals": {
+        "darkCharcoal": "#2E2E2E",
+        "mediumGray": "#757575",
+        "lightGray": "#E0E0E0",
+        "offWhite": "#FAFAFA",
+        "pureWhite": "#FFFFFF"
+      },
+      "accent": {
+        "earthYellow": "#FDD835",
+        "skyBlue": "#81C784"
+      }
+    },
+
+    "typography": {
+      "primaryFont": {
+        "family": "Inter, system-ui, sans-serif",
+        "weights": [300, 400, 500, 600, 700],
+        "usage": "Body text, UI elements, cards"
+      },
+      "headingFont": {
+        "family": "Poppins, Inter, sans-serif",
+        "weights": [400, 500, 600, 700, 800],
+        "usage": "Headlines, hero text, section titles"
+      },
+      "scale": {
+        "h1": {
+          "desktop": "3.5rem (56px)",
+          "tablet": "2.5rem (40px)",
+          "mobile": "2rem (32px)",
+          "weight": 700,
+          "lineHeight": 1.2
+        },
+        "h2": {
+          "desktop": "2.5rem (40px)",
+          "tablet": "2rem (32px)",
+          "mobile": "1.75rem (28px)",
+          "weight": 600,
+          "lineHeight": 1.3
+        },
+        "h3": {
+          "desktop": "1.75rem (28px)",
+          "tablet": "1.5rem (24px)",
+          "mobile": "1.25rem (20px)",
+          "weight": 600,
+          "lineHeight": 1.4
+        },
+        "body": {
+          "desktop": "1rem (16px)",
+          "tablet": "0.95rem (15px)",
+          "mobile": "0.9rem (14px)",
+          "weight": 400,
+          "lineHeight": 1.6
+        },
+        "caption": {
+          "desktop": "0.875rem (14px)",
+          "tablet": "0.825rem (13px)",
+          "mobile": "0.8rem (12px)",
+          "weight": 400,
+          "lineHeight": 1.5
+        }
+      }
+    },
+
+    "spacing": {
+      "scale": "8px base unit",
+      "values": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "2xl": "48px",
+        "3xl": "64px",
+        "4xl": "80px",
+        "5xl": "96px"
+      },
+      "responsive": {
+        "mobile": {
+          "containerPadding": "16px",
+          "sectionPadding": "32px 0",
+          "cardGap": "16px"
+        },
+        "tablet": {
+          "containerPadding": "24px",
+          "sectionPadding": "48px 0",
+          "cardGap": "20px"
+        },
+        "desktop": {
+          "containerPadding": "32px",
+          "sectionPadding": "64px 0",
+          "cardGap": "24px"
+        }
+      }
+    },
+
+    "components": {
+      "navigation": {
+        "desktop": {
+          "height": "80px",
+          "background": "rgba(255, 255, 255, 0.95)",
+          "backdropFilter": "blur(10px)",
+          "borderBottom": "1px solid rgba(0, 0, 0, 0.1)",
+          "position": "sticky",
+          "zIndex": 100
+        },
+        "mobile": {
+          "height": "64px",
+          "hamburgerMenu": true,
+          "slideInDirection": "right"
+        },
+        "logo": {
+          "size": "32px height",
+          "position": "left"
+        },
+        "links": {
+          "spacing": "32px apart",
+          "hoverEffect": "subtle underline animation",
+          "activeState": "darkGreen color"
+        }
+      },
+
+      "buttons": {
         "primary": {
-          "darkGreen": "#2D5016",
-          "forestGreen": "#4A7C59",
-          "sageGreen": "#7BA05B",
-          "lightGreen": "#A8C686",
-          "mintGreen": "#C8E6C9"
+          "background": "darkGreen to forestGreen gradient",
+          "color": "white",
+          "borderRadius": "24px",
+          "padding": {
+            "desktop": "12px 24px",
+            "mobile": "10px 20px"
+          },
+          "fontSize": {
+            "desktop": "16px",
+            "mobile": "14px"
+          },
+          "hoverEffect": "slight scale + shadow increase",
+          "transition": "all 0.2s ease"
         },
         "secondary": {
-          "earthyBrown": "#8D6E63",
-          "warmBeige": "#F5F5DC",
-          "softCream": "#FFFEF7"
+          "background": "transparent",
+          "color": "darkGreen",
+          "border": "2px solid darkGreen",
+          "borderRadius": "24px",
+          "hoverEffect": "background fill animation"
         },
-        "neutrals": {
-          "darkCharcoal": "#2E2E2E",
-          "mediumGray": "#757575",
-          "lightGray": "#E0E0E0",
-          "offWhite": "#FAFAFA",
-          "pureWhite": "#FFFFFF"
-        },
-        "accent": {
-          "earthYellow": "#FDD835",
-          "skyBlue": "#81C784"
+        "ghost": {
+          "background": "transparent",
+          "color": "darkGreen",
+          "border": "none",
+          "textDecoration": "underline on hover"
         }
       },
-  
-      "typography": {
-        "primaryFont": {
-          "family": "Inter, system-ui, sans-serif",
-          "weights": [300, 400, 500, 600, 700],
-          "usage": "Body text, UI elements, cards"
+
+      "cards": {
+        "base": {
+          "background": "white",
+          "borderRadius": "16px",
+          "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.1)",
+          "padding": {
+            "desktop": "24px",
+            "mobile": "16px"
+          },
+          "hoverEffect": "subtle lift + shadow increase",
+          "transition": "all 0.3s ease"
         },
-        "headingFont": {
-          "family": "Poppins, Inter, sans-serif",
-          "weights": [400, 500, 600, 700, 800],
-          "usage": "Headlines, hero text, section titles"
-        },
-        "scale": {
-          "h1": {
-            "desktop": "3.5rem (56px)",
-            "tablet": "2.5rem (40px)",
-            "mobile": "2rem (32px)",
-            "weight": 700,
-            "lineHeight": 1.2
-          },
-          "h2": {
-            "desktop": "2.5rem (40px)",
-            "tablet": "2rem (32px)",
-            "mobile": "1.75rem (28px)",
-            "weight": 600,
-            "lineHeight": 1.3
-          },
-          "h3": {
-            "desktop": "1.75rem (28px)",
-            "tablet": "1.5rem (24px)",
-            "mobile": "1.25rem (20px)",
-            "weight": 600,
-            "lineHeight": 1.4
-          },
-          "body": {
-            "desktop": "1rem (16px)",
-            "tablet": "0.95rem (15px)",
-            "mobile": "0.9rem (14px)",
-            "weight": 400,
-            "lineHeight": 1.6
-          },
-          "caption": {
-            "desktop": "0.875rem (14px)",
-            "tablet": "0.825rem (13px)",
-            "mobile": "0.8rem (12px)",
-            "weight": 400,
-            "lineHeight": 1.5
-          }
-        }
-      },
-  
-      "spacing": {
-        "scale": "8px base unit",
-        "values": {
-          "xs": "4px",
-          "sm": "8px",
-          "md": "16px",
-          "lg": "24px",
-          "xl": "32px",
-          "2xl": "48px",
-          "3xl": "64px",
-          "4xl": "80px",
-          "5xl": "96px"
-        },
-        "responsive": {
-          "mobile": {
-            "containerPadding": "16px",
-            "sectionPadding": "32px 0",
-            "cardGap": "16px"
-          },
-          "tablet": {
-            "containerPadding": "24px",
-            "sectionPadding": "48px 0",
-            "cardGap": "20px"
-          },
-          "desktop": {
-            "containerPadding": "32px",
-            "sectionPadding": "64px 0",
-            "cardGap": "24px"
-          }
-        }
-      },
-  
-      "components": {
-        "navigation": {
-          "desktop": {
-            "height": "80px",
-            "background": "rgba(255, 255, 255, 0.95)",
-            "backdropFilter": "blur(10px)",
-            "borderBottom": "1px solid rgba(0, 0, 0, 0.1)",
-            "position": "sticky",
-            "zIndex": 100
-          },
-          "mobile": {
-            "height": "64px",
-            "hamburgerMenu": true,
-            "slideInDirection": "right"
-          },
-          "logo": {
-            "size": "32px height",
-            "position": "left"
-          },
-          "links": {
-            "spacing": "32px apart",
-            "hoverEffect": "subtle underline animation",
-            "activeState": "darkGreen color"
+        "featured": {
+          "background": "lightGreen to mintGreen gradient",
+          "borderRadius": "20px",
+          "padding": {
+            "desktop": "32px",
+            "mobile": "20px"
           }
         },
-  
-        "buttons": {
-          "primary": {
-            "background": "darkGreen to forestGreen gradient",
-            "color": "white",
-            "borderRadius": "24px",
-            "padding": {
-              "desktop": "12px 24px",
-              "mobile": "10px 20px"
-            },
-            "fontSize": {
-              "desktop": "16px",
-              "mobile": "14px"
-            },
-            "hoverEffect": "slight scale + shadow increase",
-            "transition": "all 0.2s ease"
-          },
-          "secondary": {
-            "background": "transparent",
-            "color": "darkGreen",
-            "border": "2px solid darkGreen",
-            "borderRadius": "24px",
-            "hoverEffect": "background fill animation"
-          },
-          "ghost": {
-            "background": "transparent",
-            "color": "darkGreen",
-            "border": "none",
-            "textDecoration": "underline on hover"
-          }
-        },
-  
-        "cards": {
-          "base": {
-            "background": "white",
-            "borderRadius": "16px",
-            "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.1)",
-            "padding": {
-              "desktop": "24px",
-              "mobile": "16px"
-            },
-            "hoverEffect": "subtle lift + shadow increase",
-            "transition": "all 0.3s ease"
-          },
-          "featured": {
-            "background": "lightGreen to mintGreen gradient",
-            "borderRadius": "20px",
-            "padding": {
-              "desktop": "32px",
-              "mobile": "20px"
-            }
-          },
-          "imageCard": {
-            "imageHeight": "200px",
-            "imageRadius": "12px",
-            "imagePlacement": "top or left",
-            "overlayText": "bottom gradient overlay for readability"
-          }
-        },
-  
-        "sections": {
-          "hero": {
-            "minHeight": {
-              "desktop": "80vh",
-              "tablet": "70vh",
-              "mobile": "60vh"
-            },
-            "background": "subtle organic pattern or gradient",
-            "contentAlignment": "center",
-            "textAlignment": "center",
-            "maxWidth": "800px"
-          },
-          "content": {
-            "maxWidth": "1200px",
-            "margin": "0 auto",
-            "padding": "responsive containerPadding"
-          },
-          "alternating": {
-            "pattern": "image-left, text-right then reverse",
-            "verticalSpacing": "80px desktop, 48px mobile"
-          }
-        },
-  
-        "illustrations": {
-          "style": "organic, rounded shapes",
-          "elements": [
-            "Floating organic blobs",
-            "Leaf patterns",
-            "Abstract nature forms",
-            "Soft geometric shapes"
-          ],
-          "colors": "light greens and earth tones",
-          "placement": "background decoration, not foreground",
-          "opacity": "0.1 to 0.3 for subtlety"
+        "imageCard": {
+          "imageHeight": "200px",
+          "imageRadius": "12px",
+          "imagePlacement": "top or left",
+          "overlayText": "bottom gradient overlay for readability"
         }
       },
-  
-      "layout": {
-        "grid": {
-          "desktop": "12 column grid with 24px gutters",
-          "tablet": "8 column grid with 20px gutters",
-          "mobile": "4 column grid with 16px gutters"
-        },
-        "breakpoints": {
-          "mobile": "320px to 767px",
-          "tablet": "768px to 1023px",
-          "desktop": "1024px and up",
-          "maxWidth": "1400px"
-        },
-        "containers": {
-          "fluid": "100% width with max-width constraint",
-          "fixed": "fixed max-width with auto margins",
-          "fullBleed": "edge-to-edge for hero sections"
-        }
-      },
-  
-      "interactions": {
-        "animations": {
-          "duration": "0.2s to 0.3s for micro-interactions",
-          "easing": "ease-out for entrances, ease-in for exits",
-          "stagger": "0.1s delay between similar elements"
-        },
-        "hovers": {
-          "cards": "subtle lift (4px) + shadow increase",
-          "buttons": "scale(1.02) + slight glow",
-          "images": "gentle zoom (1.05x) + overlay"
-        },
-        "scrollEffects": {
-          "parallax": "subtle on hero backgrounds",
-          "fadeIn": "on scroll into viewport",
-          "slideUp": "cards and content blocks"
-        }
-      },
-  
-      "imageGuidelines": {
-        "style": "Natural, authentic photography",
-        "subjects": [
-          "People in nature",
-          "Environmental activities",
-          "Close-ups of plants/nature",
-          "Community involvement",
-          "Conservation work"
-        ],
-        "treatment": {
-          "filter": "slight warm tone, increased saturation",
-          "overlays": "gradient overlays for text readability",
-          "aspectRatios": "16:9 for hero, 4:3 for cards, 1:1 for profiles"
-        }
-      },
-  
-      "responsivePatterns": {
-        "navigation": {
-          "desktop": "horizontal nav with logo left, links center, CTA right",
-          "mobile": "hamburger menu with slide-in panel"
-        },
+
+      "sections": {
         "hero": {
-          "desktop": "large text with side-by-side layout options",
-          "mobile": "stacked layout with reduced text sizes"
-        },
-        "cards": {
-          "desktop": "3-4 column grid",
-          "tablet": "2 column grid",
-          "mobile": "single column stack"
+          "minHeight": {
+            "desktop": "80vh",
+            "tablet": "70vh",
+            "mobile": "60vh"
+          },
+          "background": "subtle organic pattern or gradient",
+          "contentAlignment": "center",
+          "textAlignment": "center",
+          "maxWidth": "800px"
         },
         "content": {
-          "desktop": "two-column text with generous whitespace",
-          "mobile": "single column with reduced spacing"
+          "maxWidth": "1200px",
+          "margin": "0 auto",
+          "padding": "responsive containerPadding"
+        },
+        "alternating": {
+          "pattern": "image-left, text-right then reverse",
+          "verticalSpacing": "80px desktop, 48px mobile"
         }
       },
-  
-      "accessibilityFeatures": {
-        "colorContrast": "WCAG AA compliant (4.5:1 minimum)",
-        "focusStates": "visible focus rings with 2px outline",
-        "altText": "descriptive alt text for all images",
-        "keyboardNav": "full keyboard navigation support",
-        "semanticHTML": "proper heading hierarchy and landmarks"
+
+      "illustrations": {
+        "style": "organic, rounded shapes",
+        "elements": [
+          "Floating organic blobs",
+          "Leaf patterns",
+          "Abstract nature forms",
+          "Soft geometric shapes"
+        ],
+        "colors": "light greens and earth tones",
+        "placement": "background decoration, not foreground",
+        "opacity": "0.1 to 0.3 for subtlety"
+      }
+    },
+
+    "layout": {
+      "grid": {
+        "desktop": "12 column grid with 24px gutters",
+        "tablet": "8 column grid with 20px gutters",
+        "mobile": "4 column grid with 16px gutters"
       },
-  
-      "brandPersonality": {
-        "tone": "trustworthy, approachable, inspiring",
-        "visualStyle": "organic, natural, growth-oriented",
-        "messaging": "action-oriented, community-focused",
-        "imagery": "authentic, diverse, nature-connected"
+      "breakpoints": {
+        "mobile": "320px to 767px",
+        "tablet": "768px to 1023px",
+        "desktop": "1024px and up",
+        "maxWidth": "1400px"
       },
-  
-      "implementationNotes": {
-        "cssFramework": "Tailwind CSS recommended for utility classes",
-        "animations": "Framer Motion or CSS transitions",
-        "responsiveImages": "srcset for different screen densities",
-        "performance": "lazy loading for images, optimized SVGs for icons",
-        "darkMode": "optional earth-tone dark variant available"
+      "containers": {
+        "fluid": "100% width with max-width constraint",
+        "fixed": "fixed max-width with auto margins",
+        "fullBleed": "edge-to-edge for hero sections"
+      }
+    },
+
+    "interactions": {
+      "animations": {
+        "duration": "0.2s to 0.3s for micro-interactions",
+        "easing": "ease-out for entrances, ease-in for exits",
+        "stagger": "0.1s delay between similar elements"
+      },
+      "hovers": {
+        "cards": "subtle lift (4px) + shadow increase",
+        "buttons": "scale(1.02) + slight glow",
+        "images": "gentle zoom (1.05x) + overlay"
+      },
+      "scrollEffects": {
+        "parallax": "subtle on hero backgrounds",
+        "fadeIn": "on scroll into viewport",
+        "slideUp": "cards and content blocks"
+      }
+    },
+
+    "imageGuidelines": {
+      "style": "Natural, authentic photography",
+      "subjects": [
+        "People in nature",
+        "Environmental activities",
+        "Close-ups of plants/nature",
+        "Community involvement",
+        "Conservation work"
+      ],
+      "treatment": {
+        "filter": "slight warm tone, increased saturation",
+        "overlays": "gradient overlays for text readability",
+        "aspectRatios": "16:9 for hero, 4:3 for cards, 1:1 for profiles"
+      }
+    },
+
+    "responsivePatterns": {
+      "navigation": {
+        "desktop": "horizontal nav with logo left, links center, CTA right",
+        "mobile": "hamburger menu with slide-in panel"
+      },
+      "hero": {
+        "desktop": "large text with side-by-side layout options",
+        "mobile": "stacked layout with reduced text sizes"
+      },
+      "cards": {
+        "desktop": "3-4 column grid",
+        "tablet": "2 column grid",
+        "mobile": "single column stack"
+      },
+      "content": {
+        "desktop": "two-column text with generous whitespace",
+        "mobile": "single column with reduced spacing"
+      }
+    },
+
+    "accessibilityFeatures": {
+      "colorContrast": "WCAG AA compliant (4.5:1 minimum)",
+      "focusStates": "visible focus rings with 2px outline",
+      "altText": "descriptive alt text for all images",
+      "keyboardNav": "full keyboard navigation support",
+      "semanticHTML": "proper heading hierarchy and landmarks"
+    },
+
+    "brandPersonality": {
+      "tone": "trustworthy, approachable, inspiring",
+      "visualStyle": "organic, natural, growth-oriented",
+      "messaging": "action-oriented, community-focused",
+      "imagery": "authentic, diverse, nature-connected"
+    },
+
+    "implementationNotes": {
+      "cssFramework": "Tailwind CSS recommended for utility classes",
+      "animations": "Framer Motion or CSS transitions",
+      "responsiveImages": "srcset for different screen densities",
+      "performance": "lazy loading for images, optimized SVGs for icons",
+      "darkMode": "optional earth-tone dark variant available"
+    },
+
+    "shadcnIntegration": {
+      "colorTokenMapping": {
+        "primary": "darkGreen (#2D5016)",
+        "primaryForeground": "white (#FFFFFF)",
+        "secondary": "lightGreen (#A8C686)",
+        "secondaryForeground": "darkGreen (#2D5016)",
+        "accent": "sageGreen (#7BA05B)",
+        "accentForeground": "white (#FFFFFF)",
+        "muted": "mintGreen (#C8E6C9)",
+        "mutedForeground": "forestGreen (#4A7C59)",
+        "background": "offWhite (#FAFAFA)",
+        "foreground": "darkCharcoal (#2E2E2E)",
+        "card": "white (#FFFFFF)",
+        "cardForeground": "darkCharcoal (#2E2E2E)",
+        "border": "lightGray (#E0E0E0)",
+        "input": "lightGray (#E0E0E0)",
+        "ring": "sageGreen (#7BA05B)"
+      },
+      "oklchConversions": {
+        "primary": "oklch(0.31 0.08 142)",
+        "primaryForeground": "oklch(1 0 0)",
+        "secondary": "oklch(0.75 0.06 142)",
+        "secondaryForeground": "oklch(0.31 0.08 142)",
+        "accent": "oklch(0.63 0.07 142)",
+        "accentForeground": "oklch(1 0 0)",
+        "muted": "oklch(0.88 0.04 142)",
+        "mutedForeground": "oklch(0.48 0.08 142)",
+        "background": "oklch(0.98 0 0)",
+        "foreground": "oklch(0.18 0 0)",
+        "card": "oklch(1 0 0)",
+        "cardForeground": "oklch(0.18 0 0)",
+        "border": "oklch(0.88 0 0)",
+        "input": "oklch(0.88 0 0)",
+        "ring": "oklch(0.63 0.07 142)"
+      },
+      "darkModeVariants": {
+        "background": "oklch(0.12 0.02 142)",
+        "foreground": "oklch(0.95 0 0)",
+        "card": "oklch(0.16 0.02 142)",
+        "cardForeground": "oklch(0.95 0 0)",
+        "primary": "oklch(0.75 0.06 142)",
+        "primaryForeground": "oklch(0.12 0.02 142)",
+        "secondary": "oklch(0.22 0.04 142)",
+        "secondaryForeground": "oklch(0.95 0 0)",
+        "muted": "oklch(0.22 0.04 142)",
+        "mutedForeground": "oklch(0.65 0.04 142)",
+        "accent": "oklch(0.48 0.08 142)",
+        "accentForeground": "oklch(0.95 0 0)"
       }
     }
   }
+}
