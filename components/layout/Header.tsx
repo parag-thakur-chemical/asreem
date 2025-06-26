@@ -21,13 +21,14 @@ const mainLinks = [
   { name: "Home", href: "/" },
   { name: "Keynote Speakers", href: "/keynote-speakers" },
   { name: "Call for Abstracts", href: "/call-for-abstracts" },
+  { name: "Dates and Fees", href: "/dates-fees" },
 ];
 
 const moreLinks = [
-  { name: "Dates and Fees", href: "/dates-fees" },
   { name: "Register", href: "/register" },
   { name: "Publications and Awards", href: "/publications-awards" },
   { name: "Organizing Committee", href: "/organizing-committee" },
+  { name: "About the Conference", href: "/about-conference" },
   // Add more links as needed
 ];
 
