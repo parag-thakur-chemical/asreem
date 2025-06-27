@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface Speaker {
   id: number;
@@ -15,31 +15,35 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     id: 1,
-    name: 'Dr. Jane Smith',
-    position: 'Professor of Computer Science',
-    college: 'Stanford University',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop&crop=face',
+    name: "Dr. Jane Smith",
+    position: "Professor of Computer Science",
+    college: "Stanford University",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop&crop=face",
   },
   {
     id: 2,
-    name: 'Dr. Michael Johnson',
-    position: 'Director of AI Research',
-    college: 'MIT',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face',
+    name: "Dr. Michael Johnson",
+    position: "Director of AI Research",
+    college: "MIT",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face",
   },
   {
     id: 3,
-    name: 'Dr. Sarah Williams',
-    position: 'Head of Engineering',
-    college: 'ETH Zurich',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&h=500&fit=crop&crop=face',
+    name: "Dr. Sarah Williams",
+    position: "Head of Engineering",
+    college: "ETH Zurich",
+    image:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&h=500&fit=crop&crop=face",
   },
   {
     id: 4,
-    name: 'Dr. Robert Chen',
-    position: 'Professor of Data Science',
-    college: 'National University of Singapore',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&h=500&fit=crop&crop=face',
+    name: "Dr. Robert Chen",
+    position: "Professor of Data Science",
+    college: "National University of Singapore",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&h=500&fit=crop&crop=face",
   },
 ];
 
@@ -83,10 +87,12 @@ export function KeynoteSpeakers() {
   };
 
   return (
-    <section className="py-10 bg-green-200 text-offWhite">
+    <section className="py-10 bg-green-300 text-offWhite">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">Keynote Speakers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            Guest Of Honour
+          </h2>
           <div className="w-16 h-1 bg-accent-earthYellow mx-auto"></div>
         </div>
 
@@ -101,7 +107,7 @@ export function KeynoteSpeakers() {
                 animate="center"
                 exit="exit"
                 transition={{
-                  x: { type: 'spring', stiffness: 300, damping: 30 },
+                  x: { type: "spring", stiffness: 300, damping: 30 },
                   opacity: { duration: 0.4 },
                 }}
                 className="absolute inset-0 flex flex-col items-center justify-center px-4"
@@ -147,8 +153,8 @@ export function KeynoteSpeakers() {
                   }}
                   className={`w-3 h-3 rounded-full transition-all ${
                     index === currentIndex
-                      ? 'bg-accent-earthYellow scale-125'
-                      : 'bg-white/30 hover:bg-white/50'
+                      ? "bg-accent-earthYellow scale-125"
+                      : "bg-white/30 hover:bg-white/50"
                   }`}
                   aria-label={`Go to speaker ${index + 1}`}
                 />

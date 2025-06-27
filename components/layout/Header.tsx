@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -38,8 +38,15 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/asreem-logo.png" alt="ASREEM Logo" width={40} height={40} />
-          <span className="font-bold text-lg hidden sm:inline">ASREEM 2026</span>
+          <Image
+            src="/asreem-logo.png"
+            alt="ASREEM Logo"
+            width={40}
+            height={40}
+          />
+          <span className="font-bold text-lg hidden sm:inline">
+            ASREEM 2026
+          </span>
         </Link>
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-2">
@@ -54,19 +61,36 @@ export default function Header() {
           ))}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="px-3 py-2 font-medium text-gray-700 flex items-center gap-1">
+              <Button
+                variant="ghost"
+                className="px-3 py-2 font-medium text-gray-700 flex items-center gap-1"
+              >
                 More
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              {moreLinks.filter((l) => l.name !== "Register").map((link) => (
-                <DropdownMenuItem asChild key={link.name}>
-                  <Link href={link.href} className="w-full text-left">
-                    {link.name}
-                  </Link>
-                </DropdownMenuItem>
-              ))}
+              {moreLinks
+                .filter((l) => l.name !== "Register")
+                .map((link) => (
+                  <DropdownMenuItem asChild key={link.name}>
+                    <Link href={link.href} className="w-full text-left">
+                      {link.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href="/register">
@@ -77,18 +101,51 @@ export default function Header() {
         <Drawer direction="right">
           <DrawerTrigger asChild>
             <Button variant="ghost" size="icon" className="md:hidden">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
             </Button>
           </DrawerTrigger>
           <DrawerContent className="w-64 max-w-full h-full p-0 flex flex-col">
             <div className="flex items-center justify-between px-6 py-4 border-b">
-              <Link href="/" className="flex items-center gap-2" onClick={() => {}}>
-                <Image src="/asreem-logo.png" alt="ASREEM Logo" width={32} height={32} />
+              <Link
+                href="/"
+                className="flex items-center gap-2"
+                onClick={() => {}}
+              >
+                <Image
+                  src="/asreem-logo.png"
+                  alt="ASREEM Logo"
+                  width={32}
+                  height={32}
+                />
                 <span className="font-bold text-lg">ASREEM 2025</span>
               </Link>
               <DrawerClose asChild>
                 <Button variant="ghost" size="icon">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
                 </Button>
               </DrawerClose>
             </div>
@@ -103,7 +160,9 @@ export default function Header() {
                 </Link>
               ))}
               <Link href="/register" className="mt-4">
-                <Button className="w-full" variant="default">Register</Button>
+                <Button className="w-full" variant="default">
+                  Register
+                </Button>
               </Link>
             </div>
           </DrawerContent>
@@ -111,4 +170,4 @@ export default function Header() {
       </nav>
     </header>
   );
-} 
+}
