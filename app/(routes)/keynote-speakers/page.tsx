@@ -91,6 +91,16 @@ const speakers = [
 		post: "Eminent scientist, CSIR-NCL, Pune",
 		photo: "/keynote-speakers/dharne.jpg",
 	},
+	{
+		name: "Dr. Lokesh Ramteke",
+		post: "Assistant Professor, Dept of Biotechnology, IIT Mandi",
+		photo: "/keynote-speakers/lokeshramteke.jpg",
+	},
+	{
+		name: "Dr. Rajeev Kumar Dohare",
+		post: "Head & Associate Professor, Dept. of Chemical Engineering, MNIT, Jaipur",
+		photo: "/keynote-speakers/rajeevdohare.jpg",
+	},
 ];
 
 export default function KeynoteSpeakers() {

@@ -35,7 +35,7 @@ export default function RegisterPage() {
   ];
 
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="py-5 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-12">
@@ -106,16 +106,6 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            <div className="bg-yellow-50 p-4 rounded-md border-l-4 border-yellow-400 mb-6">
-              <p className="text-yellow-700 text-sm">
-                <span className="font-semibold">Note:</span> All payments must be made via bank transfer to the following account:
-              </p>
-              <ul className="list-disc pl-5 mt-2 text-yellow-700 text-sm space-y-1">
-                <li>Account Number: 37030749143</li>
-                <li>IFSC Code: SBIN0003320</li>
-                <li>Name: Director, SVNIT</li>
-              </ul>
-            </div>
 
             <div className="mt-8 text-center">
               <p className="text-gray-700 mb-4">For confirmation of registration, fill out the following Google form:</p>
@@ -125,20 +115,14 @@ export default function RegisterPage() {
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-md transition-colors"
               >
-                Register Now
+                Google Form for Registration
               </a>
             </div>
           </div>
 
           {/* Payment Information */}
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="bg-amber-50 p-4 rounded-md border-l-4 border-amber-400 mb-6">
-              <p className="text-amber-800 text-sm">
-                The course fee includes 18% GST as per institute norms.
-                Single-bedded shared accommodation can be availed upon prior
-                request (at additional cost).
-              </p>
-            </div>
+          
 
             <p className="text-gray-700 mb-6">
               Participants can pay the registration fees via NEFT/IMPS/UPI

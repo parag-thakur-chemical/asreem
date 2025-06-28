@@ -300,12 +300,6 @@ export default function DatesAndFees() {
             >
               Register Now
             </Link>
-            <Link
-              href="/contact"
-              className="px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
       </div>
