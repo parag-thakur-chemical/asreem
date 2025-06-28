@@ -7,6 +7,16 @@ export const metadata: Metadata = {
 };
 
 export default function CallForAbstracts() {
+  const handleDownloadTemplate = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/api/download-template';
+    link.download = 'Abstract Template.doc';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -177,13 +187,12 @@ export default function CallForAbstracts() {
             >
               Submit Abstract
             </a>
-            <a
-              href="/abstract-template.doc"
-              download
+            <button
+              onClick={handleDownloadTemplate}
               className="px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
             >
               Download Template
-            </a>
+            </button>
             <Link
               href="/register"
               className="px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
