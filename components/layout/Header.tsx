@@ -28,7 +28,10 @@ const moreLinks = [
   { name: "Register", href: "/register" },
   { name: "Publications and Awards", href: "/publications-awards" },
   { name: "Organizing Committee", href: "/organizing-committee" },
-  { name: "About the Conference", href: "/about-conference" },
+  { name: "Advisory Committee", href: "/advisory-committee" },
+  { name: "Sponserships", href: "/sponserships" },
+  { name: "Tourist Spots", href: "/tourist-spots" },
+  // { name: "About the Conference", href: "/about-conference" },
   // Add more links as needed
 ];
 

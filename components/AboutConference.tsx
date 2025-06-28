@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 export function AboutConference() {
@@ -9,11 +10,26 @@ export function AboutConference() {
     setIsExpanded(!isExpanded);
   };
   return (
-    <section className="py-12 md:py-16 bg-gray-100 text-gray-800 md:px-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+    <motion.section
+      className="py-12 md:py-16 bg-gray-100 text-gray-800 md:px-20"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.div
+        className="container mx-auto px-4"
+        initial={{ opacity: 0, scale: 0.97 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold mb-8 text-center"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           About the Conference
-        </h2>
+        </motion.h2>
 
         <div className="md:hidden space-y-6 px-2">
           <h3 className="text-2xl font-semibold text-primary-forestGreen">
@@ -129,7 +145,7 @@ export function AboutConference() {
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }

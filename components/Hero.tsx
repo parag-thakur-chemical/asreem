@@ -6,14 +6,25 @@ import { CiCalendarDate } from "react-icons/ci";
 import { Particles } from "./ui/particles";
 import SplitText from "./ui/SplitText";
 import BlurText from "./ui/BlurText";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const color = "oklch(0.27 0.06 153)";
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden">
+    <motion.section
+      className="relative bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden"
+      initial={{ opacity: 0, scale: 0.98 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       {/* Logos */}
-      <div className="absolute top-4 left-4 md:left-8 z-10">
+      <motion.div
+        className="absolute top-4 left-4 md:left-8 z-10"
+        initial={{ x: -60, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         <Image
           src="/asreem-logo.png"
           alt="ASREEM Logo"
@@ -22,8 +33,13 @@ export default function Hero() {
           className="w-16 h-16 md:w-20 md:h-20"
           priority
         />
-      </div>
-      <div className="absolute top-4 right-4 md:right-8 z-10">
+      </motion.div>
+      <motion.div
+        className="absolute top-4 right-4 md:right-8 z-10"
+        initial={{ x: 60, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         <Image
           src="/nit-surat-logo.png"
           alt="NIT Surat Logo"
@@ -32,7 +48,7 @@ export default function Hero() {
           className="w-16 h-16 md:w-20 md:h-20"
           priority
         />
-      </div>
+      </motion.div>
 
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
@@ -40,7 +56,12 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-skyBlue rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32">
+      <motion.div
+        className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-6 py-2 rounded-full mb-2 mt-2">
             <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base">
@@ -106,7 +127,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-offWhite to-transparent"></div>
       <Particles
         className="absolute inset-0"
@@ -115,6 +136,6 @@ export default function Hero() {
         color={color}
         refresh
       />
-    </section>
+    </motion.section>
   );
 }
