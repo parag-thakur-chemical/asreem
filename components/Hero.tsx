@@ -7,6 +7,7 @@ import { Particles } from "./ui/particles";
 import SplitText from "./ui/SplitText";
 import BlurText from "./ui/BlurText";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   const color = "oklch(0.27 0.06 153)";
@@ -64,10 +65,12 @@ export default function Hero() {
       >
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-6 py-2 rounded-full mb-2 mt-2">
+            <Link href="/dates-fees">
             <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base">
               <CiCalendarDate className="w-8 h-8 inline-block mr-2" />
               FEBRUARY 6-8, 2026
             </span>
+            </Link>
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -109,12 +112,16 @@ export default function Hero() {
           </div>
 
           <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/register">
             <button className="bg-[#00c950] hover:bg-opacity-90 text-darkCharcoal font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-accent-earthYellow/30">
               Register Now
             </button>
+            </Link>
+            <Link href="/call-for-abstracts">
             <button className="border-2 border-offWhite hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-offWhite/10">
               Learn More
             </button>
+            </Link>
           </div>
 
           <div className="pt-6 flex items-center justify-center space-x-4 text-base text-offWhite/80">
