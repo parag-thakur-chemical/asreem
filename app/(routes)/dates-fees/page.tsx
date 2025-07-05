@@ -113,7 +113,7 @@ export default function DatesAndFees() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Important Dates */}
-          <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm mx-auto md:max-w-full">
+          <div className="bg-white p-8 rounded-lg shadow-md w-full mx-auto md:max-w-full">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Important Dates
             </h2>
@@ -142,7 +142,7 @@ export default function DatesAndFees() {
           </div>
 
           {/* Registration Fees */}
-          <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm mx-auto md:max-w-full">
+          <div className="bg-white p-8 rounded-lg shadow-md w-full mx-auto md:max-w-full">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Registration Fees
             </h2>
