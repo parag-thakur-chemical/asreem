@@ -75,7 +75,7 @@ export default function Hero() {
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-6 py-2 rounded-full mb-2 mt-2">
             <Link href="/dates-fees">
-            <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base">
+            <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base text-amber-50">
               <CiCalendarDate className="w-8 h-8 inline-block mr-2" />
               FEBRUARY 6-8, 2026
             </span>
@@ -83,7 +83,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow">
+            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow text-amber-50">
               2nd Edition of The International Conference on
             </span>
             <SplitText
@@ -104,7 +104,7 @@ export default function Hero() {
           </h1>
 
           <div className="flex flex-col items-center justify-center space-y-2">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-green-900">
+            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-green-500">
               <BlurText
                 text="ASREEM 2.0"
                 delay={1000}
@@ -115,7 +115,7 @@ export default function Hero() {
               />
             </h2>
             <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
-            <p className="text-lg md:text-xl text-offWhite/80 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-amber-50 max-w-2xl mx-auto">
               Department of Chemical Engineering
             </p>
           </div>
@@ -127,13 +127,13 @@ export default function Hero() {
             </button>
             </Link>
             <Link href="/call-for-abstracts">
-            <button className="border-2 border-offWhite hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-offWhite/10">
+            <button className="border-2 border-offWhite hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-offWhite/10 text-amber-50">
               Learn More
             </button>
             </Link>
           </div>
 
-          <div className="pt-6 flex items-center justify-center space-x-4 text-base text-offWhite/80">
+          <div className="pt-6 flex items-center justify-center space-x-4 text-base text-offWhite/80 text-amber-50">
             <div className="flex items-center space-x-2">
               <CiLocationOn className="w-8 h-8" />
               <span>
