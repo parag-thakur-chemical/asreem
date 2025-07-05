@@ -148,3 +148,45 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-section > *:not(.hero-bg-video) {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-glass {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
+  padding: 2rem 1rem;
+  margin: 2.5rem auto;
+  max-width: 1100px;
+}
+
+@media (max-width: 768px) {
+  .hero-glass {
+    border-radius: 1.2rem;
+    padding: 1.2rem 0.5rem;
+    margin: 1.2rem auto;
+  }
+}

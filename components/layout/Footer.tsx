@@ -11,15 +11,12 @@ export default function Footer() {
 
   const contacts = [
     {
-      name: "Dr. Parag Thakur",
-      email: "paragthakur@ched.svnit.ac.in",
+      name: "Prof. (Dr.) Mousumi Chakraborty",
+      phone: "+91-261-2201610",
+      email: "mchakraborty@ched.svnit.ac.in",
     },
     {
-      name: "Dr. Jogender Singh",
-      email: "jogendersingh@ched.svnit.ac.in",
-    },
-    {
-      name: "Dr. A. K. Mungray",
+      name: "Prof. (Dr.) Arvind Kumar Mungray ",
       phone: "+91-261-2201605",
       email: "akm@ched.svnit.ac.in",
     },
@@ -34,9 +31,14 @@ export default function Footer() {
       email: "bag@ched.svnit.ac.in",
     },
     {
-      name: "Dr. Mausumi Chakraborty",
-      phone: "+91-261-2201",
-      email: "mchakraborty@ched.svnit.ac.in",
+      name: "Dr. Jogender Singh",
+      phone: "+91-82875 05262",
+      email: "jogendersingh@ched.svnit.ac.in",
+    },
+    {
+      name: "Dr. Parag Thakur",
+      phone: "+91-89992 54795",
+      email: "paragthakur@ched.svnit.ac.in",
     },
   ];
 

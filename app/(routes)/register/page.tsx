@@ -35,49 +35,49 @@ export default function RegisterPage() {
   ];
 
   return (
-    <div className="py-5 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-4 sm:py-5 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Registration
           </h1>
-          <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <div className="w-20 sm:w-24 h-1 bg-green-600 mx-auto mb-4 sm:mb-6"></div>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-2">
             Register now to secure your participation in ASREEM 2026
           </p>
         </div>
 
         <div className="space-y-8">
           {/* How to Apply */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">How to Apply</h2>
+          <div className="bg-white p-3 rounded-lg shadow-md">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">How to Apply</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li>Participants need to submit the abstracts as per the format provided on website. 
+              <li>Participants need to submit the abstracts as per the format provided on website.
                 (<a href="https://www.asreem.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">www.asreem.com</a>)</li>
               <li>After receiving the confirmation from organizing committee of ASREEM 2.0, participants need to pay registration fees as given below.</li>
             </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Registration Fees (inclusive of 18% GST)</h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">For Offline Participation</h3>
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gray-50">
-                      <tr>
-                        <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                        <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
-                      </tr>
+                    <tr>
+                      <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                      <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
+                    </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                      {registrationFeesOffline.map((item, index) => (
-                        <tr key={`offline-${index}`}>
-                          <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-700">{item.category}</td>
-                          <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 text-right">{item.fee}</td>
-                        </tr>
-                      ))}
+                    {registrationFeesOffline.map((item, index) => (
+                      <tr key={`offline-${index}`}>
+                        <td className="py-3 text-sm text-gray-700">{item.category}</td>
+                        <td className="py-3 text-sm font-medium text-gray-900 text-right">{item.fee}</td>
+                      </tr>
+                    ))}
                     </tbody>
                   </table>
                 </div>
@@ -88,32 +88,31 @@ export default function RegisterPage() {
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gray-50">
-                      <tr>
-                        <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                        <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
-                      </tr>
+                    <tr>
+                      <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                      <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
+                    </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                      {registrationFeesOnline.map((item, index) => (
-                        <tr key={`online-${index}`}>
-                          <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-700">{item.category}</td>
-                          <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 text-right">{item.fee}</td>
-                        </tr>
-                      ))}
+                    {registrationFeesOnline.map((item, index) => (
+                      <tr key={`online-${index}`}>
+                        <td className="py-3 text-sm text-gray-700">{item.category}</td>
+                        <td className="py-3 text-sm font-medium text-gray-900 text-right">{item.fee}</td>
+                      </tr>
+                    ))}
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
 
-
-            <div className="mt-8 text-center">
+            <div className="mt-6 sm:mt-8 text-center px-2">
               <p className="text-gray-700 mb-4">For confirmation of registration, fill out the following Google form:</p>
-              <a 
-                href="https://forms.gle/VoHdkZ5edvM88vqQ8" 
-                target="_blank" 
+              <a
+                href="https://forms.gle/VoHdkZ5edvM88vqQ8"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-md transition-colors"
+                className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 sm:px-6 rounded-md transition-colors text-sm sm:text-base"
               >
                 Google Form for Registration
               </a>
@@ -122,15 +121,13 @@ export default function RegisterPage() {
 
           {/* Payment Information */}
           <div className="bg-white p-8 rounded-lg shadow-md">
-          
-
             <p className="text-gray-700 mb-6">
               Participants can pay the registration fees via NEFT/IMPS/UPI
               using the following account details or QR code.
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 p-4 sm:p-6 rounded-lg mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-center">
                 <div>
                   <p className="mb-2">
                     <span className="font-medium">Account Number:</span>{" "}
@@ -146,7 +143,7 @@ export default function RegisterPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-40 h-40 bg-gray-100 rounded-md flex items-center justify-center text-gray-400 text-xs mb-2">
+                  <div className="w-32 h-32 sm:w-40 sm:h-40 bg-gray-100 rounded-md flex items-center justify-center text-gray-400 text-xs mb-2 mx-auto">
                     <img
                       src="/qr-code.png"
                       alt="Registration QR Code"
@@ -179,11 +176,11 @@ export default function RegisterPage() {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-12 bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+        <div className="mt-8 sm:mt-12 bg-white p-4 sm:p-8 rounded-lg shadow-md">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
             Contact Us
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div>
               <h3 className="text-lg font-medium text-gray-900 mb-2">
                 Department of Chemical Engineering,
@@ -194,15 +191,26 @@ export default function RegisterPage() {
               <p className="text-gray-700">Surat - 395 007, Gujarat, India</p>
             </div>
             <div>
-              <p className="text-gray-700">
-                <span className="font-medium">Phone:</span> 8287505262
-              </p>
-              <p className="text-gray-700">
-                <span className="font-medium">Phone:</span> 9904173019
-              </p>
-              <p className="text-gray-700">
-                <span className="font-medium">Phone:</span> 8999254795
-              </p>
+              <div className="space-y-6 sm:space-y-8">
+                <p className="text-gray-700">
+                  <span className="font-medium">Phone:</span>{" "}
+                  <a href="tel:+918287505262" className="hover:underline block sm:inline">
+                    8287505262
+                  </a>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-medium">Phone:</span>{" "}
+                  <a href="tel:+919904173019" className="hover:underline block sm:inline">
+                    9904173019
+                  </a>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-medium">Phone:</span>{" "}
+                  <a href="tel:+918999254795" className="hover:underline block sm:inline">
+                    8999254795
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
