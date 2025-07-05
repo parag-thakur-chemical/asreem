@@ -75,7 +75,7 @@ export default function Hero() {
         <div className="max-w-5xl w-full mx-auto text-center space-y-6 overflow-x-auto">
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-2 mt-2">
             <Link href="/dates-fees">
-            <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base text-amber-50">
+            <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base ">
               <CiCalendarDate className="w-8 h-8 inline-block mr-2" />
               FEBRUARY 6-8, 2026
             </span>
@@ -83,11 +83,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight break-words">
-            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow text-amber-50">
+            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow ">
               2nd Edition of The International Conference on
             </span>
             <SplitText
-              text="Advances in Sustainable Research\n  for Energy and Environmental\n  Management"
+              text="Advances in Sustainable Research   for Energy and Environmental   Management"
               className="h1 block text-[#00c950]"
               delay={100}
               duration={0.6}
