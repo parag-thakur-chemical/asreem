@@ -17,6 +17,7 @@ import {
   DrawerClose,
   DrawerTitle, // Add DrawerTitle import
 } from "@/components/ui/drawer";
+import { useRouter } from "next/navigation";
 
 const mainLinks = [
   { name: "Home", href: "/" },
@@ -37,6 +38,7 @@ const moreLinks = [
 ];
 
 export default function Header() {
+  const router = useRouter();
   return (
     <header className="w-full bg-white shadow sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
@@ -157,19 +159,24 @@ export default function Header() {
             </div>
             <div className="flex flex-col gap-1 px-6 py-4">
               {[...mainLinks, ...moreLinks].map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="block px-2 py-2 rounded hover:bg-gray-100 text-gray-700 font-medium"
-                >
-                  {link.name}
-                </Link>
+                <DrawerClose asChild key={link.name}>
+                  <button
+                    className="block px-2 py-2 rounded hover:bg-gray-100 text-gray-700 font-medium w-full text-left"
+                    onClick={() => setTimeout(() => router.push(link.href), 1000)}
+                  >
+                    {link.name}
+                  </button>
+                </DrawerClose>
               ))}
-              <Link href="/register" className="mt-4">
-                <Button className="w-full" variant="default">
+              <DrawerClose asChild>
+                <Button
+                  className="mt-4 w-full"
+                  variant="default"
+                  onClick={() => setTimeout(() => router.push('/register'), 1000)}
+                >
                   Register
                 </Button>
-              </Link>
+              </DrawerClose>
             </div>
           </DrawerContent>
         </Drawer>
