@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { CiLocationOn } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
-import { Particles } from "./ui/particles";
+// Removed Particles import
 import SplitText from "./ui/SplitText";
 import BlurText from "./ui/BlurText";
 import { motion } from "framer-motion";
@@ -19,6 +19,15 @@ export default function Hero() {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
     >
+      {/* Video Background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
       {/* Logos */}
       <motion.div
         className="absolute top-4 left-4 md:left-8 z-10"
@@ -58,7 +67,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32"
+        className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32 z-10"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -135,14 +144,8 @@ export default function Hero() {
           </div>
         </div>
       </motion.div>
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-offWhite to-transparent"></div>
-      <Particles
-        className="absolute inset-0"
-        quantity={100}
-        ease={80}
-        color={color}
-        refresh
-      />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-offWhite to-transparent z-10"></div>
+      {/* Removed Particles component */}
     </motion.section>
   );
 }
