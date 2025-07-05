@@ -15,6 +15,7 @@ import {
   DrawerTrigger,
   DrawerContent,
   DrawerClose,
+  DrawerTitle, // Add DrawerTitle import
 } from "@/components/ui/drawer";
 
 const mainLinks = [
@@ -29,7 +30,7 @@ const moreLinks = [
   { name: "Publications and Awards", href: "/publications-awards" },
   { name: "Organizing Committee", href: "/organizing-committee" },
   { name: "Advisory Committee", href: "/advisory-committee" },
-  { name: "Sponserships", href: "/sponserships" },
+  { name: "Sponsorships", href: "/sponsorships" },
   { name: "Tourist Spots", href: "/tourist-spots" },
   // { name: "About the Conference", href: "/about-conference" },
   // Add more links as needed
@@ -120,6 +121,8 @@ export default function Header() {
             </Button>
           </DrawerTrigger>
           <DrawerContent className="w-64 max-w-full h-full p-0 flex flex-col">
+            {/* Visually hidden DrawerTitle for accessibility */}
+            <DrawerTitle className="sr-only">Mobile Navigation</DrawerTitle>
             <div className="flex items-center justify-between px-6 py-4 border-b">
               <Link
                 href="/"

@@ -113,7 +113,7 @@ export default function DatesAndFees() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Important Dates */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm mx-auto md:max-w-full">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Important Dates
             </h2>
@@ -126,10 +126,10 @@ export default function DatesAndFees() {
                     </span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-gray-900">
+                    <h3 className="text-base md:text-lg font-medium text-gray-900">
                       {item.title}
                     </h3>
-                    <p className="text-green-600 font-medium">{item.date}</p>
+                    <p className="text-green-600 font-medium text-sm md:text-base">{item.date}</p>
                   </div>
                 </div>
               ))}
@@ -142,7 +142,7 @@ export default function DatesAndFees() {
           </div>
 
           {/* Registration Fees */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm mx-auto md:max-w-full">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Registration Fees
             </h2>
@@ -152,18 +152,18 @@ export default function DatesAndFees() {
               Offline Participation
             </h3>
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
+              <table className="min-w-full divide-y divide-gray-200 text-xs md:text-sm">
                 <thead className="bg-green-50">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-2 md:px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Category
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-2 md:px-6 py-3 text-right text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Fee (INR)
                     </th>
@@ -175,10 +175,10 @@ export default function DatesAndFees() {
                       key={index}
                       className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
                     >
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900">
                         {fee.category}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-900">
+                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm text-right font-medium text-gray-900">
                         {fee.fee}
                       </td>
                     </tr>
@@ -192,18 +192,18 @@ export default function DatesAndFees() {
               Online Participation
             </h3>
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
+              <table className="min-w-full divide-y divide-gray-200 text-xs md:text-sm">
                 <thead className="bg-green-50">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-2 md:px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Category
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-2 md:px-6 py-3 text-right text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Fee (INR)
                     </th>
@@ -215,10 +215,10 @@ export default function DatesAndFees() {
                       key={index}
                       className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
                     >
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900">
                         {fee.category}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-900">
+                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm text-right font-medium text-gray-900">
                         {fee.fee}
                       </td>
                     </tr>
