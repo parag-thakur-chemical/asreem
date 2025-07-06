@@ -111,131 +111,133 @@ export default function DatesAndFees() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Important Dates */}
-          <div className="bg-white p-4 sm:p-8 rounded-lg shadow-md w-full max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Important Dates
-            </h2>
-            <div className="space-y-6">
-              {importantDates.map((item, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                    <span className="text-green-600 font-semibold">
-                      {index + 1}
-                    </span>
+        <div className="max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Important Dates */}
+            <div className="bg-white p-4 sm:p-8 rounded-lg shadow-md w-full mt-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Important Dates
+              </h2>
+              <div className="space-y-6">
+                {importantDates.map((item, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                      <span className="text-green-600 font-semibold">
+                        {index + 1}
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="text-base md:text-lg font-medium text-gray-900">
+                        {item.title}
+                      </h3>
+                      <p className="text-green-600 font-medium text-sm md:text-base">{item.date}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-base md:text-lg font-medium text-gray-900">
-                      {item.title}
-                    </h3>
-                    <p className="text-green-600 font-medium text-sm md:text-base">{item.date}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
-              <p className="text-green-800 text-sm">
-                All fees are inclusive of 18% GST as per institute norms.
-              </p>
-            </div>
-          </div>
-
-          {/* Registration Fees */}
-          <div className="bg-white p-4 sm:p-8 rounded-lg shadow-md w-full max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Registration Fees
-            </h2>
-
-            {/* Offline Fees */}
-            <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
-              Offline Participation
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 text-xs md:text-sm">
-                <thead className="bg-green-50">
-                  <tr>
-                    <th
-                      scope="col"
-                      className="px-2 md:px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Category
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-2 md:px-6 py-3 text-right text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Fee (INR)
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {registrationFeesOffline.map((fee, index) => (
-                    <tr
-                      key={index}
-                      className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                    >
-                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900">
-                        {fee.category}
-                      </td>
-                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm text-right font-medium text-gray-900">
-                        {fee.fee}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Online Fees */}
-            <h3 className="text-lg font-semibold text-gray-900 mt-8 mb-2">
-              Online Participation
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 text-xs md:text-sm">
-                <thead className="bg-green-50">
-                  <tr>
-                    <th
-                      scope="col"
-                      className="px-2 md:px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Category
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-2 md:px-6 py-3 text-right text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Fee (INR)
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {registrationFeesOnline.map((fee, index) => (
-                    <tr
-                      key={index}
-                      className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                    >
-                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900">
-                        {fee.category}
-                      </td>
-                      <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm text-right font-medium text-gray-900">
-                        {fee.fee}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-400">
-              <h3 className="text-amber-800 font-medium mb-2">
-                Important Notes:
-              </h3>
-              <ul className="list-disc pl-5 space-y-1 text-sm text-amber-800">
-                {additionalInfo.map((item, index) => (
-                  <li key={index}>{item}</li>
                 ))}
-              </ul>
+              </div>
+              <div className="mt-8 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
+                <p className="text-green-800 text-sm">
+                  All fees are inclusive of 18% GST as per institute norms.
+                </p>
+              </div>
+            </div>
+
+            {/* Registration Fees */}
+            <div className="bg-white p-4 sm:p-8 rounded-lg shadow-md w-full mt-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Registration Fees
+              </h2>
+
+              {/* Offline Fees */}
+              <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
+                Offline Participation
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-gray-200 text-xs md:text-sm">
+                  <thead className="bg-green-50">
+                    <tr>
+                      <th
+                        scope="col"
+                        className="px-2 md:px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Category
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-2 md:px-6 py-3 text-right text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Fee (INR)
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {registrationFeesOffline.map((fee, index) => (
+                      <tr
+                        key={index}
+                        className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                      >
+                        <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900">
+                          {fee.category}
+                        </td>
+                        <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm text-right font-medium text-gray-900">
+                          {fee.fee}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Online Fees */}
+              <h3 className="text-lg font-semibold text-gray-900 mt-8 mb-2">
+                Online Participation
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-gray-200 text-xs md:text-sm">
+                  <thead className="bg-green-50">
+                    <tr>
+                      <th
+                        scope="col"
+                        className="px-2 md:px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Category
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-2 md:px-6 py-3 text-right text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Fee (INR)
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {registrationFeesOnline.map((fee, index) => (
+                      <tr
+                        key={index}
+                        className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                      >
+                        <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900">
+                          {fee.category}
+                        </td>
+                        <td className="px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-sm text-right font-medium text-gray-900">
+                          {fee.fee}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-400">
+                <h3 className="text-amber-800 font-medium mb-2">
+                  Important Notes:
+                </h3>
+                <ul className="list-disc pl-5 space-y-1 text-sm text-amber-800">
+                  {additionalInfo.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

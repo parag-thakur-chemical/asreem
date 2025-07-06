@@ -98,7 +98,7 @@ export default function OrganizingCommittee() {
                     key={mIdx}
                     className="w-72 h-72 bg-gradient-to-br from-lime-50 via-white to-emerald-100 rounded-2xl shadow-lg flex flex-col items-center p-6 border border-lime-200 hover:scale-105 transition-transform duration-200 group"
                   >
-                    <div className="w-32 h-32 mb-4 relative rounded-full overflow-hidden border-4 border-emerald-600 bg-white shadow-md group-hover:border-lime-500">
+                    <div className="w-32 h-32 mb-4 relative rounded-md overflow-hidden border-4 border-emerald-600 bg-white shadow-md group-hover:border-lime-500">
                       <Image
                         src={member.photo}
                         alt={member.name}
