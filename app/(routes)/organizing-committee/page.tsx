@@ -81,7 +81,8 @@ const committee = [
 export default function OrganizingCommittee() {
   return (
     <div className="py-12 bg-white min-h-screen">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-6"
+>
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
           Organizing Committee
         </h1>
@@ -89,7 +90,7 @@ export default function OrganizingCommittee() {
         <div className="space-y-12">
           {committee.map((section, idx) => (
             <div key={idx}>
-              <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">
+              <h2 className="text-3xl font-bold text-green-800 mb-6 text-center">
                 {section.role}
               </h2>
               <div className="flex flex-wrap justify-center gap-8">

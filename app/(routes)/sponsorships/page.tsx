@@ -11,7 +11,7 @@ export default function Sponsorships() {
             If you are selling Industrial Products, Instruments, Processors, or Simulation Softwares related to Chemical Engineering, Environmental engineering or Mechanical Engineering then, Advertise your product, process or services through the International Conference on ‘Advances in sustainable research for energy and environmental Management (ASREEM 2.0)’ to reach right people.
           </p>
           <p className="text-lg text-gray-700 text-center">
-            Nearby Hotels and Travel Agencies can also become our official accommodation and Travel partners for all three flagship events.
+            Nearby Hotels and Travel Agencies can also become our official accommodation and Travel partners.
           </p>
         </div>
       </div>

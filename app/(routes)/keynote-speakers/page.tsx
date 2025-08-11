@@ -41,11 +41,7 @@ const speakers = [
 		post: "Professor, IIT, Delhi",
 		photo: "/keynote-speakers/anilverma.jpg",
 	},
-	{
-		name: "Dr. P. Sesha Talpa Sai",
-		post: "Professor, IIT, Madras",
-		photo: "/keynote-speakers/sesha.jpg",
-	},
+
 	{
 		name: "Dr. Shriram Sonawane",
 		post: "Professor, VNIT, Nagpur",
@@ -66,41 +62,7 @@ const speakers = [
 		post: "Associate Professor, MNNIT, Allahabad (Prayagraj)",
 		photo: "/keynote-speakers/sushilkumar.jpg",
 	},
-	{
-		name: "Dr. Sunil A Patil",
-		post: "Associate Professor, IISER-Mohali",
-		photo: "/keynote-speakers/sunilpatil.jpg",
-	},
-	{
-		name: "Dr. Deepak Jadhav",
-		post: "Eminent Scientist, Korea Maritime and Ocean University (KMOU), South Korea",
-		photo: "/keynote-speakers/deepakjadhav.jpg",
-	},
-	{
-		name: "Dr. Parag Sadgir",
-		post: "Professor, COEP, Pune",
-		photo: "/keynote-speakers/sadgir.jpg",
-	},
-	{
-		name: "Dr. Hiren Rawal",
-		post: "Eminent scientist, CSIR CSMCRI, Bhavnagar",
-		photo: "/keynote-speakers/rawal.jpg",
-	},
-	{
-		name: "Mahesh S. Dharne",
-		post: "Eminent scientist, CSIR-NCL, Pune",
-		photo: "/keynote-speakers/dharne.jpg",
-	},
-	{
-		name: "Dr. Lokesh Ramteke",
-		post: "Assistant Professor, Dept of Biotechnology, IIT Mandi",
-		photo: "/keynote-speakers/lokeshramteke.jpg",
-	},
-	{
-		name: "Dr. Rajeev Kumar Dohare",
-		post: "Head & Associate Professor, Dept. of Chemical Engineering, MNIT, Jaipur",
-		photo: "/keynote-speakers/rajeevdohare.jpg",
-	},
+
 ];
 
 export default function KeynoteSpeakers() {
