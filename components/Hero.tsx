@@ -87,8 +87,11 @@ export default function Hero() {
               2nd Edition of The International Conference on
             </span>
             <SplitText
-              text="Advances in Sustainable Research   for Energy and Environmental   Management"
-              className="h1 block text-[#00c950]"
+              text="Advances in Sustainable Research for Energy and Environmental Management"
+              className="h1 block text-[#00ff66] 
+                        drop-shadow-[0_0_8px_#00ff88] 
+                        drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)] 
+                        [text-shadow:_0_0_2px_black,_0_0_8px_#00ff88]"
               delay={100}
               duration={0.6}
               ease="power3.out"
@@ -99,10 +102,14 @@ export default function Hero() {
               rootMargin="-100px"
               textAlign="center"
             />
+
           </h1>
 
           <div className="flex flex-col items-center justify-center space-y-2">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-green-500">
+            <h2 className="text-3xl md:text-4xl font-black tracking-wider h1 block text-[#00ff66] 
+                        drop-shadow-[0_0_8px_#00ff88] 
+                        drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)] 
+                        [text-shadow:_0_0_2px_black,_0_0_8px_#00ff88]">
               <BlurText
                 text="ASREEM 2.0"
                 delay={1000}
@@ -132,18 +139,18 @@ export default function Hero() {
           </div>
 
           <div className="pt-6 flex items-center justify-center space-x-4 text-base text-offWhite/80 text-amber-50">
-            <a
-              href="https://maps.google.com/?q=Sardar+Vallabhbhai+National+Institute+of+Technology,+Surat,+Gujarat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 hover:underline"
-            >
-              <CiLocationOn className="w-8 h-8" />
-              <span>
-                Sardar Vallabhbhai National Institute of Technology, Surat (Gujarat)
-              </span>
-            </a>
-          </div>
+        <a
+          href="https://maps.google.com/?q=Sardar+Vallabhbhai+National+Institute+of+Technology,+Surat,+Gujarat"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center space-x-2 hover:underline"
+        >
+          <CiLocationOn className="w-8 h-8" />
+          <span>
+            Sardar Vallabhbhai National Institute of Technology, Surat (Gujarat)
+          </span>
+        </a>
+      </div>
 
         </div>
       </motion.div>
