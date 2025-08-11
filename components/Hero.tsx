@@ -120,12 +120,12 @@ export default function Hero() {
 
           <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs sm:max-w-none mx-auto">
             <Link href="/register">
-            <button className="bg-[#00c950] hover:bg-opacity-90 text-darkCharcoal font-semibold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-accent-earthYellow/30 w-full sm:w-auto">
+            <button   className="bg-[#00c950] hover:bg-opacity-90 text-darkCharcoal font-semibold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-accent-earthYellow/30 w-full sm:w-auto cursor-pointer">
               Register Now
             </button>
             </Link>
             <Link href="/call-for-abstracts">
-            <button className="border-2 border-offWhite hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-offWhite/10 text-amber-50 w-full sm:w-auto">
+            <button className="border-2 border-offWhite hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-offWhite/10 text-amber-50 w-full sm:w-auto cursor-pointer">
               Learn More
             </button>
             </Link>
