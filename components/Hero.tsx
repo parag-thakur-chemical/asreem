@@ -67,7 +67,7 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="relative container mx-auto px-2 sm:px-4 py-16 md:py-24 lg:py-32 z-10"
+        className="relative  container mx-auto px-2 sm:px-4 py-16 md:py-24 lg:py-32 z-10"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -132,14 +132,19 @@ export default function Hero() {
           </div>
 
           <div className="pt-6 flex items-center justify-center space-x-4 text-base text-offWhite/80 text-amber-50">
-            <div className="flex items-center space-x-2">
+            <a
+              href="https://maps.google.com/?q=Sardar+Vallabhbhai+National+Institute+of+Technology,+Surat,+Gujarat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 hover:underline"
+            >
               <CiLocationOn className="w-8 h-8" />
               <span>
-                Sardar Vallabhbhai National Institute of Technology, Surat
-                (Gujarat)
+                Sardar Vallabhbhai National Institute of Technology, Surat (Gujarat)
               </span>
-            </div>
+            </a>
           </div>
+
         </div>
       </motion.div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-offWhite to-transparent z-10"></div>
