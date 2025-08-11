@@ -144,6 +144,12 @@ export default function CallForAbstracts() {
               "Modelling & Simulation: Life Cycle Analysis & Computational Fluid Dynamics",
               "Advanced oxidation processesandSonochemistry",
               "Process intensification",
+              "Advanced Solid Waste Management Strategies",
+              "Air Pollution Management and Control",
+              "Smart Cities through Renewable Energy",
+              "Thermochemical and hydrothermal Techniques",
+              "Catalysis and Reaction Engg."
+
             ].map((topic, index) => (
               <div
                 key={index}
