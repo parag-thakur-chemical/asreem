@@ -107,7 +107,7 @@ export default function DatesAndFees() {
           <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Mark your calendars and plan your participation in ASREEM 2026.
-            Early registration ensures you secure your spot at the best rates.
+            Early registration ensures you secure your spot as early as possible.
           </p>
         </div>
 
@@ -134,11 +134,11 @@ export default function DatesAndFees() {
                 </div>
               ))}
             </div>
-            <div className="mt-8 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
+            {/* <div className="mt-8 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
               <p className="text-green-800 text-sm">
                 All fees are inclusive of 18% GST as per institute norms.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Registration Fees */}

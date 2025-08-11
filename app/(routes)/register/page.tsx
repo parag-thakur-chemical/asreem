@@ -53,8 +53,8 @@ export default function RegisterPage() {
           <div className="bg-white p-3 rounded-lg shadow-md">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">How to Apply</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li>Participants need to submit the abstracts as per the format provided on website.
-                (<a href="https://www.asreem.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">www.asreem.com</a>)</li>
+              <li>Participants need to submit the abstracts as per the format provided .
+                (<a href="/call-for-abstracts"target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">template</a>)</li>
               <li>After receiving the confirmation from organizing committee of ASREEM 2.0, participants need to pay registration fees as given below.</li>
             </ul>
 
