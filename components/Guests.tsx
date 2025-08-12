@@ -15,36 +15,36 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     id: 1,
-    name: "Dr. Jane Smith",
-    position: "Professor of Computer Science",
-    college: "Stanford University",
+    name: "",
+    position: "",
+    college: "",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop&crop=face",
+      "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png",
   },
-  {
-    id: 2,
-    name: "Dr. Michael Johnson",
-    position: "Director of AI Research",
-    college: "MIT",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face",
-  },
-  {
-    id: 3,
-    name: "Dr. Sarah Williams",
-    position: "Head of Engineering",
-    college: "ETH Zurich",
-    image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&h=500&fit=crop&crop=face",
-  },
-  {
-    id: 4,
-    name: "Dr. Robert Chen",
-    position: "Professor of Data Science",
-    college: "National University of Singapore",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&h=500&fit=crop&crop=face",
-  },
+  // {
+  //   id: 2,
+  //   name: "",
+  //   position: "",
+  //   college: "",
+  //   image:
+  //     "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png"
+  // },
+  // {
+  //   id: 3,
+  //   name: "",
+  //   position: "",
+  //   college: "",
+  //   image:
+  //     "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png",
+  // },
+  // {
+  //   id: 4,
+  //   name: "",
+  //   position: "",
+  //   college: "",
+  //   image:
+  //     "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png",
+  // },
 ];
 
 export function KeynoteSpeakers() {
@@ -116,7 +116,7 @@ export function KeynoteSpeakers() {
                   <img
                     src={speakers[currentIndex].image}
                     alt={speakers[currentIndex].name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover py-14"
                   />
                 </div>
                 <div className="text-center px-2">
