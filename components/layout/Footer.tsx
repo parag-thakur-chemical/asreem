@@ -74,12 +74,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
+                {/* <Link
                   href="/about-conference"
                   className="text-green-100 hover:text-white transition-colors"
                 >
                   About Conference
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link

@@ -1,19 +1,143 @@
 export default function Sponsorships() {
+  const tiers = [
+    {
+      icon: "fas fa-crown",
+      tier: "Title",
+      price: "₹5,00,000",
+      benefits: [
+        "5 conference delegates",
+        "15 minutes corporate presentation",
+        "Logo on all conference banners",
+        "Key Position on the homepage of conference website",
+        "A4 size ad on conference souvenir back cover",
+        "Market stall",
+      ],
+      gradient: "from-blue-500 to-blue-400",
+      bodyGradient: "from-blue-100 to-blue-200",
+      svgIcon: "/icons/title-icon.svg",
+    },
+    {
+      icon: "fas fa-gem",
+      tier: "Diamond",
+      price: "₹3,00,000",
+      benefits: [
+        "3 conference delegates",
+        "10 minutes corporate presentation",
+        "Logo on all conference banners",
+        "Position on conference website",
+        "A3 size ad on conference souvenir front cover",
+        "Market stall",
+      ],
+      gradient: "from-purple-500 to-purple-400",
+      bodyGradient: "from-purple-100 to-purple-200",
+      svgIcon: "/icons/diamond-icon.svg",
+    },
+    {
+      icon: "fas fa-medal",
+      tier: "Gold",
+      price: "₹2,00,000",
+      benefits: [
+        "2 conference delegates",
+        "5 minutes corporate presentation",
+        "Logo on all conference banners",
+        "Position on conference website",
+        "Ad inside conference souvenir",
+        "Market stall",
+      ],
+      gradient: "from-yellow-500 to-yellow-400",
+      bodyGradient: "from-yellow-100 to-yellow-200",
+      svgIcon: "/icons/gold-icon.svg",
+    },
+    {
+      icon: "fas fa-star",
+      tier: "Silver",
+      price: "₹1,00,000",
+      benefits: [
+        "1 conference delegate",
+        "Logo on all conference banners",
+        "Position on conference website",
+        "Ad inside conference souvenir",
+        "Market stall",
+      ],
+      gradient: "from-gray-400 to-gray-400",
+      bodyGradient: "from-gray-100 to-gray-200",
+      svgIcon: "/icons/silver-icon.svg",
+    },
+  ];
+
   return (
     <div className="py-12 bg-white min-h-screen">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
           Sponsorships
         </h1>
         <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+
+        {/* Description */}
         <div className="bg-gradient-to-br from-green-50 via-white to-green-100 rounded-2xl shadow-lg border-2 border-green-200 p-8 mb-8 hover:scale-105 transition-transform duration-200">
-          <p className="text-lg text-gray-700 text-center mb-6">
-            If you are selling Industrial Products, Instruments, Processors, or Simulation Softwares related to Chemical Engineering, Environmental engineering or Mechanical Engineering then, Advertise your product, process or services through the International Conference on ‘Advances in sustainable research for energy and environmental Management (ASREEM 2.0)’ to reach right people.
+          <p className="text-lg text-gray-700 text-justify mb-6">
+            If you are selling Industrial Products, Instruments, Processors, or Simulation Softwares related to Chemical Engineering, Environmental engineering or Mechanical Engineering then, Advertise your product, process or services through the International Conference on ‘Advances in sustainable research for energy and environmental Management (ASREEM 2.0)’ to reach the right people.
           </p>
           <p className="text-lg text-gray-700 text-center">
             Nearby Hotels and Travel Agencies can also become our official accommodation and Travel partners.
           </p>
         </div>
+
+       {/* Cards */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  {tiers.map((tier, index) => (
+    <div
+      key={index}
+      className="rounded-xl overflow-hidden shadow-md flex flex-col h-full"
+    >
+      {/* Header */}
+      <div
+        className={`bg-gradient-to-b ${tier.gradient} text-white text-center p-4 flex flex-col items-center`}
+      >
+        {/* SVG Icon */}
+        <img
+          src={tier.svgIcon} // e.g., "/icons/silver.svg"
+          alt={`${tier.tier} icon`}
+          className="w-10 h-10 mb-2"
+          style={{ backgroundColor: "transparent" }}
+        />
+
+        <h2 className="font-semibold text-lg">{tier.tier}</h2>
+      </div>
+
+      {/* Body */}
+      <div
+        className={`bg-gradient-to-b ${tier.bodyGradient} text-center p-6 flex-grow`}
+      >
+        <div className="text-1xl sm:text-3xl font-bold text-blue-900 mb-4">
+          {tier.price}
+        </div>
+
+        <ul className="text-left text-blue-900 space-y-3">
+          {tier.benefits.map((benefit, i) => (
+            <li
+              key={i}
+              className={`flex items-start gap-2 ${
+                i < tier.benefits.length - 1
+                  ? "border-b border-blue-300 pb-2"
+                  : ""
+              }`}
+            >
+              <img
+                src="/tick.webp"
+                alt="tick"
+                className="w-5 h-5 mt-1 bg-transparent"
+              />
+              {benefit}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  ))}
+</div>
+
+
       </div>
     </div>
   );

@@ -1,161 +1,107 @@
 "use client";
 
 import Image from "next/image";
-import { CiLocationOn } from "react-icons/ci";
 import { CiCalendarDate } from "react-icons/ci";
-// Removed Particles import
-import SplitText from "./ui/SplitText";
-import BlurText from "./ui/BlurText";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Hero() {
-  const color = "oklch(0.27 0.06 153)";
-
   return (
-    <motion.section
-      className="relative bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden overflow-x-hidden"
-      initial={{ opacity: 0, scale: 0.98 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-      {/* Video Background */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/video.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
+    <section className="relative h-screen bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden">
+      {/* Background */}
+      <img
+        className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+        src="/bg_hero.png"
+        alt="Background"
       />
-      {/* Logos */}
-      <motion.div
-        className="absolute top-4 left-4 md:left-8 z-10"
-        initial={{ x: -60, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-      >
-        <Image
-          src="/asreem-logo.png"
-          alt="ASREEM Logo"
-          width={80}
-          height={80}
-          className="w-16 h-16 md:w-20 md:h-20"
-          priority
-        />
-      </motion.div>
-      <motion.div
-        className="absolute top-4 right-4 md:right-8 z-10"
-        initial={{ x: 60, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-      >
-        <Image
-          src="/nit-surat-logo.png"
-          alt="NIT Surat Logo"
-          width={80}
-          height={80}
-          className="w-16 h-16 md:w-20 md:h-20"
-          priority
-        />
-      </motion.div>
 
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent-earthYellow rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-skyBlue rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+      {/* Logos */}
+      <div className="absolute top-4 left-4 md:left-8 z-10">
+        <div className="bg-white backdrop-blur-lg p-2 rounded-xl shadow-xl shadow-black/20 border border-white/80">
+          <Image
+            src="/asreem-logo.png"
+            alt="ASREEM Logo"
+            width={80}
+            height={80}
+            className="w-16 h-16 md:w-20 md:h-20"
+            priority
+          />
+        </div>
       </div>
 
-      <motion.div
-        className="relative  container mx-auto px-2 sm:px-4 py-16 md:py-24 lg:py-32 z-10"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="max-w-5xl w-full mx-auto text-center space-y-6 overflow-x-auto">
+      <div className="absolute top-4 right-4 md:right-8 z-10">
+        <div className="bg-white backdrop-blur-lg p-2 rounded-xl shadow-xl shadow-black/20 border border-white/80">
+          <Image
+            src="/nit-surat-logo.png"
+            alt="NIT Surat Logo"
+            width={80}
+            height={80}
+            className="w-16 h-16 md:w-20 md:h-20"
+            priority
+          />
+        </div>
+      </div>
+
+      {/* Decorative blur circles */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-accent-earthYellow rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-skyBlue rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative container mx-auto px-2 sm:px-4 py-16 md:py-24 lg:py-32 z-10 h-full flex flex-col justify-center">
+        <div className="max-w-5xl w-full mx-auto text-center space-y-6">
+          {/* Date */}
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-2 mt-2">
             <Link href="/dates-fees">
-            <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base ">
-              <CiCalendarDate className="w-8 h-8 inline-block mr-2" />
-              FEBRUARY 6-8, 2026
-            </span>
+              <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base flex items-center justify-center">
+                <CiCalendarDate className="w-8 h-8 mr-2" />
+                FEBRUARY 6-8, 2026
+              </span>
             </Link>
           </div>
 
+          {/* Main heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight break-words">
-            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow ">
+            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow">
               2nd Edition of The International Conference on
             </span>
-            <SplitText
-              text="Advances in Sustainable Research for Energy and Environmental Management"
-              className="h1 block text-[#00ff66] 
-                        drop-shadow-[0_0_8px_#00ff88] 
-                        drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)] 
-                        [text-shadow:_0_0_2px_black,_0_0_8px_#00ff88]"
-              delay={100}
-              duration={0.6}
-              ease="power3.out"
-              splitType="words, chars"
-              from={{ opacity: 0, y: 40 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin="-100px"
-              textAlign="center"
-            />
-
+            <span className="block text-[#394735]">
+              Advances in Sustainable Research for Energy and Environmental Management
+            </span>
           </h1>
 
+          {/* Subheading */}
           <div className="flex flex-col items-center justify-center space-y-2">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider h1 block text-[#00ff66] 
-                        drop-shadow-[0_0_8px_#00ff88] 
-                        drop-shadow-[2px_2px_6px_rgba(0,0,0,0.8)] 
-                        [text-shadow:_0_0_2px_black,_0_0_8px_#00ff88]">
-              <BlurText
-                text="ASREEM 2.0"
-                delay={1000}
-                animateBy="letters"
-                stepDuration={1}
-                direction="top"
-                // className="text-2xl mb-8"
-              />
+            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#2c4034]">
+              ASREEM 2.0
             </h2>
             <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
-            <p className="text-lg md:text-xl text-amber-50 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-black max-w-2xl mx-auto">
               Department of Chemical Engineering
             </p>
           </div>
 
-          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs sm:max-w-none mx-auto">
+          {/* Buttons */}
+          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/register">
-            <button   className="bg-[#00c950] hover:bg-opacity-90 text-darkCharcoal font-semibold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-accent-earthYellow/30 w-full sm:w-auto cursor-pointer">
-              Register Now
-            </button>
+              <button className="border-green-900 border-2 bg-[#00ff66] hover:bg-opacity-90 text-darkCharcoal font-semibold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-earthYellow/30 cursor-pointer">
+                Register Now
+              </button>
             </Link>
-            <Link href="/call-for-abstracts">
-            <button className="border-2 border-offWhite hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-offWhite/10 text-amber-50 w-full sm:w-auto cursor-pointer">
-              Learn More
-            </button>
-            </Link>
-          </div>
+            <a
+              href="\ASREEM_2_brochure.pdf"
+              download
+              className="border-2 border-black hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-offWhite/10 text-black inline-block text-center "
+            >
+              Download Brochure
+            </a>
 
-          <div className="pt-6 flex items-center justify-center space-x-4 text-base text-offWhite/80 text-amber-50">
-        <a
-          href="https://maps.google.com/?q=Sardar+Vallabhbhai+National+Institute+of+Technology,+Surat,+Gujarat"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-2 hover:underline"
-        >
-          <CiLocationOn className="w-8 h-8" />
-          <span>
-            Sardar Vallabhbhai National Institute of Technology, Surat (Gujarat)
-          </span>
-        </a>
+          </div>
+        </div>
       </div>
 
-        </div>
-      </motion.div>
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-offWhite to-transparent z-10"></div>
-      {/* Removed Particles component */}
-    </motion.section>
+      {/* Gradient fade bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-offWhite to-transparent z-10 pointer-events-none"></div>
+    </section>
   );
 }

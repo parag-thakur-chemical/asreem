@@ -19,7 +19,7 @@ const speakers: Speaker[] = [
     position: "",
     college: "",
     image:
-      "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png",
+      "/comming_soon.jpg",
   },
   // {
   //   id: 2,
@@ -116,7 +116,7 @@ export function KeynoteSpeakers() {
                   <img
                     src={speakers[currentIndex].image}
                     alt={speakers[currentIndex].name}
-                    className="w-full h-full object-cover py-14"
+                    className="w-full h-full object-cover  py-24"
                   />
                 </div>
                 <div className="text-center px-2">
