@@ -54,7 +54,7 @@ const speakers = [
     name: "Dr. Shriram Sonawane",
     post: "Professor, VNIT, Nagpur",
     photo: "/keynote-speakers/sonawane.jpg",
-    portfolio: "https://vnit.irins.org/profile/48569" 
+    portfolio: "https://share.google/uih3MoOBY1aRDqIkX " 
   },
   {
     name: "Dr. Anand Kishor Kola",
