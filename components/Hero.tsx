@@ -50,7 +50,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-2 sm:px-4 py-16 md:py-24 lg:py-32 z-10 h-full flex flex-col justify-center pt-28 sm:pt-0">
+      <div className="relative container mx-auto px-2 sm:px-4 py-8 md:py-12 lg:py-16 z-10 h-full flex flex-col justify-center pt-28 sm:pt-0">
         <div className="max-w-5xl w-full mx-auto text-center space-y-6">
           {/* Date */}
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-2 mt-2">
