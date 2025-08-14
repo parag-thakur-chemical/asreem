@@ -11,34 +11,16 @@ export default function Footer() {
 
   const contacts = [
     {
-      name: "Prof. (Dr.) Mousumi Chakraborty",
-      phone: "+91-261-2201610",
-      email: "mchakraborty@ched.svnit.ac.in",
-    },
-    {
-      name: "Prof. (Dr.) Arvind Kumar Mungray ",
-      phone: "+91-261-2201605",
-      email: "akm@ched.svnit.ac.in",
-    },
-    {
-      name: "Dr. V. N. Lad",
-      phone: "+91-261-2201684",
-      email: "vnl@ched.svnit.ac.in",
-    },
-    {
-      name: "Dr. Alka A. Mungray",
-      phone: "+91-261-2201716",
-      email: "bag@ched.svnit.ac.in",
-    },
-    {
       name: "Dr. Jogender Singh",
       phone: "+91-82875 05262",
-      email: "jogendersingh@ched.svnit.ac.in",
     },
     {
       name: "Dr. Parag Thakur",
       phone: "+91-89992 54795",
-      email: "paragthakur@ched.svnit.ac.in",
+    },
+    {
+      name: "ASREEM Official Email",
+      email: "asreem.svnit@gmail.com",
     },
   ];
 
@@ -74,14 +56,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                {/* <Link
-                  href="/about-conference"
-                  className="text-green-100 hover:text-white transition-colors"
-                >
-                  About Conference
-                </Link> */}
-              </li>
-              <li>
                 <Link
                   href="/call-for-abstracts"
                   className="text-green-100 hover:text-white transition-colors"
@@ -114,22 +88,28 @@ export default function Footer() {
             <div className="space-y-4">
               {contacts.map((contact, index) => (
                 <div key={index} className="space-y-1">
-                  <h4 className="font-semibold text-green-50">
-                    {contact.name}
-                  </h4>
-                  <div className="flex items-center space-x-2 text-green-100">
-                    <FaPhoneAlt className="w-4 h-4" />
-                    <span>{contact.phone}</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-green-100">
-                    <FaEnvelope className="w-4 h-4" />
-                    <a
-                      href={`mailto:${contact.email}`}
-                      className="hover:underline"
-                    >
-                      {contact.email}
-                    </a>
-                  </div>
+                  {contact.name && (
+                    <h4 className="font-semibold text-green-50">
+                      {contact.name}
+                    </h4>
+                  )}
+                  {contact.phone && (
+                    <div className="flex items-center space-x-2 text-green-100">
+                      <FaPhoneAlt className="w-4 h-4" />
+                      <span>{contact.phone}</span>
+                    </div>
+                  )}
+                  {contact.email && (
+                    <div className="flex items-center space-x-2 text-green-100">
+                      <FaEnvelope className="w-4 h-4" />
+                      <a
+                        href={`mailto:${contact.email}`}
+                        className="hover:underline"
+                      >
+                        {contact.email}
+                      </a>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
