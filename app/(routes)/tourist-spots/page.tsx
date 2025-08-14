@@ -7,45 +7,58 @@ const spots = [
     name: "SAPUTARA",
     key: "saputara",
     location: "Dang District",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Saputara",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Saputara"
   },
   {
     name: "DAMAN",
     key: "daman",
     location: "Union Territory of Daman & Diu",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Daman,+India",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Daman,+India"
   },
   {
     name: "Dumas/Hazira",
     key: "dumas-hazira",
     location: "Surat District",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Dumas+Beach,+Surat,+Gujarat",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Dumas+Beach,+Surat,+Gujarat"
   },
   {
     name: "Swaminarayan Temple",
     key: "swaminarayan-temple",
     location: "Akshardham, Gandhinagar",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/BAPS+Swaminarayan+Temple,+Gandhinagar,+Gujarat",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/BAPS+Swaminarayan+Temple,+Gandhinagar,+Gujarat"
   },
   {
     name: "Pavagadh Step wells",
     key: "pavagadh-stepwells",
     location: "Panchmahal District",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Pavagadh+Hill,+Gujarat",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Pavagadh+Hill,+Gujarat"
   },
   {
     name: "Statue of Unity",
     key: "statue-of-unity",
     location: "Kevadia, Narmada District",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Statue+of+Unity",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Statue+of+Unity"
   },
   {
     name: "Kutch Desert",
     key: "kutch-desert",
     location: "Kutch District",
-    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Great+Rann+of+Kutch",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Great+Rann+of+Kutch"
   },
+  {
+    name: "Gopi Talav",
+    key: "gopi-talav",
+    location: "Surat City",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Gopi+Talav,+Surat,+Gujarat"
+  },
+  {
+    name: "Gir National Park",
+    key: "gir-national-park",
+    location: "Junagadh District",
+    portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Gir+National+Park,+Gujarat"
+  }
 ];
+
 
 
 export default function TouristSpots() {
