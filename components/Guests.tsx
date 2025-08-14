@@ -48,129 +48,129 @@ const speakers: Speaker[] = [
 ];
 
 export function KeynoteSpeakers() {
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const [direction, setDirection] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     nextSpeaker();
-  //   }, 5000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSpeaker();
+    }, 5000);
 
-  //   return () => clearInterval(timer);
-  // }, [currentIndex]);
+    return () => clearInterval(timer);
+  }, [currentIndex]);
 
-  // const nextSpeaker = () => {
-  //   setDirection(1);
-  //   setCurrentIndex((prev) => (prev + 1) % speakers.length);
-  // };
+  const nextSpeaker = () => {
+    setDirection(1);
+    setCurrentIndex((prev) => (prev + 1) % speakers.length);
+  };
 
-  // const prevSpeaker = () => {
-  //   setDirection(-1);
-  //   setCurrentIndex((prev) => (prev - 1 + speakers.length) % speakers.length);
-  // };
+  const prevSpeaker = () => {
+    setDirection(-1);
+    setCurrentIndex((prev) => (prev - 1 + speakers.length) % speakers.length);
+  };
 
-  // const slideVariants = {
-  //   enter: (direction: number) => ({
-  //     x: direction > 0 ? 100 : -100,
-  //     opacity: 0,
-  //   }),
-  //   center: {
-  //     zIndex: 1,
-  //     x: 0,
-  //     opacity: 1,
-  //   },
-  //   exit: (direction: number) => ({
-  //     zIndex: 0,
-  //     x: direction < 0 ? 100 : -100,
-  //     opacity: 0,
-  //   }),
-  // };
+  const slideVariants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 100 : -100,
+      opacity: 0,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: number) => ({
+      zIndex: 0,
+      x: direction < 0 ? 100 : -100,
+      opacity: 0,
+    }),
+  };
 
-  // return (
-  //   <section className="py-10 bg-green-300 text-offWhite">
-  //     <div className="container mx-auto px-4">
-  //       <div className="text-center mb-8 md:mb-12">
-  //         <h2 className="text-3xl md:text-4xl font-bold mb-2">
-  //           Guest Of Honour
-  //         </h2>
-  //         <div className="w-16 h-1 bg-accent-earthYellow mx-auto"></div>
-  //       </div>
+  return (
+    <section className="py-10 bg-green-300 text-offWhite">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            Guest Of Honour
+          </h2>
+          <div className="w-16 h-1 bg-accent-earthYellow mx-auto"></div>
+        </div>
 
-  //       <div className="max-w-3xl mx-auto">
-  //         <div className="relative h-[500px] md:h-[550px] overflow-hidden">
-  //           <AnimatePresence initial={false} custom={direction}>
-  //             <motion.div
-  //               key={currentIndex}
-  //               custom={direction}
-  //               variants={slideVariants}
-  //               initial="enter"
-  //               animate="center"
-  //               exit="exit"
-  //               transition={{
-  //                 x: { type: "spring", stiffness: 300, damping: 30 },
-  //                 opacity: { duration: 0.4 },
-  //               }}
-  //               className="absolute inset-0 flex flex-col items-center justify-center px-4"
-  //             >
-  //               <div className="w-4/5 max-w-xs aspect-[3/4] overflow-hidden mb-4 shadow-2xl rounded-lg border-2 border-white/20">
-  //                 <img
-  //                   src={speakers[currentIndex].image}
-  //                   alt={speakers[currentIndex].name}
-  //                   className="w-full h-full object-cover  py-24"
-  //                 />
-  //               </div>
-  //               <div className="text-center px-2">
-  //                 <h3 className="text-xl md:text-2xl font-bold mb-1">
-  //                   {speakers[currentIndex].name}
-  //                 </h3>
-  //                 <p className="text-md text-accent-earthYellow font-medium">
-  //                   {speakers[currentIndex].position}
-  //                 </p>
-  //                 <p className="text-sm  mt-1">
-  //                   {speakers[currentIndex].college}
-  //                 </p>
-  //               </div>
-  //             </motion.div>
-  //           </AnimatePresence>
-  //         </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="relative h-[500px] md:h-[550px] overflow-hidden">
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.div
+                key={currentIndex}
+                custom={direction}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.4 },
+                }}
+                className="absolute inset-0 flex flex-col items-center justify-center px-4"
+              >
+                <div className="w-4/5 max-w-xs aspect-[3/4] overflow-hidden mb-4 shadow-2xl rounded-lg border-2 border-white/20">
+                  <img
+                    src={speakers[currentIndex].image}
+                    alt={speakers[currentIndex].name}
+                    className="w-full h-full object-cover  py-24"
+                  />
+                </div>
+                <div className="text-center px-2">
+                  <h3 className="text-xl md:text-2xl font-bold mb-1">
+                    {speakers[currentIndex].name}
+                  </h3>
+                  <p className="text-md text-accent-earthYellow font-medium">
+                    {speakers[currentIndex].position}
+                  </p>
+                  <p className="text-sm  mt-1">
+                    {speakers[currentIndex].college}
+                  </p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
-  //         <div className="flex justify-center items-center gap-4 mt-3">
-  //           <button
-  //             onClick={prevSpeaker}
-  //             className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-  //             aria-label="Previous speaker"
-  //           >
-  //             <ArrowLeft className="w-6 h-6" />
-  //           </button>
+          <div className="flex justify-center items-center gap-4 mt-3">
+            <button
+              onClick={prevSpeaker}
+              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+              aria-label="Previous speaker"
+            >
+              <ArrowLeft className="w-6 h-6" />
+            </button>
 
-  //           <div className="flex gap-2">
-  //             {speakers.map((_, index) => (
-  //               <button
-  //                 key={index}
-  //                 onClick={() => {
-  //                   setDirection(index > currentIndex ? 1 : -1);
-  //                   setCurrentIndex(index);
-  //                 }}
-  //                 className={`w-3 h-3 rounded-full transition-all ${
-  //                   index === currentIndex
-  //                     ? "bg-accent-earthYellow scale-125"
-  //                     : "bg-white/30 hover:bg-white/50"
-  //                 }`}
-  //                 aria-label={`Go to speaker ${index + 1}`}
-  //               />
-  //             ))}
-  //           </div>
+            <div className="flex gap-2">
+              {speakers.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setDirection(index > currentIndex ? 1 : -1);
+                    setCurrentIndex(index);
+                  }}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === currentIndex
+                      ? "bg-accent-earthYellow scale-125"
+                      : "bg-white/30 hover:bg-white/50"
+                  }`}
+                  aria-label={`Go to speaker ${index + 1}`}
+                />
+              ))}
+            </div>
 
-  //           <button
-  //             onClick={nextSpeaker}
-  //             className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-  //             aria-label="Next speaker"
-  //           >
-  //             <ArrowRight className="w-6 h-6" />
-  //           </button>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </section>
-  // );
+            <button
+              onClick={nextSpeaker}
+              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+              aria-label="Next speaker"
+            >
+              <ArrowRight className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
