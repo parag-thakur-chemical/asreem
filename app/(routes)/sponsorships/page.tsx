@@ -94,14 +94,12 @@ export default function Sponsorships() {
       <div
         className={`bg-gradient-to-b ${tier.gradient} text-white text-center p-4 flex flex-col items-center`}
       >
-        {/* SVG Icon */}
         <img
           src={tier.svgIcon}
           alt={`${tier.tier} icon`}
           className="w-10 h-10 mb-2"
           style={{ backgroundColor: "transparent" }}
         />
-
         <h2 className="font-semibold text-lg">{tier.tier}</h2>
       </div>
 
@@ -137,8 +135,14 @@ export default function Sponsorships() {
   ))}
 </div>
 
+{/* Stall Only Note */}
+<p className="mt-4 text-center text-gray-800 bg-yellow-100 border border-yellow-300 rounded-lg p-4 max-w-lg mx-auto">
+  <strong>Stall Only :</strong> If you wish to only put up a stall of dimensions 8×16 ft , you can do so for <strong>₹25,000</strong>.
+  you can get additional space at ₹10,000 per 3×3 ft
+</p>
+
 {/* Disclaimer */}
-<p className="text-sm text-gray-600 text-center italic">
+<p className="mt-2 text-sm text-gray-600 text-center italic">
   * All above mentioned prices for sponsorships are exclusive of 18% GST.
 </p>
 
