@@ -56,10 +56,10 @@ export default function DatesAndFees() {
         </div>
 
         {/* Cards Container */}
-        <div className="flex flex-col md:flex-row md:space-x-12 space-y-12 md:space-y-0">
+        <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-12 lg:space-y-0">
 
           {/* Important Dates Card */}
-          <div className="bg-white p-8 rounded-lg shadow-md w-full">
+          <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-full overflow-hidden">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Important Dates</h2>
             <div className="space-y-6">
               {importantDates.map((item, index) => (
@@ -67,8 +67,8 @@ export default function DatesAndFees() {
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
                     <span className="text-green-600 font-semibold">{index + 1}</span>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-gray-900">{item.title}</h3>
+                  <div className="min-w-0">
+                    <h3 className="text-lg font-medium text-gray-900 break-words">{item.title}</h3>
                     <p className="text-green-600 font-medium">{item.date}</p>
                   </div>
                 </div>
@@ -77,24 +77,24 @@ export default function DatesAndFees() {
           </div>
 
           {/* Registration Fees Card */}
-          <div className="bg-white p-8 rounded-lg shadow-md w-full">
+          <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-full overflow-hidden">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Registration Fees</h2>
 
             {/* Offline Fees */}
             <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Offline Participation</h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
+            <div className="w-full overflow-hidden">
+              <table className="w-full table-fixed">
                 <thead className="bg-green-50">
                   <tr>
-                    <th className="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                    <th className="px-6 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
+                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-2/3">Category</th>
+                    <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider w-1/3">Fee (INR)</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {registrationFeesOffline.map((fee, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{fee.category}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-900">{fee.fee}</td>
+                      <td className="px-4 py-4 text-sm font-medium text-gray-900 break-words">{fee.category}</td>
+                      <td className="px-4 py-4 text-sm text-right font-medium text-gray-900 whitespace-nowrap">{fee.fee}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -103,19 +103,19 @@ export default function DatesAndFees() {
 
             {/* Online Fees */}
             <h3 className="text-lg font-semibold text-gray-900 mt-8 mb-2">Online Participation</h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
+            <div className="w-full overflow-hidden">
+              <table className="w-full table-fixed">
                 <thead className="bg-green-50">
                   <tr>
-                    <th className="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                    <th className="px-6 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
+                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-2/3">Category</th>
+                    <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider w-1/3">Fee (INR)</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {registrationFeesOnline.map((fee, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{fee.category}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-900">{fee.fee}</td>
+                      <td className="px-4 py-4 text-sm font-medium text-gray-900 break-words">{fee.category}</td>
+                      <td className="px-4 py-4 text-sm text-right font-medium text-gray-900 whitespace-nowrap">{fee.fee}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -133,19 +133,19 @@ export default function DatesAndFees() {
         </div>
 
         {/* Payment Information */}
-        <div className="mt-12 bg-white p-8 rounded-lg shadow-md w-full">
+        <div className="mt-12 bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-full overflow-hidden">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Payment Information</h2>
           <div className="max-w-2xl mx-auto">
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-4 sm:p-6 rounded-lg">
               <div className="grid md:grid-cols-2 gap-6 items-center">
                 <div>
                   <h3 className="text-lg font-medium text-gray-900 mb-3">Bank Details</h3>
                   <div className="space-y-2">
-                    <p className="text-gray-700"><span className="font-medium">Account Number:</span> 37030749143</p>
-                    <p className="text-gray-700"><span className="font-medium">IFSC Code:</span> SBIN0003320</p>
-                    <p className="text-gray-700"><span className="font-medium">Account Name:</span> Director, SVNIT</p>
-                    <p className="text-gray-700"><span className="font-medium">Bank Name:</span> State Bank of India</p>
-                    <p className="text-gray-700"><span className="font-medium">Branch:</span> SVNIT Campus, Surat</p>
+                    <p className="text-gray-700 break-words"><span className="font-medium">Account Number:</span> 37030749143</p>
+                    <p className="text-gray-700 break-words"><span className="font-medium">IFSC Code:</span> SBIN0003320</p>
+                    <p className="text-gray-700 break-words"><span className="font-medium">Account Name:</span> Director, SVNIT</p>
+                    <p className="text-gray-700 break-words"><span className="font-medium">Bank Name:</span> State Bank of India</p>
+                    <p className="text-gray-700 break-words"><span className="font-medium">Branch:</span> SVNIT Campus, Surat</p>
                   </div>
                 </div>
                 <div className="flex justify-center">

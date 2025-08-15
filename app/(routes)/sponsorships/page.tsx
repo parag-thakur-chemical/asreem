@@ -83,8 +83,8 @@ export default function Sponsorships() {
           </p>
         </div>
 
-       {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Cards */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
   {tiers.map((tier, index) => (
     <div
       key={index}
@@ -96,7 +96,7 @@ export default function Sponsorships() {
       >
         {/* SVG Icon */}
         <img
-          src={tier.svgIcon} // e.g., "/icons/silver.svg"
+          src={tier.svgIcon}
           alt={`${tier.tier} icon`}
           className="w-10 h-10 mb-2"
           style={{ backgroundColor: "transparent" }}
@@ -136,6 +136,11 @@ export default function Sponsorships() {
     </div>
   ))}
 </div>
+
+{/* Disclaimer */}
+<p className="text-sm text-gray-600 text-center italic">
+  * All above mentioned prices for sponsorships are exclusive of 18% GST.
+</p>
 
 
       </div>
