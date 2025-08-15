@@ -1,39 +1,17 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useState } from "react";
-
 export function AboutConference() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
   return (
-    <motion.section
-      className="py-12 md:py-16 bg-gray-100 text-gray-800 md:px-20"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <motion.div
-        className="container mx-auto px-4"
-        initial={{ opacity: 0, scale: 0.97 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
-      >
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-8 text-center"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
+    <section className="py-12 md:py-16 bg-gray-100 text-gray-800 md:px-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
           About the Conference
-        </motion.h2>
+        </h2>
 
+        {/* Mobile view */}
         <div className="md:hidden space-y-6 px-2">
           <h3 className="text-2xl font-semibold text-primary-forestGreen">
-            Welcome to ASREEM-2026 !
+            Welcome to ASREEM-2026!
           </h3>
 
           <p className="text-justify">
@@ -51,52 +29,32 @@ export function AboutConference() {
             the field of applied energy and environmental research.
           </p>
 
-          {!isExpanded && (
-            <button
-              onClick={toggleExpand}
-              className="w-full py-2 px-4 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors"
-            >
-              Read More
-            </button>
-          )}
+          <p className="text-justify">
+            The focus will be on the research studies and findings that can
+            have a 'Lab to Field' approach. We believe that the findings of
+            research studies should be motivated to go for a market
+            application. This can solve the day-to-day problems that are faced
+            by people of industrial background, wastewater treatment managers,
+            energy suppliers, environmental activists etc.
+          </p>
 
-          {isExpanded && (
-            <div className="space-y-6">
-              <p className="text-justify">
-                The focus will be on the research studies and findings that can
-                have a 'Lab to Field' approach. We believe that the findings of
-                research studies should be motivated to go for a market
-                application. This can solve the day-to-day problems that are
-                faced by people of industrial background, wastewater treatment
-                managers, energy suppliers, environmental activists etc.
-              </p>
+          <p className="text-justify">
+            This will be an on-ground conference held at the Chemical
+            Engineering Department, SVNIT, Surat, Gujarat. The organisers are
+            working in the field of the 'Energy and Environmental Management'
+            sector for the past decade. They share a common thought process for
+            the development of 'solution-oriented research'.
+          </p>
 
-              <p className="text-justify">
-                This will be an on-ground conference held at the Chemical
-                Engineering Department, SVNIT, Surat, Gujarat. The organisers
-                are working in the field of the 'Energy and Environmental
-                Management' sector for the past decade. They share a common
-                thought process for the development of 'solution-oriented
-                research'.
-              </p>
-
-              <p className="text-justify">
-                The conference is organised to gather like-minded people of
-                academic and industrial origin who can share their views
-                regarding advances in sustainable research for energy and
-                environmental management.
-              </p>
-
-              <button
-                onClick={toggleExpand}
-                className="w-full py-2 px-4 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors"
-              >
-                Show Less
-              </button>
-            </div>
-          )}
+          <p className="text-justify">
+            The conference is organised to gather like-minded people of
+            academic and industrial origin who can share their views regarding
+            advances in sustainable research for energy and environmental
+            management.
+          </p>
         </div>
 
+        {/* Desktop view */}
         <div className="hidden md:flex flex-col md:flex-row gap-8 lg:gap-12">
           <div className="md:w-1/2 space-y-6">
             <h3 className="text-2xl lg:text-3xl font-semibold text-primary-forestGreen">
@@ -145,7 +103,7 @@ export function AboutConference() {
             </p>
           </div>
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 }

@@ -50,7 +50,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-2 sm:px-4 py-8 md:py-12 lg:py-16 z-10 h-full flex flex-col justify-center pt-28 sm:pt-0">
+      <div className="relative container mx-auto px-2 sm:px-4 z-10 h-full flex flex-col justify-center">
         <div className="max-w-5xl w-full mx-auto text-center space-y-6">
           {/* Date */}
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-2 mt-2">
@@ -64,20 +64,20 @@ export default function Hero() {
 
           {/* Main heading */}
           <h1
-  className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight break-words
-  text-shadow:
-  0 0 4px rgba(255,255,255,0.8),
-  0 0 12px rgba(255,255,255,0.9),
-  0 0 24px rgba(255,255,255,0.8);"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight break-words
+            text-shadow:
+            0 0 4px rgba(255,255,255,0.8),
+            0 0 12px rgba(255,255,255,0.9),
+            0 0 24px rgba(255,255,255,0.8);"
 
->
-  <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow">
-    2nd Edition of The International Conference on
-  </span>
-  <span className="block text-green-950">
-    Advances in Sustainable Research for Energy and Environmental Management
-  </span>
-</h1>
+          >
+            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow">
+              2nd Edition of The International Conference on
+            </span>
+            <span className="block text-green-950">
+              Advances in Sustainable Research for Energy and Environmental Management
+            </span>
+          </h1>
 
 
           {/* Subheading */}

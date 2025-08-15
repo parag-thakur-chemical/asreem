@@ -1,39 +1,23 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export const AboutSVNIT = () => {
   return (
     <section className="py-12 md:py-16 bg-gradient-to-br from-amber-50 via-white to-yellow-100 text-gray-800 md:px-20">
       <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary-forestGreen"
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary-forestGreen">
           About SVNIT
-        </motion.h2>
-        <div className="flex flex-col md:flex-row items-center gap-8 rounded-2xl shadow-lg bg-gradient-to-br from-green-50 via-white to-green-100 border-2 border-green-200 p-8 mb-8 hover:scale-105 transition-transform duration-200">
-          <motion.div
-            className="md:w-1/2"
-            initial={{ opacity: 0, x: -80 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+        </h2>
+        <div className="flex flex-col md:flex-row items-center gap-8 rounded-2xl shadow-lg bg-gradient-to-br from-green-50 via-white to-green-100 border-2 border-green-200 p-8 mb-8">
+          <div className="md:w-1/2">
             <Image
               src="/svnit.jpg"
               alt="SVNIT Campus"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg w-full h-auto transition-transform duration-300 hover:scale-105"
+              className="rounded-lg shadow-lg w-full h-auto"
             />
-          </motion.div>
-          <motion.div
-            className="md:w-1/2"
-            initial={{ opacity: 0, x: 80 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          </div>
+          <div className="md:w-1/2">
             <div className="space-y-4 text-justify">
               <p>
                 Sardar Vallabhbhai National Institute of Technology, Surat known
@@ -58,7 +42,7 @@ export const AboutSVNIT = () => {
                 National Importance' w.e.f. Aug.15, 2007.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
