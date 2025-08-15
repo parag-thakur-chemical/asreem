@@ -6,7 +6,11 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden">
+    <section
+      className="relative bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden"
+      style={{ height: "100dvh" }}
+    >
+
       {/* Background */}
       <img
         className=" absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
