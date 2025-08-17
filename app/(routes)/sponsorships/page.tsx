@@ -137,7 +137,7 @@ export default function Sponsorships() {
 
 {/* Stall Only Note */}
 <p className="mt-4 text-center text-gray-800 bg-yellow-100 border border-yellow-300 rounded-lg p-4 max-w-lg mx-auto">
-  <strong>Stall Only :</strong> If you wish to only put up a stall of dimensions 8×16 ft , you can do so for <strong>₹25,000</strong>.
+  <strong>Stall Only :</strong> If you wish to only put up a stall of dimensions 8×16 ft , you can do so for <strong>₹30,000</strong>.
   you can get additional space at ₹10,000 per 3×3 ft
 </p>
 

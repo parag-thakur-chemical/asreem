@@ -16,10 +16,6 @@ const internationalAdvisory = [
     post: "Senior Lecturer in Resource Recovery Technology, IHE Delft Institute for Water Education, Netherlands"
   },
   {
-    name: "Dr. Iwona Gajda",
-    post: "Senior Research Fellow, Bristol Robotics Laboratory, UWE Bristol, United Kingdom"
-  },
-  {
     name: "Dr. Nancy G. Love",
     post: "Borchardt and Glysson Collegiate Professor, University of Michigan"
   },
@@ -48,10 +44,6 @@ const internationalAdvisory = [
     post: "Associate Professor, Chemical Engineering, AlHussein Bin Talal University, Jordan"
   },
   {
-    name: "Dr. Ludo Diels",
-    post: "Research Leader, Institute for Environment & Sustainable Development, Flemish Institute for Technological Research (VITO), Belgium"
-  },
-  {
     name: "Dr. Jaume Puigagut",
     post: "Associate Professor, Polytechnic University of Catalonia, Barcelona, Spain"
   },
@@ -62,10 +54,6 @@ const internationalAdvisory = [
   {
     name: "Dr. Nguyen Dinh Duc",
     post: "Professor, The Head of Laboratory A, Vietnam National University, Hanoi"
-  },
-  {
-    name: "DI Dr. Techn. Hans-Jörg Bart",
-    post: "Professor, Technical University of Kaiserslautern, Germany"
   },
   {
     name: "Dr. Pietro Bartocci",
@@ -81,7 +69,11 @@ const internationalAdvisory = [
   },
   {
     name: "Dr. Uwe Schröder",
-    post: "Institute of Environmental and Sustainable Chemistry, Technical University of Braunschweig, Germany"
+    post: "Professor, Institute of Environmental and Sustainable Chemistry, Technical University of Braunschweig, Germany"
+  },
+  {
+    name: "Salim Hiziroglu",
+    post: "Professor,  Emeritus Natural Resource Ecology & Managemen"
   },
 ];
 
