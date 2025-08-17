@@ -6,7 +6,7 @@ const committee = [
     role: "Chief Patron",
     members: [
       {
-        name: "Prof. Anupam Shukla",
+        name: "Dr. Anupam Shukla",
         post: "Director, SVNIT, Surat-395 007",
         photo: "/organizing-committee/anupam-shukla.jpg",
         portfolio: "https://www.svnit.ac.in/web/brief-about-director.php"
@@ -17,7 +17,7 @@ const committee = [
     role: "Patron",
     members: [
       {
-        name: "Prof. Meghal Desai",
+        name: "Dr. Meghal Desai",
         post: "Head, Dept. of Chem Engg, SVNIT, Surat-395 007",
         photo: "/organizing-committee/meghal-desai.jpg",
         portfolio: "https://svnit.ac.in/facup/CV_Meghal_Website_July2025.pdf"
@@ -28,13 +28,13 @@ const committee = [
     role: "Conveners",
     members: [
       {
-        name: "Prof. Mousumi Chakraborty",
+        name: "Dr. Mousumi Chakraborty",
         post: "Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
         photo: "/organizing-committee/mousumi-chakraborty.jpg",
         portfolio: "https://svnit.ac.in/facup/Webpage_MC_19012024.pdf"
       },
       {
-        name: "Prof. Arvind Kumar Mungray",
+        name: "Dr. Arvind Kumar Mungray",
         post: "Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
         photo: "/organizing-committee/arvind-mungray.jpg",
         portfolio: "https://www.svnit.ac.in/facup/akm.pdf"
@@ -45,7 +45,7 @@ const committee = [
     role: "Coordinators",
     members: [
       {
-        name: "Prof. V.N. Lad",
+        name: "Dr. V.N. Lad",
         post: "Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
         photo: "/organizing-committee/vn-lad.jpg",
         portfolio: "https://www.svnit.ac.in/facup/homepage__vnl/index%20vnl.htm"
