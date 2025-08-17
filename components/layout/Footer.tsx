@@ -12,11 +12,15 @@ export default function Footer() {
   const contacts = [
     {
       name: "Dr. Jogender Singh",
-      phone: "+91-82875 05262",
+      phone: "+91 82875 05262",
     },
     {
       name: "Dr. Parag Thakur",
-      phone: "+91-89992 54795",
+      phone: "+91 89992 54795",
+    },
+    {
+      name: "Dr. Arvind Kumar Mungray",
+      phone: "+91 9904173019",
     },
     {
       name: "ASREEM Official Email",
