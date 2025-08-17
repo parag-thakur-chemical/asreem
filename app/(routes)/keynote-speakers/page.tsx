@@ -62,12 +62,6 @@ const speakers = [
     photo: "/keynote-speakers/kola.jpg",
     portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
   },
-  {
-    name: "Dr. Manish Vashishtha",
-    post: "Professor, MNIT, Jaipur",
-    photo: "/keynote-speakers/vashishtha.jpg",
-    portfolio: "https://mnit.ac.in/dept_chemical/profile?fid=RK2I"
-  },
  
 ];
 
