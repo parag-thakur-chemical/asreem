@@ -28,7 +28,7 @@ const spots = [
     portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/BAPS+Swaminarayan+Temple,+Gandhinagar,+Gujarat"
   },
   {
-    name: "Pavagadh Step wells",
+    name: "Pavagadh",
     key: "pavagadh-stepwells",
     location: "Panchmahal District",
     portfolio: "https://www.google.com/maps/dir/SVNIT+Surat/Pavagadh+Hill,+Gujarat"
