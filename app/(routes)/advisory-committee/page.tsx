@@ -73,7 +73,11 @@ const internationalAdvisory = [
   },
   {
     name: "Salim Hiziroglu",
-    post: "Professor,  Emeritus Natural Resource Ecology & Managemen"
+    post: "Professor,  Emeritus Natural Resource Ecology & Management"
+  },
+  {
+    name: "Mohammad Ali Abdelkareem",
+    post: "Professor, Sustainable and Renewable Energy Engineering Department, University of Sharjah"
   },
 ];
 
