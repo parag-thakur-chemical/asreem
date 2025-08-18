@@ -8,7 +8,7 @@ const internationalAdvisory = [
     post: "Senior Scientist, Flemish Institute for Technological Research (VITO), Belgium"
   },
   {
-    name: "Prof. Muthupandian Ashokkumar",
+    name: "Dr. Muthupandian Ashokkumar",
     post: "Assistant Deputy Vice Chancellor, University of Melbourne, Australia"
   },
   {
@@ -72,11 +72,11 @@ const internationalAdvisory = [
     post: "Professor, Institute of Environmental and Sustainable Chemistry, Technical University of Braunschweig, Germany"
   },
   {
-    name: "Salim Hiziroglu",
+    name: "Dr. Salim Hiziroglu",
     post: "Professor,  Emeritus Natural Resource Ecology & Management"
   },
   {
-    name: "Mohammad Ali Abdelkareem",
+    name: "Dr. Mohammad Ali Abdelkareem",
     post: "Professor, Sustainable and Renewable Energy Engineering Department, University of Sharjah"
   },
 ];
