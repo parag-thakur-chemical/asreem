@@ -19,7 +19,7 @@ export default function Hero() {
       />
 
       {/* Logos */}
-      <div className="absolute top-4 left-4 md:left-8 z-10">
+      <div className="absolute top-3 left-3 md:left-8 z-10">
         <div className="bg-white/15 backdrop-blur-md p-2 rounded-xl border border-white/30 shadow-lg shadow-black/10">
           <Image
             src="/asreem-logo.png"
@@ -90,10 +90,10 @@ export default function Hero() {
             <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#a6ffc6]">
               ASREEM 2.0
             </h2>
-            <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
+            {/* <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
             <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
-              {/* Department of Chemical Engineering */}
-            </p>
+              Department of Chemical Engineering
+            </p> */}
           </div>
 
           {/* Buttons */}
