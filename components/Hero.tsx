@@ -80,16 +80,16 @@ export default function Hero() {
             </span>
 
             <span className="block text-green-950">
-              Advances in Sustainable Research for Energy and Environmental Management
+              Advances in Sustainable Research for Energy and Environmental Management (ASREEM 2.0)
             </span>
           </h1>
 
 
           {/* Subheading */}
           <div className="flex flex-col items-center justify-center space-y-2 ">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-black">
+            {/* <h2 className="text-3xl md:text-4xl font-black tracking-wider text-black">
               ASREEM 2.0
-            </h2>
+            </h2> */}
             {/* <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
             <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
               Department of Chemical Engineering
