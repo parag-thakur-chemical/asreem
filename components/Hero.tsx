@@ -75,21 +75,22 @@ export default function Hero() {
             0 0 24px rgba(255,255,255,0.8);"
 
           >
-            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow">
+            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow ">
               2<sup>nd</sup> Edition of The International Conference on
             </span>
 
-            <span className="block text-green-950">
-              Advances in Sustainable Research for Energy and Environmental Management (ASREEM 2.0)
+            <span className="block text-[#040c25] ">
+              Advances in Sustainable Research for Energy and Environmental Management 
             </span>
           </h1>
 
 
           {/* Subheading */}
           <div className="flex flex-col items-center justify-center space-y-2 ">
-            {/* <h2 className="text-3xl md:text-4xl font-black tracking-wider text-black">
-              ASREEM 2.0
-            </h2> */}
+            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#7d90be] drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
+  ASREEM 2.0
+</h2>
+
             {/* <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
             <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
               Department of Chemical Engineering
