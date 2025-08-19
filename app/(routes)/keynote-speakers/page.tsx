@@ -93,7 +93,7 @@ const speakers = [
     portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
   },
   {
-    name: "Dr. Dong-Hoon Kim",
+    name: "Dr. Sage R. Hiibel",
     post: "Associate Professor ,University of Nevada, Reno",
     photo: "/keynote-speakers/sagehiibel.jpg",
     portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
@@ -116,12 +116,7 @@ const speakers = [
     photo: "/keynote-speakers/salim-hiziroglu.jpg",
     portfolio: "https://experts.okstate.edu/salim.hiziroglu"
   },
-  {
-    name: "Dr. Mohsen Sharifpur",
-    post: "Associate Professor, University of Pretoria South Africa",
-    photo: "/keynote-speakers/mohsen-sharifpur.jpg",
-    portfolio: "https://experts.okstate.edu/salim.hiziroglu"
-  },
+  
   {
     name: "Dr. S Senthilmurugan",
     post: "Professor, Indian Institute of Technology Guwahati",

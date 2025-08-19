@@ -93,15 +93,15 @@ const committee = [
       },
       {
         name: "Dr. Shirish H. Sonawane",
-        post: "",
-        photo: "/keynote-speakers/.jpg",
-        portfolio: "..."
+        post: "Professor , National Institute of Technology, Warangal",
+        photo: "/organizing-committee/shirish-sonawane.jpg",
+        portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
       },
       {
         name: "Dr.  Sushil Kumar",
-        post: "",
-        photo: "/keynote-speakers/.jpg",
-        portfolio: "..."
+        post: "professor, Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
+        photo: "/keynote-speakers/sushilkumar.jpg",
+        portfolio: "https://mnnit.ac.in/profile/sushilk"
       },
     ],
   },
@@ -121,7 +121,7 @@ const committee = [
         portfolio: "https://www.linkedin.com/in/yash-dumbhare-95225b2b4/"
       },
       {
-        name: "Yash Dumbhare",
+        name: "Shiv Pratap Gupta",
         post: "Student Coordinator",
         photo: "/organizing-committee/shiv-pratap.jpg",
         portfolio: "https://www.linkedin.com/in/shiv-pratap-gupta-u24ch005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
