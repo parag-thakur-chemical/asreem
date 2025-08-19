@@ -19,7 +19,7 @@ export default function Hero() {
       />
 
       {/* Logos */}
-      <div className="absolute top-3 left-3 md:left-8 z-10">
+      <div className="absolute top-20 sm:top-24 left-4 md:left-8 z-10">
         <div className="bg-white/15 backdrop-blur-md p-2 rounded-xl border border-white/30 shadow-lg shadow-black/10">
           <Image
             src="/asreem-logo.png"
@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
 
 
-      <div className="absolute top-4 right-4 md:right-8 z-10">
+      <div className="absolute top-20 sm:top-24 right-4 md:right-8 z-10">
   <div className="bg-white/15 backdrop-blur-md p-2 rounded-xl border border-white/30 shadow-lg shadow-black/10">
     <Image
       src="/nit-surat-logo.png"
@@ -55,7 +55,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative container mx-auto px-2 sm:px-4 z-10 h-full flex flex-col justify-center">
-        <div className="max-w-5xl w-full mx-auto text-center space-y-6">
+        <div className="max-w-5xl w-full mx-auto text-center space-y-6 mt-16">
           {/* Date */}
           <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-2 mt-2">
             <Link href="/dates-fees">
@@ -79,7 +79,7 @@ export default function Hero() {
               2<sup>nd</sup> Edition of The International Conference on
             </span>
 
-            <span className="block text-[#040c25] ">
+            <span className="block text-[#154500] ">
               Advances in Sustainable Research for Energy and Environmental Management 
             </span>
           </h1>
@@ -87,7 +87,7 @@ export default function Hero() {
 
           {/* Subheading */}
           <div className="flex flex-col items-center justify-center space-y-2 ">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#7d90be] drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
+            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#154500]">
   ASREEM 2.0
 </h2>
 
