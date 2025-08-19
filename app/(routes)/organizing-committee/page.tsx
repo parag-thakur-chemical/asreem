@@ -132,7 +132,7 @@ const committee = [
 
 export default function OrganizingCommittee() {
   return (
-    <div className="py-12 bg-white min-h-screen">
+    <div className="mt-14 py-12 bg-white min-h-screen">
       <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-6">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
           Organizing Committee

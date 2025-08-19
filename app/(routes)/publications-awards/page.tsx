@@ -4,7 +4,7 @@ import React from "react";
 
 export default function PublicationsAwards() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite py-16 px-4">
+    <section className=" mt-14 relative min-h-screen bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
 					Publications And Awards
@@ -12,7 +12,7 @@ export default function PublicationsAwards() {
 				<div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
         <div className="space-y-10">
           <div className="bg-offWhite/5 rounded-xl p-6 shadow-lg">
-            <h2 className="text-2xl font-semibold text-[#00c950] mb-4">Publications</h2>
+            <h2 className="text-2xl font-semibold text-[#00c950] ">Publications</h2>
             <ul className="list-decimal list-inside space-y-2 text-lg">
               <li>Registration is mandatory through Google form (see register tab) for taking part in any of the events of the conference.</li>
               <li>All accepted abstracts will be published in Conference Proceedings subject to the quality of presentation, originality check and author’s/authors’ consent.</li>

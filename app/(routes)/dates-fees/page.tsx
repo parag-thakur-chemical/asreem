@@ -42,7 +42,7 @@ export default function DatesAndFees() {
   ];
 
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="mt-14 py-12 bg-gray-50">
       {/* Outer container restricts width */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 

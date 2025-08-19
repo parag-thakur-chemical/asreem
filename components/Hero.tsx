@@ -26,7 +26,7 @@ export default function Hero() {
             alt="ASREEM Logo"
             width={80}
             height={80}
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+            className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20"
             priority
           />
         </div>
@@ -40,7 +40,7 @@ export default function Hero() {
       alt="NIT Surat Logo"
       width={80}
       height={80}
-      className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+      className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20"
       priority
     />
   </div>
@@ -87,7 +87,7 @@ export default function Hero() {
 
           {/* Subheading */}
           <div className="flex flex-col items-center justify-center space-y-2 ">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#154500]">
+            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#b4d3d1]">
   ASREEM 2.0
 </h2>
 

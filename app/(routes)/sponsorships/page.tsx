@@ -66,7 +66,7 @@ export default function Sponsorships() {
   ];
 
   return (
-    <div className="py-12 bg-white min-h-screen">
+    <div className="mt-14 py-12 bg-white min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
           Sponsorships

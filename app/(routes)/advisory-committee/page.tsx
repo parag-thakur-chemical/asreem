@@ -171,8 +171,8 @@ const nationalAdvisory = [
 export default function AdvisoryCommittee() {
   return (
     <div className="py-12 bg-white min-h-screen">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
+      <div className="mt-14 max-w-screen-xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+        <h1 className="text-4xl font-bold text-center text-gray-900 my-4">
           Advisory Committee
         </h1>
         <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
