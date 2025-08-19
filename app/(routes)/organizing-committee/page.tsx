@@ -25,7 +25,7 @@ const committee = [
     ],
   },
   {
-    role: "Conveners",
+    role: "Chairman",
     members: [
       {
         name: "Dr. Mousumi Chakraborty",
@@ -42,7 +42,7 @@ const committee = [
     ],
   },
   {
-    role: "Coordinators",
+    role: "Secretary",
     members: [
       {
         name: "Dr. V.N. Lad",
@@ -71,6 +71,41 @@ const committee = [
     ],
   },
   {
+    role: "Faculty Coordinators",
+    members: [
+      {
+        name: "Dr. Shriram Sonawane",
+        post: "Professor, VNIT, Nagpur",
+        photo: "/keynote-speakers/sonawane.jpg",
+        portfolio: "https://share.google/uih3MoOBY1aRDqIkX " 
+      },
+      {
+        name: "Dr. Anand Kishor Kola",
+        post: "Professor, NIT, Warangal",
+        photo: "/keynote-speakers/kola.jpg",
+        portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
+      },
+      {
+        name: "Dr. Priyanand Agale",
+        post: "Founder President & Pioneer of Eco Revolution Movement, Water Hero of India",
+        photo: "/keynote-speakers/priyanand-agale.jpg",
+        portfolio: "https://www.linkedin.com/in/priyanandagale/"
+      },
+      {
+        name: "Dr. Shirish H. Sonawane",
+        post: "",
+        photo: "/keynote-speakers/.jpg",
+        portfolio: "..."
+      },
+      {
+        name: "Dr.  Sushil Kumar",
+        post: "",
+        photo: "/keynote-speakers/.jpg",
+        portfolio: "..."
+      },
+    ],
+  },
+  {
     role: "Student Coordinators",
     members: [
       {
@@ -84,6 +119,12 @@ const committee = [
         post: "Student Coordinator",
         photo: "/organizing-committee/yash-dumbhare.jpg",
         portfolio: "https://www.linkedin.com/in/yash-dumbhare-95225b2b4/"
+      },
+      {
+        name: "Yash Dumbhare",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/shiv-pratap.jpg",
+        portfolio: "https://www.linkedin.com/in/shiv-pratap-gupta-u24ch005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
     ],
   },

@@ -84,11 +84,11 @@ export default function Sponsorships() {
         </div>
 
       {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 ">
   {tiers.map((tier, index) => (
     <div
       key={index}
-      className="rounded-xl overflow-hidden shadow-md flex flex-col h-full"
+      className="rounded-xl overflow-hidden shadow-md flex flex-col h-full hover:scale-105 transition-transform duration-200"
     >
       {/* Header */}
       <div
