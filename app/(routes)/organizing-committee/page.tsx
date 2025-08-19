@@ -7,7 +7,7 @@ const committee = [
     members: [
       {
         name: "Dr. Anupam Shukla",
-        post: "Director, SVNIT, Surat-395 007",
+        post: "Director, SVNIT, Surat",
         photo: "/organizing-committee/anupam-shukla.jpg",
         portfolio: "https://www.svnit.ac.in/web/brief-about-director.php"
       },
@@ -18,7 +18,7 @@ const committee = [
     members: [
       {
         name: "Dr. Meghal Desai",
-        post: "Head, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Head, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/meghal-desai.jpg",
         portfolio: "https://svnit.ac.in/facup/CV_Meghal_Website_July2025.pdf"
       },
@@ -29,13 +29,13 @@ const committee = [
     members: [
       {
         name: "Dr. Mousumi Chakraborty",
-        post: "Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/mousumi-chakraborty.jpg",
         portfolio: "https://svnit.ac.in/facup/Webpage_MC_19012024.pdf"
       },
       {
         name: "Dr. Arvind Kumar Mungray",
-        post: "Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/arvind-mungray.jpg",
         portfolio: "https://www.svnit.ac.in/facup/akm.pdf"
       },
@@ -46,25 +46,25 @@ const committee = [
     members: [
       {
         name: "Dr. V.N. Lad",
-        post: "Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/vn-lad.jpg",
         portfolio: "https://www.svnit.ac.in/facup/homepage__vnl/index%20vnl.htm"
       },
       {
         name: "Dr. Alka Mungray",
-        post: "Associate Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Associate Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/alka-mungray.jpg",
         portfolio: "https://www.svnit.ac.in/facup/aakm.pdf"
       },
       {
         name: "Dr. Jogender Singh",
-        post: "Assistant Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Assistant Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/jogender-singh.jpg",
         portfolio: "https://www.svnit.ac.in/facup/Jogender-Singh-resume.pdf"
       },
       {
         name: "Dr. Parag Thakur",
-        post: "Assistant Professor, Dept. of Chem Engg, SVNIT, Surat-395 007",
+        post: "Assistant Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/parag-thakur.jpg",
         portfolio: "https://portfolio-website-drab-nine.vercel.app/"
       },
