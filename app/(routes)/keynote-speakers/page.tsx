@@ -33,7 +33,7 @@ const speakers = [
     portfolio: "https://vito.be/en/about-vito/employees/deepak-pant"
   },
   {
-    name: "Aniruddha B. Pandit",
+    name: "Dr. Aniruddha B. Pandit",
     post: "Vice-Chancellor, Institute of Chemical Technology, Mumbai",
     photo: "/keynote-speakers/pandit.jpg",
     portfolio: "https://abpandit.weebly.com/"
@@ -45,7 +45,7 @@ const speakers = [
     portfolio: "https://www.che.iitb.ac.in/faculty/sameer-jadhav"
   },
   {
-    name: "Anil Verma",
+    name: "Dr. Anil Verma",
     post: "Professor, IIT, Delhi",
     photo: "/keynote-speakers/anilverma.jpg",
     portfolio: "https://web.iitd.ac.in/~anilverma/"
@@ -61,6 +61,24 @@ const speakers = [
     post: "Professor, NIT, Warangal",
     photo: "/keynote-speakers/kola.jpg",
     portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
+  },
+  {
+    name: "Dr. Mohsen Sharifpur",
+    post: " Professor, School of Mechanical, Industrial and Aeronautical Engineering at the University of the Witwatersrand (Wits), South Africa.",
+    photo: "/keynote-speakers/mohsen-sharifpur.jpg",
+    portfolio: "https://scholar.google.com/citations?hl=en&user=Ws1wL5MAAAAJ&view_op=list_works&sortby=pubdate"
+  },
+  {
+    name: "Dr. Sivakumar Manickam",
+    post: " Professor, University of Technology Brunei",
+    photo: "/keynote-speakers/sivakumar.jpg",
+    portfolio: "https://www.utb.edu.bn/academics/people/sivakumar-manickam/"
+  },
+  {
+    name: "Dr Hussein Mohammed",
+    post: " Professor,  School of Engineering of Edith Cowan University",
+    photo: "/keynote-speakers/hussein-mohammed.jpg",
+    portfolio: "https://www.ecu.edu.au/schools/engineering/staff/profiles/senior-lecturers/dr-hussein-mohammed"
   },
  
 ];

@@ -131,7 +131,7 @@ const nationalAdvisory = [
     post: "Head, Department of Life Sciences, Sharda University"
   },
   {
-    name: "Arun Kumar",
+    name: "Dr. Arun Kumar",
     post: "Assistant Professor, Division of Civil Engineering, Cochin University of science and Technology"
   },
   {
@@ -171,26 +171,48 @@ const nationalAdvisory = [
 export default function AdvisoryCommittee() {
   return (
     <div className="py-12 bg-white min-h-screen">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
           Advisory Committee
         </h1>
         <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
-        <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">International Advisory Committee</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mb-12">
+
+        {/* International Advisory */}
+        <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">
+          International Advisory Committee
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-12">
           {internationalAdvisory.map((member, idx) => (
-            <div key={idx} className="bg-gradient-to-br from-blue-50 via-white to-green-100 rounded-xl shadow-xl flex flex-col items-center p-6 border-2 border-blue-200 hover:scale-105 transition-transform duration-200 group">
-              <div className="text-lg font-bold text-blue-900 text-center mb-2 group-hover:text-green-700 transition-colors">{member.name}</div>
-              <div className="text-sm text-gray-700 text-center">{member.post}</div>
+            <div
+              key={idx}
+              className="bg-gradient-to-br from-blue-50 via-white to-green-100 rounded-xl shadow-xl flex flex-col items-center p-6 border-2 border-blue-200 hover:scale-105 transition-transform duration-200 group"
+            >
+              <div className="text-lg font-bold text-blue-900 text-center mb-2 group-hover:text-green-700 transition-colors">
+                {member.name}
+              </div>
+              <div className="text-sm text-gray-700 text-center">
+                {member.post}
+              </div>
             </div>
           ))}
         </div>
-        <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">National Advisory Committee</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+
+        {/* National Advisory */}
+        <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">
+          National Advisory Committee
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {nationalAdvisory.map((member, idx) => (
-            <div key={idx} className="bg-gradient-to-br from-amber-50 via-white to-green-100 rounded-xl shadow-xl flex flex-col items-center p-6 border-2 border-amber-200 hover:scale-105 transition-transform duration-200 group">
-              <div className="text-lg font-bold text-amber-900 text-center mb-2 group-hover:text-green-700 transition-colors">{member.name}</div>
-              <div className="text-sm text-gray-700 text-center">{member.post}</div>
+            <div
+              key={idx}
+              className="bg-gradient-to-br from-amber-50 via-white to-green-100 rounded-xl shadow-xl flex flex-col items-center p-6 border-2 border-amber-200 hover:scale-105 transition-transform duration-200 group"
+            >
+              <div className="text-lg font-bold text-amber-900 text-center mb-2 group-hover:text-green-700 transition-colors">
+                {member.name}
+              </div>
+              <div className="text-sm text-gray-700 text-center">
+                {member.post}
+              </div>
             </div>
           ))}
         </div>

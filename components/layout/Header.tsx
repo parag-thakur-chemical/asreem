@@ -65,13 +65,13 @@ export default function Header() {
             ))}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="px-2 py-1">
+                <Button variant="ghost" className="px-2 py-1 cursor-pointer">
                   More ▼
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
+              <DropdownMenuContent align="start" >
                 {moreLinks.map((link) => (
-                  <DropdownMenuItem asChild key={link.name}>
+                  <DropdownMenuItem className="cursor-pointer" asChild key={link.name}>
                     <Link href={link.href}>{link.name}</Link>
                   </DropdownMenuItem>
                 ))}
@@ -81,9 +81,9 @@ export default function Header() {
         </div>
 
         {/* Right: CTA */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           <Link href="/register">
-            <Button className="bg-green-600 hover:bg-green-700 text-white">
+            <Button className="bg-green-600 hover:bg-green-700 text-white cursor-pointer">
               Register
             </Button>
           </Link>

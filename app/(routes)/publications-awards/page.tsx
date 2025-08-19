@@ -6,9 +6,10 @@ export default function PublicationsAwards() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-accent-earthYellow drop-shadow-lg">
-          Publications & Awards
-        </h1>
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
+					Publications And Awards
+				</h1>
+				<div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
         <div className="space-y-10">
           <div className="bg-offWhite/5 rounded-xl p-6 shadow-lg">
             <h2 className="text-2xl font-semibold text-[#00c950] mb-4">Publications</h2>

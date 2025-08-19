@@ -68,7 +68,7 @@ export default function Hero() {
 
           {/* Main heading */}
           <h1
-            className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight break-words
+            className="text-3xl md:text-5xl lg:text-6xl  font-bold leading-tight break-words
             text-shadow:
             0 0 4px rgba(255,255,255,0.8),
             0 0 12px rgba(255,255,255,0.9),
