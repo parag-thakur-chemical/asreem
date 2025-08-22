@@ -122,6 +122,10 @@ const nationalAdvisory = [
     name: "Dr. Parag Sadgir",
     post: "Professor, Civil Engineering Department, College of Engineering, Pune"
   },
+    {
+    name: "Dr. Anil Kumar Katare",
+    post: "Senior Principal Scientist ,CSIR – Indian Institute of Integrative Medicine",
+    },
   {
     name: "Dr. K. D. Yadav",
     post: "Associate Professor, Civil Engineering Department, SVNIT, Surat"

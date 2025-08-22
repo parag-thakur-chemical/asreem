@@ -156,7 +156,7 @@ const speakers = [
   },
   {
     name: "Dr. Anil Kumar Katare",
-    post: "Professor , National Institute of Technology, Warangal",
+    post: "Senior Principal Scientist ,CSIR – Indian Institute of Integrative Medicine",
     photo: "/organizing-committee/shirish-sonawane.jpg",
     portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
   },
