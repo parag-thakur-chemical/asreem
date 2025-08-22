@@ -81,6 +81,12 @@ const speakers = [
     portfolio: "https://sciprofiles.com/profile/603600"
   },
   {
+    name: "Dr. Yannis Ieropoulos ",
+    post: "Professor , National Research University of Electronic Technology (MIET)",
+    photo: "/keynote-speakers/yannis.jpg",
+    portfolio: "https://sciprofiles.com/profile/603600"
+  },
+  {
     name: "Dr. Shriram Sonawane",
     post: "Professor, VNIT, Nagpur",
     photo: "/keynote-speakers/sonawane.jpg",
@@ -111,7 +117,7 @@ export default function KeynoteSpeakers() {
 				</h1>
 				<div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
 				<p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-2">
-					ASREEM 2026 brings together distinguished keynote speakers from premier
+					ASREEM 2026 brings together distinguished Plenary/keynote speakers from premier
 					institutions and organizations worldwide.
 				</p>
 				<p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-10">

@@ -25,7 +25,7 @@ const committee = [
     ],
   },
   {
-    role: "Chairman",
+    role: "Chairmen",
     members: [
       {
         name: "Dr. Mousumi Chakraborty",
