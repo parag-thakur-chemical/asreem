@@ -116,6 +116,12 @@ const speakers = [
     photo: "/keynote-speakers/salim-hiziroglu.jpg",
     portfolio: "https://experts.okstate.edu/salim.hiziroglu"
   },
+  {
+    name: "Dr. Mohammad Ali Abdelkareem",
+    post: "Professor, Sustainable and Renewable Energy Engineering Department, University of Sharjah",
+    photo: "/keynote-speakers/abdelkareem.jpg",
+    portfolio: "https://sciprofiles.com/profile/603600"
+  },
   
   {
     name: "Dr. S Senthilmurugan",
