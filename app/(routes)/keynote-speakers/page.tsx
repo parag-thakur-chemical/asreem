@@ -155,6 +155,12 @@ const speakers = [
     portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
   },
   {
+    name: "Dr. Anil Kumar Katare",
+    post: "Professor , National Institute of Technology, Warangal",
+    photo: "/organizing-committee/shirish-sonawane.jpg",
+    portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
+  },
+  {
     name: "Dr.  Sushil Kumar",
     post: "professor, Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
     photo: "/keynote-speakers/sushilkumar.jpg",
