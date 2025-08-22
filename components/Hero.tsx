@@ -91,10 +91,10 @@ export default function Hero() {
   ASREEM 2.0
 </h2>
 
-            {/* <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
-            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
-              Department of Chemical Engineering
-            </p> */}
+            <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
+            <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
+              Rendevous for sustainable future
+            </p>
           </div>
 
           {/* Buttons */}

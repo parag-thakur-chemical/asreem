@@ -161,7 +161,7 @@ export default function CallForAbstracts() {
             ))}
           </div>
 
-          <p className="text-center text-gray-500 mt-8 italic">
+          <p className="text-center text-gray-700 mt-8 italic font-bold text-xl tracking-wide">
             * The above list is not exhaustive. Related topics are also welcome.
           </p>
         </div>

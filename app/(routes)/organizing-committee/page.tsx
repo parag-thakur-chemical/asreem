@@ -6,7 +6,7 @@ const committee = [
     role: "Chief Patron",
     members: [
       {
-        name: "Dr. Anupam Shukla",
+        name: "Prof(Dr). Anupam Shukla",
         post: "Director, SVNIT, Surat",
         photo: "/organizing-committee/anupam-shukla.jpg",
         portfolio: "https://www.svnit.ac.in/web/brief-about-director.php"
@@ -17,7 +17,7 @@ const committee = [
     role: "Patron",
     members: [
       {
-        name: "Dr. Meghal Desai",
+        name: "Prof(Dr). Meghal Desai",
         post: "Head, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/meghal-desai.jpg",
         portfolio: "https://svnit.ac.in/facup/CV_Meghal_Website_July2025.pdf"

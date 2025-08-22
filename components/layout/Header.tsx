@@ -23,14 +23,16 @@ import React  from "react";
 const mainLinks = [
   { name: "Home", href: "/" },
   { name: "Keynote Speakers", href: "/keynote-speakers" },
+  { name: "Invited Speakers", href: "/invited-speakers" },
   { name: "Call for Abstracts", href: "/call-for-abstracts" },
   { name: "Dates and Fees", href: "/dates-fees" },
   { name: "Sponsorships", href: "/sponsorships" },
   { name: "Publications & Awards", href: "/publications-awards" },
-  { name: "Organizing Committee", href: "/organizing-committee" },
+  
 ];
 
 const moreLinks = [
+  { name: "Organizing Committee", href: "/organizing-committee" },
   { name: "Advisory Committee", href: "/advisory-committee" },
   { name: "Tourist Spots", href: "/tourist-spots" },
 ];

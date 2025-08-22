@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 const speakers = [
   {
     name: "Dr. Shishir Sinha",
@@ -34,27 +33,15 @@ const speakers = [
   },
   {
     name: "Dr. Mohsen Sharifpur",
-    post: " Professor, School of Mechanical, Industrial and Aeronautical Engineering at the University of the Witwatersrand (Wits), South Africa.",
+    post: "Professor, School of Mechanical, Industrial and Aeronautical Engineering at the University of the Witwatersrand (Wits), South Africa.",
     photo: "/keynote-speakers/mohsen-sharifpur.jpg",
     portfolio: "https://scholar.google.com/citations?hl=en&user=Ws1wL5MAAAAJ&view_op=list_works&sortby=pubdate"
   },
   {
     name: "Dr. Sivakumar Manickam",
-    post: " Professor, University of Technology Brunei",
+    post: "Professor, University of Technology Brunei",
     photo: "/keynote-speakers/sivakumar.jpg",
     portfolio: "https://www.utb.edu.bn/academics/people/sivakumar-manickam/"
-  },
-  {
-    name: "Dr Hussein Mohammed",
-    post: " Professor,  School of Engineering of Edith Cowan University",
-    photo: "/keynote-speakers/hussein-mohammed.jpg",
-    portfolio: "https://www.ecu.edu.au/schools/engineering/staff/profiles/senior-lecturers/dr-hussein-mohammed"
-  },
-  {
-    name: "Dr. Deepak Pant",
-    post: "Senior Scientist, Sustainable Chemistry, VITO, Belgium",
-    photo: "/keynote-speakers/deepakpant.jpg",
-    portfolio: "https://vito.be/en/about-vito/employees/deepak-pant"
   },
   {
     name: "Dr. Sameer Jadhav",
@@ -69,18 +56,6 @@ const speakers = [
     portfolio: "https://web.iitd.ac.in/~anilverma/"
   },
   {
-    name: "Dr. Dyllon Randall",
-    post: "Associate Professor, University of Capetown, South Africa",
-    photo: "/keynote-speakers/dyllon.jpg",
-    portfolio: "https://ebe.uct.ac.za/department-civil-engineering/aprof-dyllon-randall"
-  },
-  {
-    name: "Dr. Sherub Phuntsho",
-    post: "Associate Professor, University of Technology Sydney, Australia",
-    photo: "/keynote-speakers/sherub.jpg",
-    portfolio: "https://scholar.google.com/citations?user=qTLAA70AAAAJ&hl=en"
-  },
-  {
     name: "Dr. Treavor Boyer",
     post: "Professor, School of Sustainable Engineering and the Built Environment (SSEBE) at ASU",
     photo: "/keynote-speakers/treavor-boyer.jpg",
@@ -92,24 +67,7 @@ const speakers = [
     photo: "/keynote-speakers/dong-hoon.jpg",
     portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
   },
-  {
-    name: "Dr. Sage R. Hiibel",
-    post: "Associate Professor ,University of Nevada, Reno",
-    photo: "/keynote-speakers/sagehiibel.jpg",
-    portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
-  },
-  {
-    name: "Dr. Sokhee Philemon Jung",
-    post: "Professor ,Chonnam National University-Gwangju,",
-    photo: "/keynote-speakers/sokhee-jung.jpg",
-    portfolio: "https://sites.google.com/site/sokheejung/s-p-jung"
-  },
-  {
-    name: "Dr. Eldon R. Rene",
-    post: "Associate Professor ,Resource Recovery Technology, IHE Delft Institute for Water Education, The Netherlands",
-    photo: "/keynote-speakers/eldon-raj.jpg",
-    portfolio: "https://www.un-ihe.org/people/staff/eldon-raj"
-  },
+
   {
     name: "Dr. Salim Hiziroglu",
     post: "Professor, Emeritus Oklahoma State University, Natural Resource Ecology & Management, Stillwater, Oklahoma, United States",
@@ -122,20 +80,6 @@ const speakers = [
     photo: "/keynote-speakers/abdelkareem.jpg",
     portfolio: "https://sciprofiles.com/profile/603600"
   },
-  
-  {
-    name: "Dr. S Senthilmurugan",
-    post: "Professor, Indian Institute of Technology Guwahati",
-    photo: "/keynote-speakers/senthlimurugan.jpg",
-    portfolio: "https://iitg.ac.in/chemeng/faculty_profile.php?name=ss"
-  },
-  {
-    name: "Dr. Hiralal Pramanik",
-    post: "Professor, Indian Institute of Technology (BHU) Varanasi",
-    photo: "/keynote-speakers/hiralal-pramanik.jpg",
-    portfolio: "https://iitg.ac.in/chemeng/faculty_profile.php?name=ss"
-  },
-  
   {
     name: "Dr. Shriram Sonawane",
     post: "Professor, VNIT, Nagpur",
@@ -149,44 +93,13 @@ const speakers = [
     portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
   },
   {
-    name: "Dr. Shirish H. Sonawane",
-    post: "Professor , National Institute of Technology, Warangal",
-    photo: "/organizing-committee/shirish-sonawane.jpg",
-    portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
-  },
-  {
-    name: "Dr. Anil Kumar Katare",
-    post: "Senior Principal Scientist ,CSIR – Indian Institute of Integrative Medicine",
-    photo: "/organizing-committee/shirish-sonawane.jpg",
-    portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
-  },
-  {
-    name: "Dr.  Sushil Kumar",
-    post: "professor, Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
-    photo: "/keynote-speakers/sushilkumar.jpg",
-    portfolio: "https://mnnit.ac.in/profile/sushilk"
-  },
-  {
-    name: "Dr. Sunil A. Patil",
-    post: "Assistant Professor ,  Indian Institute of Science Education and Research Mohali (IISER Mohali)",
-    photo: "/keynote-speakers/sunilpatil.jpg",
-    portfolio: "https://www.iisermohali.ac.in/faculty/ees/sunil"
-  },
-  {
-    name: "Dr. Priyanand Agale",
-    post: "Founder President & Pioneer of Eco Revolution Movement, Water Hero of India",
-    photo: "/keynote-speakers/priyanand-agale.jpg",
-    portfolio: "https://www.linkedin.com/in/priyanandagale/"
-  },
-  {
     name: "Dr. Upendra (Muni) Raval",
     post: "Science and Stewardship",
     photo: "/keynote-speakers/upendra-raval.jpg",
     portfolio: "..."
-  },
-
- 
+  }
 ];
+
 
 
 export default function KeynoteSpeakers() {
@@ -194,7 +107,7 @@ export default function KeynoteSpeakers() {
 		<div className="mt-14 py-12 bg-white min-h-screen">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
-					Keynote/Plenary Speakers
+					Plenary/Keynote Speakers
 				</h1>
 				<div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
 				<p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-2">
