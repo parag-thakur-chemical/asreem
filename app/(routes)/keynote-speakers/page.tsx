@@ -143,6 +143,18 @@ const speakers = [
     portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
   },
   {
+    name: "Dr. Shirish H. Sonawane",
+    post: "Professor , National Institute of Technology, Warangal",
+    photo: "/organizing-committee/shirish-sonawane.jpg",
+    portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
+  },
+  {
+    name: "Dr.  Sushil Kumar",
+    post: "professor, Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
+    photo: "/keynote-speakers/sushilkumar.jpg",
+    portfolio: "https://mnnit.ac.in/profile/sushilk"
+  },
+  {
     name: "Dr. Sunil A. Patil",
     post: "Assistant Professor ,  Indian Institute of Science Education and Research Mohali (IISER Mohali)",
     photo: "/keynote-speakers/sunilpatil.jpg",
@@ -160,6 +172,7 @@ const speakers = [
     photo: "/keynote-speakers/upendra-raval.jpg",
     portfolio: "..."
   },
+
  
 ];
 
