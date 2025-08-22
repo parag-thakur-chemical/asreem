@@ -129,12 +129,7 @@ const speakers = [
     photo: "/keynote-speakers/hiralal-pramanik.jpg",
     portfolio: "https://iitg.ac.in/chemeng/faculty_profile.php?name=ss"
   },
-  {
-    name: "Dr. P. Sesha Talpa Sai",
-    post: "Professor, Indian Institute of Technology, Madras",
-    photo: "/keynote-speakers/sesha.jpg",
-    portfolio: "https://vidwan.inflibnet.ac.in/profile/10130"
-  },
+  
   {
     name: "Dr. Shriram Sonawane",
     post: "Professor, VNIT, Nagpur",
