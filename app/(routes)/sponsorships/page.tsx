@@ -3,10 +3,11 @@ export default function Sponsorships() {
     {
       icon: "fas fa-crown",
       tier: "Title",
-      price: "₹5,00,000",
+      price: "₹10,00,000",
       benefits: [
         "5 conference delegates",
-        "15 minutes corporate presentation",
+        "20 minutes corporate presentation",
+        "continous publicity",
         "Logo on all conference banners",
         "Key Position on the homepage of conference website",
         "A4 size ad on conference souvenir back cover",
@@ -19,10 +20,10 @@ export default function Sponsorships() {
     {
       icon: "fas fa-gem",
       tier: "Diamond",
-      price: "₹3,00,000",
+      price: "₹5,00,000",
       benefits: [
         "3 conference delegates",
-        "10 minutes corporate presentation",
+        "15 minutes corporate presentation",
         "Logo on all conference banners",
         "Position on conference website",
         "A3 size ad on conference souvenir front cover",
@@ -35,10 +36,10 @@ export default function Sponsorships() {
     {
       icon: "fas fa-medal",
       tier: "Gold",
-      price: "₹2,00,000",
+      price: "₹3,00,000",
       benefits: [
         "2 conference delegates",
-        "5 minutes corporate presentation",
+        "10 minutes corporate presentation",
         "Logo on all conference banners",
         "Position on conference website",
         "Ad inside conference souvenir",
