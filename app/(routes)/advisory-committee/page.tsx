@@ -1,39 +1,43 @@
 const internationalAdvisory = [
   {
     name: "Dr. Ioannis Ieropoulos",
-    post: "Professor - Bioenergy and Self-sustainable System, Bristol Robotics Laboratory, UWE Bristol, United Kingdom"
+    post: "Professor & Head, Water and Environmental Engineering Group, Bioenergy and Self-sustainable System, Bristol Robotics Laboratory, University of Southampton, United Kingdom"
   },
   {
     name: "Dr. Deepak Pant",
     post: "Senior Scientist, Flemish Institute for Technological Research (VITO), Belgium"
   },
   {
-    name: "Dr. Muthupandian Ashokkumar",
-    post: "Assistant Deputy Vice Chancellor, University of Melbourne, Australia"
+    name: "Prof. Muthupandian Ashokkumar",
+    post: "Professor & Director, Melbourne Global Centre, University of Melbourne, Australia"
   },
   {
     name: "Dr. Eldon R. Rene",
-    post: "Senior Lecturer in Resource Recovery Technology, IHE Delft Institute for Water Education, Netherlands"
+    post: "Senior Lecturer, Resource Recovery Technology, IHE Delft Institute for Water Education, Netherlands"
   },
   {
     name: "Dr. Nancy G. Love",
-    post: "Borchardt and Glysson Collegiate Professor, University of Michigan"
+    post: "Professor, Borchardt and Glysson Collegiate Professor, University of Michigan, United States"
   },
   {
     name: "Dr. Yaqian Zhao",
-    post: "Visiting Professor, University of Dublin"
+    post: "Professor, University College Dublin, Ireland"
   },
   {
     name: "Dr. Dyllon Randall",
-    post: "Associate Professor, University of Cape Town, South Africa"
+    post: "Professor, University of Cape Town, South Africa"
   },
   {
     name: "Dr. Sherub Phuntsho",
-    post: "Senior Lecturer, University of Technology Sydney"
+    post: "Associate Professor, University of Technology Sydney, Australia"
   },
   {
     name: "Dr. Treavor Boyer",
-    post: "Associate Professor, Arizona State University"
+    post: "Professor, Arizona State University, United States"
+  },
+  {
+    name: "Dr. Nabila Shehata",
+    post: "Professor, Environmental Science and Industrial Development Department, Beni-Suef University, Egypt"
   },
   {
     name: "Dr. Harold Leverenz",
@@ -41,7 +45,7 @@ const internationalAdvisory = [
   },
   {
     name: "Dr. Muhammad A. Batiha",
-    post: "Associate Professor, Chemical Engineering, AlHussein Bin Talal University, Jordan"
+    post: "Professor, Chemical Engineering, Al-Hussein Bin Talal University, Jordan"
   },
   {
     name: "Dr. Jaume Puigagut",
@@ -53,7 +57,7 @@ const internationalAdvisory = [
   },
   {
     name: "Dr. Nguyen Dinh Duc",
-    post: "Professor, The Head of Laboratory A, Vietnam National University, Hanoi"
+    post: "Professor & Head of Laboratory A, Vietnam National University, Hanoi, Vietnam"
   },
   {
     name: "Dr. Pietro Bartocci",
@@ -61,24 +65,32 @@ const internationalAdvisory = [
   },
   {
     name: "Dr. Hafiz Muhammad Ali",
-    post: "Professor, King Fahd University of Petroleum and Minerals, 31261 Dhahran, Saudi Arabia"
+    post: "Professor, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
   },
   {
     name: "Dr. Hong Liu",
-    post: "Professor, Biological and Ecological Engineering, Oregon State University, USA"
+    post: "Professor, Biological and Ecological Engineering, Massachusetts Institute of Technology (MIT), United States"
   },
   {
     name: "Dr. Uwe Schröder",
     post: "Professor, Institute of Environmental and Sustainable Chemistry, Technical University of Braunschweig, Germany"
   },
   {
+    name: "Dr. Duc Nguyen",
+    post: "Professor, Department of Civil & Energy System Engineering, Kyonggi University, South Korea"
+  },
+  {
     name: "Dr. Salim Hiziroglu",
-    post: "Professor,  Emeritus Natural Resource Ecology & Management"
+    post: "Professor Emeritus, Natural Resource Ecology & Management, Oklahoma State University, United States"
   },
   {
     name: "Dr. Mohammad Ali Abdelkareem",
-    post: "Professor, Sustainable and Renewable Energy Engineering Department, University of Sharjah"
+    post: "Professor, Sustainable & Renewable Energy Engineering Department, University of Sharjah, UAE"
   },
+  {
+    name: "Dr. Sage R. Hiibel",
+    post: "Associate Professor, Department of Chemical Engineering, University of Nevada, Reno, United States"
+  }
 ];
 
 const nationalAdvisory = [
@@ -87,60 +99,36 @@ const nationalAdvisory = [
     post: "Director, National Institute of Technology Puducherry"
   },
   {
-    name: "Dr. Asheesh Kumar Yadav",
-    post: "Principal Scientist, CSIR-Institute of Minerals & Materials Technology, Bhubaneswar - 751 013, Odisha, INDIA"
+    name: "Dr. S. Venkata Mohan",
+    post: "Director, CSIR-National Environmental Engineering Research Institute (CSIR-NEERI), Hyderabad"
   },
   {
-    name: "Dr. S. Venkata Mohan",
-    post: "Senior Scientist, CSIR-Indian Institute of Chemical Technology (CSIR-IICT), Hyderabad"
+    name: "Dr. Dhananjay Singh",
+    post: "Director, Govind Ballabh Pant Institute of Engineering & Technology Pauri"
+  },
+  {
+    name: "Dr. Asheesh Kumar Yadav",
+    post: "Senior Principal Scientist, CSIR-Institute of Minerals & Materials Technology, Bhubaneswar - 751 013, Odisha, INDIA"
   },
   {
     name: "Dr. Indumathi M Nambi",
     post: "Professor, Environment and Water Resources Division, Indian Institute of Technology, Madras"
   },
   {
+    name: "Dr. Vimal Chandra Srivastava",
+    post: "Department of Chemical Engineering, Indian Institute of Technology Roorkee, Roorkee-247667, Uttarakhand, India"
+  },
+  {
     name: "Dr. S. Gajalakshmi",
-    post: "Assistant Professor, Pollution Control and Environmental Engineering, Pondicherry University, Pondicherry"
+    post: "Professor, Pollution Control and Environmental Engineering, Pondicherry University, Pondicherry"
   },
-  {
-    name: "Dr. Dipak Ashok Jadhav",
-    post: "Assistant Professor, Agricultural Engineering, Maharashtra Institute of Technology, Aurangabad"
-  },
-  {
-    name: "Dr. Surajbhan Sevda",
-    post: "Assistant Professor, NIT, Warangal"
-  },
-  {
-    name: "Dr. Sunil A. Patil",
-    post: "Assistant Professor, Environmental Sciences, Indian Institute of Science Education and Research IISER Mohali"
-  },
-  {
-    name: "Dr. Sushil Kumar",
-    post: "Associate Professor, Department of Chemical Engineering, MNNIT Allahabad"
-  },
-  {
-    name: "Dr. Parag Sadgir",
-    post: "Professor, Civil Engineering Department, College of Engineering, Pune"
-  },
-    {
-    name: "Dr. Anil Kumar Katare",
-    post: "Senior Principal Scientist ,CSIR – Indian Institute of Integrative Medicine",
-    },
   {
     name: "Dr. K. D. Yadav",
-    post: "Associate Professor, Civil Engineering Department, SVNIT, Surat"
+    post: "Professor, Civil Engineering Department, SVNIT, Surat"
   },
   {
     name: "Dr. Abhilasha Singh Mathuriya",
     post: "Head, Department of Life Sciences, Sharda University"
-  },
-  {
-    name: "Dr. Arun Kumar",
-    post: "Assistant Professor, Division of Civil Engineering, Cochin University of science and Technology"
-  },
-  {
-    name: "Dr. Somya Pandit",
-    post: "Assistant Professor, Life Sciences, Sharda University"
   },
   {
     name: "Dr. Shriram Sonawane",
@@ -148,29 +136,82 @@ const nationalAdvisory = [
   },
   {
     name: "Dr. Pradeep Kumar",
-    post: "Distinguished Professor, Sharda University"
+    post: "Distinguished Professor, Sharda University, Noida"
   },
   {
-    name: "Dr. Shrish Sonawane",
+    name: "Dr. Shirish H. Sonawane",
     post: "Professor, Department of Chemical Engineering, NIT, Warangal"
   },
   {
     name: "Dr. Anand Kishore Kola",
-    post: "Professor, Department of Chemical Engineering NIT, Warangal"
+    post: "Professor, Department of Chemical Engineering, NIT, Warangal"
   },
   {
-    name: "Dr. Ajay R. Tembhurkar",
-    post: "Professor, Civil Engineering Department VNIT, Nagpur"
+    name: "Dr. Bhaskar Singh",
+    post: "Department of Environmental Sciences, Central University of Jharkhand, Ranchi-835222, Jharkhand, India"
   },
   {
-    name: "Dr. R S Sapkal",
-    post: "Professor, Chemical Technology, SGBA University, Amravati, Maharastra"
+    name: "Dr. Dipak Ashok Jadhav",
+    post: "Research Professor, Environmental Engineering, Korea Maritime and Ocean University, Republic of Korea"
+  },
+  {
+    name: "Dr. Sunil A. Patil",
+    post: "Associate Professor, Environmental Sciences, Indian Institute of Science Education and Research IISER Mohali"
+  },
+  {
+    name: "Dr. Sushil Kumar",
+    post: "Professor, Department of Chemical Engineering, MNNIT Allahabad"
+  },
+  {
+    name: "Dr. Parag Sadgir",
+    post: "Professor, Civil Engineering Department, College of Engineering, Pune"
+  },
+  {
+    name: "Dr. Surajbhan Sevda",
+    post: "Assistant Professor, Department of Biotechnology, NIT, Warangal"
+  },
+  {
+    name: "Dr. Nidheesh P. V.",
+    post: "National Environmental Engineering Research Institute, Nagpur"
+  },
+  {
+    name: "Dr. Manoj Chandra Garg",
+    post: "Amity Institute of Environmental Sciences, Amity University, Noida, Uttar Pradesh, India"
+  },
+  {
+    name: "Dr. Manish Vashistha",
+    post: "Professor, Department of Chemical Engineering, MNIT, Jaipur"
+  },
+  {
+    name: "Dr. Lal Singh",
+    post: "Principal Scientist, CSIR-NEERI, Nagpur"
+  },
+  {
+    name: "Dr. Dharam Pal Singh",
+    post: "Associate Professor, Chemical Engineering, NIT, Raipur"
+  },
+  {
+    name: "Dr. Raj Kumar Arya",
+    post: "Associate Professor, Chemical Engineering Department, NIT Jalandhar"
   },
   {
     name: "Dr. Priyanand Agale",
     post: "Founder and Advisor, Eco-Needs Foundation"
   },
+  {
+    name: "Dr. Shailendra Bajpai",
+    post: "Professor, Chemical Engineering Department, NIT Jalandhar"
+  },
+  {
+    name: "Dr. Anil Kumar Katare",
+    post: "Senior Principal Scientist, Quality Management & Instrumentation Division, CSIR – Indian Institute of Integrative Medicine, Canal Road, Jammu"
+  },
+  {
+   name: "Dr. Athar Hussain",
+   post: "Professor, Netaji Subhas University of Technology"
+  },
 ];
+
 
 export default function AdvisoryCommittee() {
   return (
