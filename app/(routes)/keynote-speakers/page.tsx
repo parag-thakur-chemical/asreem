@@ -84,7 +84,7 @@ const speakers = [
     name: "Dr. Yannis Ieropoulos ",
     post: "Professor , National Research University of Electronic Technology (MIET)",
     photo: "/keynote-speakers/yannis.jpg",
-    portfolio: "https://sciprofiles.com/profile/603600"
+    portfolio: "https://www.southampton.ac.uk/people/5z9k7x/professor-yannis-ieropoulos"
   },
   {
     name: "Dr. Shriram Sonawane",

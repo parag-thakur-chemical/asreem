@@ -16,7 +16,7 @@ export default function PublicationsAwards() {
             <ul className="list-decimal list-inside space-y-2 text-lg">
               <li>Registration is mandatory through Google form (see register tab) for taking part in any of the events of the conference.</li>
               <li>All accepted abstracts will be published in Conference Proceedings subject to the quality of presentation, originality check and author’s/authors’ consent.</li>
-              <li className="font-bold" >Journals (Comming Soon ...)</li>
+              <li className="font-bold" >Selected full length papers will be published in SCI/Scopus indexed journals (Comming soon ...)</li>
             </ul>
             {/* <div className="mt-6 space-y-4">
               <div className="flex items-start gap-4">
