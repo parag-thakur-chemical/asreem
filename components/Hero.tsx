@@ -86,12 +86,12 @@ export default function Hero() {
 
 
           {/* Subheading */}
-          <div className="flex flex-col items-center justify-center space-y-2 ">
+          <div className="flex flex-col items-center justify-center  ">
             <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#b4d3d1]">
   ASREEM 2.0
 </h2>
 
-            <div className="w-24 h-1 bg-accent-earthYellow my-2"></div>
+            
             <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
               Rendevous for sustainable future
             </p>
