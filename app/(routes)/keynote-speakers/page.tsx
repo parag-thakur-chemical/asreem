@@ -8,6 +8,12 @@ const speakers = [
     portfolio: "https://www.cipet.gov.in/our-team/our-team-dg-profile.php"
   },
   {
+    name: "Dr. Yannis Ieropoulos ",
+    post: "Professor , National Research University of Electronic Technology (MIET)",
+    photo: "/keynote-speakers/yannis.jpg",
+    portfolio: "https://www.southampton.ac.uk/people/5z9k7x/professor-yannis-ieropoulos"
+  },
+  {
     name: "Dr. S. VenkataMohan",
     post: "Director, CSIR NEERI, Nagpur",
     photo: "/keynote-speakers/venkatamohan.jpg",
@@ -79,12 +85,6 @@ const speakers = [
     post: "Professor, Sustainable and Renewable Energy Engineering Department, University of Sharjah",
     photo: "/keynote-speakers/abdelkareem.jpg",
     portfolio: "https://sciprofiles.com/profile/603600"
-  },
-  {
-    name: "Dr. Yannis Ieropoulos ",
-    post: "Professor , National Research University of Electronic Technology (MIET)",
-    photo: "/keynote-speakers/yannis.jpg",
-    portfolio: "https://www.southampton.ac.uk/people/5z9k7x/professor-yannis-ieropoulos"
   },
   {
     name: "Dr. Shriram Sonawane",
