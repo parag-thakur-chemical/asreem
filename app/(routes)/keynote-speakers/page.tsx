@@ -9,7 +9,7 @@ const speakers = [
   },
   {
     name: "Dr. Yannis Ieropoulos ",
-    post: "Professor , National Research University of Electronic Technology (MIET)",
+    post: "Professor & Head of Department - Civil, Maritime & Environmental Engineering, Faculty of Engineering and Physical Sciences ,University of Southampton, UK",
     photo: "/keynote-speakers/yannis.jpg",
     portfolio: "https://www.southampton.ac.uk/people/5z9k7x/professor-yannis-ieropoulos"
   },
