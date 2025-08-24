@@ -57,14 +57,15 @@ export default function Hero() {
       <div className="relative container mx-auto px-2 sm:px-4 z-10 h-full flex flex-col justify-center">
         <div className="max-w-5xl w-full mx-auto text-center space-y-6 mt-16">
           {/* Date */}
-          <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-2 mt-2">
-            <Link href="/dates-fees">
-              <span className="text-accent-earthYellow font-semibold tracking-wider text-sm md:text-base flex items-center justify-center">
-                <CiCalendarDate className="w-8 h-8 mr-2" />
-                FEBRUARY 6-8, 2026
-              </span>
-            </Link>
-          </div>
+<div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-2 sm:px-4 py-1 sm:py-2 rounded-md mb-2 mt-2">
+  <Link href="/dates-fees">
+    <span className="text-accent-earthYellow font-semibold tracking-wide text-xs sm:text-sm md:text-base flex items-center justify-center">
+      <CiCalendarDate className="w-5 h-5 sm:w-6 sm:h-6 mr-1 sm:mr-2" />
+      FEBRUARY 6-8, 2026
+    </span>
+  </Link>
+</div>
+
 
           {/* Main heading */}
           <h1
