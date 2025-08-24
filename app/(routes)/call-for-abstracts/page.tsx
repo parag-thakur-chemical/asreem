@@ -118,52 +118,146 @@ export default function CallForAbstracts() {
           </div>
         </div>
 
-        {/* Topics of Interest */}
+        {/* Conference Tracks and Topics */}
         <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
-            Topics of Interest
+            Conference Tracks & Topics
           </h2>
           <p className="text-center text-gray-600 mb-8 max-w-4xl mx-auto">
-            ASREEM 2.0 will feature a comprehensive technical program covering
-            the latest research and innovation in energy and environmental
-            researches. The conference will bring together
-            leading researchers, engineers, and scientists in the domain of interest
-            from around the world. Topics of interest
-            for submission include, but are not limited to:
+            Research papers, review papers, case studies, etc. are welcome on the below topics. The following list is not inclusive; nearby topics based on the theme are welcome.
           </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              "Wastewater treatment systems and recycling/reuse and Resource Recovery",
-              "Biomass: Algae-based treatment, bio-energy production",
-              "Biosensors Green synthesis using biotechnology and biocatalysts",
-              "Renewable Energy",
-              "Management systems for energy storage and supply",
-              "Nanotechnology for Energy Conservation and Effective utilization ",
-              "Green Nanotechnology",
-              "Modelling & Simulation: Life Cycle Analysis & Computational Fluid Dynamics",
-              "Advanced oxidation processesandSonochemistry",
-              "Process intensification",
-              "Advanced Solid Waste Management Strategies",
-              "Air Pollution Management and Control",
-              "Smart Cities through Renewable Energy",
-              "Thermochemical and hydrothermal Techniques",
-              "Catalysis and Reaction Engg."
-
-            ].map((topic, index) => (
-              <div
-                key={index}
-                className="flex items-start p-3 bg-gray-50 rounded-lg hover:bg-green-50 transition-colors"
-              >
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span className="text-gray-700">{topic}</span>
+          <div className="space-y-8">
+            {/* Track 1 */}
+            <div className="bg-green-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-green-800 mb-4">Track 1</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Wastewater treatment technologies and recycling/reuse and Resource Recovery</li>
+                    <li>Industrial waste management and sustainable practices</li>
+                    <li>Renewable Energy, Management systems for energy storage and supply</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Membrane technology &amp; Advancement</li>
+                    <li>Advances towards Bioelectrochemical systems</li>
+                    <li>Water-Energy Nexus</li>
+                  </ul>
+                </div>
               </div>
-            ))}
+            </div>
+            {/* Track 2 */}
+            <div className="bg-amber-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-amber-800 mb-4">Track 2</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Nanotechnology for Energy Conservation and Effective utilization</li>
+                    <li>Advanced oxidation processes and Sonochemistry: Emerging contaminants</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Advanced Materials and 3D Printing</li>
+                    <li>Biosensors &amp; Green synthesis using biotechnology and biocatalysts</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Track 3 */}
+            <div className="bg-blue-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-blue-800 mb-4">Track 3</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Thermochemical and hydrothermal Techniques biomass conversion</li>
+                    <li>Biotechnology: Algae-based treatment, bio-energy production</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Plastics/Polymers and biodegradable Polymers, Micro &amp; Nano plastics: Need and Challenges</li>
+                    <li>Innovative Technologies and Solution</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Track 4 */}
+            <div className="bg-purple-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-purple-800 mb-4">Track 4</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Advanced Solid Waste Management Strategies</li>
+                    <li>Waste-to-Energy Concept</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>E-Waste &amp; Hazardous waste management</li>
+                    <li>Digitalization and traceability: Block-chain, IoT, and AI to track plastic materials</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Track 5 */}
+            <div className="bg-yellow-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-yellow-800 mb-4">Track 5</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Sustainable &amp; Green Chemistry</li>
+                    <li>Refining and Petrochemicals</li>
+                    <li>Air Pollution Management, Control, and Sustainability</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Oil Spills &amp; Biodiversity</li>
+                    <li>Catalysis and Reaction Engineering towards product formation</li>
+                    <li>Fuel Cells and Sustainability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Track 6 */}
+            <div className="bg-pink-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-pink-800 mb-4">Track 6</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Modelling &amp; Simulation, Computational Fluid Dynamics</li>
+                    <li>Sustainable Resource Management (LCA, TEA, Sustainable supply chains, etc.)</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Process intensification</li>
+                    <li>Artificial Intelligence, Artificial Neural Network &amp; Machine Learning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* Track 7 */}
+            <div className="bg-gray-50 rounded-lg shadow p-6">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Track 7</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Sustainable Development Goals</li>
+                    <li>Climate change &amp; Concept of Smart Cities</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul className="list-disc ml-5 space-y-2">
+                    <li>Entrepreneurship &amp; Management for Environmental Remediation</li>
+                    <li>Environmental Policy &amp; Regulation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <p className="text-center text-gray-700 mt-8 italic font-bold text-xl tracking-wide">
-            * The above list is not exhaustive. Related topics are also welcome.
-          </p>
         </div>
 
         {/* Submission Buttons */}
