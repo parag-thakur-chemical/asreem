@@ -57,7 +57,7 @@ const speakers = [
   },
   {
     name: "Dr. Muthupandian Ashokkumar",
-    post: "Director, Melbourne Global Centre - Delhi ,Global (GCE)",
+    post: "Director, Melbourne Global Centre - Delhi , University of Melbourne, Australia",
     photo: "/keynote-speakers/muthupandian-ashokkumar.jpg",
     portfolio: "https://findanexpert.unimelb.edu.au/profile/1590-muthupandian-ashokkumar"
   },
