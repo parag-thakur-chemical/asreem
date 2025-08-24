@@ -134,10 +134,7 @@ export default function OrganizingCommittee() {
   return (
     <div className="mt-14 py-12 bg-white min-h-screen">
       <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-6">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
-          Organizing Committee
-        </h1>
-        <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
+        
 
         {/* Chief Patron + Patron in the same row */}
         <div className="flex flex-wrap justify-center gap-8 mb-12">
@@ -181,6 +178,11 @@ export default function OrganizingCommittee() {
             </div>
           ))}
         </div>
+
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
+          Organizing Committee
+        </h1>
+        <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
 
         {/* Render the rest of the committee */}
         <div className="space-y-12">
