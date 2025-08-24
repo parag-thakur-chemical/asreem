@@ -50,10 +50,16 @@ const speakers = [
     portfolio: "https://www.utb.edu.bn/academics/people/sivakumar-manickam/"
   },
   {
-    name: "Dr. Sameer Jadhav",
-    post: "Professor, IIT, Bombay",
-    photo: "/keynote-speakers/sameerjadhav.jpg",
-    portfolio: "https://www.che.iitb.ac.in/faculty/sameer-jadhav"
+    name: "Dr. Monoj Kumar Mondal",
+    post: "Professor, IIT, BHU",
+    photo: "/keynote-speakers/manoj-kumar-mondal.jpg",
+    portfolio: "https://iitbhu.ac.in/dept/che/people/mkmondalche"
+  },
+  {
+    name: "Dr. Muthupandian Ashokkumar",
+    post: "Director, Melbourne Global Centre - Delhi ,Global (GCE)",
+    photo: "/keynote-speakers/muthupandian-ashokkumar.jpg",
+    portfolio: "https://findanexpert.unimelb.edu.au/profile/1590-muthupandian-ashokkumar"
   },
   {
     name: "Dr. Anil Verma",
