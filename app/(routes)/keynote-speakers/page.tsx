@@ -38,6 +38,12 @@ const speakers = [
     portfolio: "https://abpandit.weebly.com/"
   },
   {
+    name: "Dr. Muthupandian Ashokkumar",
+    post: "Director, Melbourne Global Centre - Delhi , University of Melbourne, Australia",
+    photo: "/keynote-speakers/muthupandian-ashokkumar.jpg",
+    portfolio: "https://findanexpert.unimelb.edu.au/profile/1590-muthupandian-ashokkumar"
+  },
+  {
     name: "Dr. Mohsen Sharifpur",
     post: "Professor, School of Mechanical, Industrial and Aeronautical Engineering at the University of the Witwatersrand (Wits), South Africa.",
     photo: "/keynote-speakers/mohsen-sharifpur.jpg",
@@ -54,12 +60,6 @@ const speakers = [
     post: "Professor, IIT, BHU",
     photo: "/keynote-speakers/manoj-kumar-mondal.jpg",
     portfolio: "https://iitbhu.ac.in/dept/che/people/mkmondalche"
-  },
-  {
-    name: "Dr. Muthupandian Ashokkumar",
-    post: "Director, Melbourne Global Centre - Delhi , University of Melbourne, Australia",
-    photo: "/keynote-speakers/muthupandian-ashokkumar.jpg",
-    portfolio: "https://findanexpert.unimelb.edu.au/profile/1590-muthupandian-ashokkumar"
   },
   {
     name: "Dr. Anil Verma",
