@@ -31,12 +31,12 @@ const speakers = [
     photo: "/keynote-speakers/ghangrekar.jpg",
     portfolio: "https://ghangrekar.com/"
   },
-  {
-    name: "Dr. Aniruddha B. Pandit",
-    post: "Vice-Chancellor, Institute of Chemical Technology, Mumbai",
-    photo: "/keynote-speakers/pandit.jpg",
-    portfolio: "https://abpandit.weebly.com/"
-  },
+  // {
+  //   name: "Dr. Aniruddha B. Pandit",
+  //   post: "Vice-Chancellor, Institute of Chemical Technology, Mumbai",
+  //   photo: "/keynote-speakers/pandit.jpg",
+  //   portfolio: "https://abpandit.weebly.com/"
+  // },
   {
     name: "Dr. Muthupandian Ashokkumar",
     post: "Director, Melbourne Global Centre - Delhi , University of Melbourne, Australia",
@@ -61,12 +61,12 @@ const speakers = [
     photo: "/keynote-speakers/manoj-kumar-mondal.jpg",
     portfolio: "https://iitbhu.ac.in/dept/che/people/mkmondalche"
   },
-  {
-    name: "Dr. Anil Verma",
-    post: "Professor, IIT, Delhi",
-    photo: "/keynote-speakers/anilverma.jpg",
-    portfolio: "https://web.iitd.ac.in/~anilverma/"
-  },
+  // {
+  //   name: "Dr. Anil Verma",
+  //   post: "Professor, IIT, Delhi",
+  //   photo: "/keynote-speakers/anilverma.jpg",
+  //   portfolio: "https://web.iitd.ac.in/~anilverma/"
+  // },
   {
     name: "Dr. Treavor Boyer",
     post: "Professor, School of Sustainable Engineering and the Built Environment (SSEBE) at ASU",
