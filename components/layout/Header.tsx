@@ -33,7 +33,7 @@ const mainLinks = [
 
 const moreLinks = [
   { name: "Organizing Committee", href: "/organizing-committee" },
-  { name: "HighlightsPage", href: "/highlights" },
+  { name: "Highlights of 2021", href: "/highlights" },
   { name: "Advisory Committee", href: "/advisory-committee" },
   { name: "Tourist Spots", href: "/tourist-spots" },
 ];
