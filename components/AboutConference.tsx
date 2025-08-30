@@ -65,7 +65,7 @@ export function AboutConference() {
               The fast depleting natural resources intensify the need for new
               sustainable energy resources. If you are actively taking part in
               building new opportunities in the field of Energy and Environment
-              then please consider joining the platform of ASREEM-2025!
+              then please consider joining the platform of ASREEM-2026!
             </p>
 
             <p className="text-justify">

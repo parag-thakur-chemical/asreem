@@ -16,6 +16,10 @@ export default function PublicationsAwards() {
             <ul className="list-decimal list-inside space-y-2 text-lg">
               <li>Registration is mandatory through Google form (see register tab) for taking part in any of the events of the conference.</li>
               <li>All accepted abstracts will be published in Conference Proceedings subject to the quality of presentation, originality check and author’s/authors’ consent.</li>
+              <li>
+                Special Issue on “Applications and Challenges of Nano-Biotechnology” in the journal Current Pharmaceutical Biotechnology. This journal is Q2 journal indexed in SCIE and Scopus, with an Impact Factor of 2.6. If published as Open Access, your paper will be made available on ScienceDirect (Elsevier).
+                Link of Special Issue: <a href="https://www.eurekaselect.com/call-for-papers-detail/7294/specialissue/mostRecent" target="_blank" rel="noopener noreferrer" className="text-green-700 underline">Link</a>
+              </li>
               <li className="font-bold" >Selected full length papers will be published in SCI/Scopus indexed journals (Comming soon ...)</li>
             </ul>
             {/* <div className="mt-6 space-y-4">

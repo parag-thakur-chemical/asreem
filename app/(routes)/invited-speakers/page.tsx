@@ -87,7 +87,7 @@ const speakers = [
   },
   {
     name: "Dr. Sunil A. Patil",
-    post: "Assistant Professor ,  Indian Institute of Science Education and Research Mohali (IISER Mohali)",
+    post: "Associate Professor ,  Indian Institute of Science Education and Research Mohali (IISER Mohali)",
     photo: "/keynote-speakers/sunilpatil.jpg",
     portfolio: "https://www.iisermohali.ac.in/faculty/ees/sunil"
   },
