@@ -92,6 +92,12 @@ const speakers = [
     portfolio: "https://www.iisermohali.ac.in/faculty/ees/sunil"
   },
   {
+    name: "Dr. Surajbhan Sevda",
+    post: "Assistant  Professor ,  National Institute of Technology , Warangal",
+    photo: "/keynote-speakers/surajbhan-sevda.jpg",
+    portfolio: "https://erp.nitw.ac.in/ext/profile/bt-sevdasuraj"
+  },
+  {
     name: "Dr. Priyanand Agale",
     post: "Founder President & Pioneer of Eco Revolution Movement, Water Hero of India",
     photo: "/keynote-speakers/priyanand-agale.jpg",
