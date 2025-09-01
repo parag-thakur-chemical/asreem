@@ -99,7 +99,7 @@ const committee = [
       },
       {
         name: "Dr.  Sushil Kumar",
-        post: "professor, Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
+        post: "Professor, Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
         photo: "/keynote-speakers/sushilkumar.jpg",
         portfolio: "https://mnnit.ac.in/profile/sushilk"
       },
