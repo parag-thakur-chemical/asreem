@@ -16,36 +16,18 @@ export default function PublicationsAwards() {
             <ul className="list-decimal list-inside space-y-2 text-lg">
               <li>Registration is mandatory through Google form (see register tab) for taking part in any of the events of the conference.</li>
               <li>All accepted abstracts will be published in Conference Proceedings subject to the quality of presentation, originality check and author’s/authors’ consent.</li>
-              <li>
-                Special Issue on “Applications and Challenges of Nano-Biotechnology” in the journal Current Pharmaceutical Biotechnology. This journal is Q2 journal indexed in SCIE and Scopus, with an Impact Factor of 2.6. If published as Open Access, your paper will be made available on ScienceDirect (Elsevier).
-                Link of Special Issue: <a href="https://www.eurekaselect.com/call-for-papers-detail/7294/specialissue/mostRecent" target="_blank" rel="noopener noreferrer" className="text-green-700 underline">Link</a>
+              <li className="font-bold flex flex-col gap-2">
+                <span>Selected full length papers will be published in SCI/Scopus indexed journals</span>
+                <div className="flex items-start gap-4 bg-offWhite/10 rounded-lg p-3">
+                  <img src="/awards1.jpg" alt="Special Issue" className="w-28 h-28 object-contain rounded-lg bg-offWhite/20" />
+                  <div className="text-base font-normal text-gray-800">
+                    Special Issue on “Applications and Challenges of Nano-Biotechnology” in the journal Current Pharmaceutical Biotechnology. This journal is Q2 journal indexed in SCIE and Scopus, with an Impact Factor of 2.6. If published as Open Access, your paper will be made available on ScienceDirect (Elsevier).
+                  </div>
+                </div>
+                <span className="text-base text-gray-700 mt-2">More journals will be updated soon.</span>
               </li>
-              <li className="font-bold" >Selected full length papers will be published in SCI/Scopus indexed journals (Comming soon ...)</li>
             </ul>
-            {/* <div className="mt-6 space-y-4">
-              <div className="flex items-start gap-4">
-                <img src="/awards1.jpg" alt="Energy Nexus" className="w-32 h-32 object-contain rounded-lg bg-offWhite/20" />
-                <div>
-                  <h3 className="text-xl font-bold text-accent-earthYellow mb-1">1. Energy Nexus (Elsevier Journal)</h3>
-                  <p className="mb-1">The organizing committee of ASREEM 2026 would like to invite high-quality papers for submission at the Energy Nexus journal (ELSEVIER). <span className="font-semibold text-green-400">No article processing charges.</span></p>
-                  <p className="mb-1">Special Issue for the Conference on <span className="italic">“Circular Economy for the Sustainable Development.”</span></p>
-                  <p>This Special Issue (SI) aims to publish the original, critical review and high-quality scientific articles containing significant results in the area of new technologies across all fields of “Circular Economy for the Sustainable Development”.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <img src="/awards2.jpg" alt="Environmental Science and Pollution Research" className="w-32 h-32 object-contain rounded-lg bg-offWhite/20" />
-                <div>
-                  <h3 className="text-xl font-bold text-accent-earthYellow mb-1">2. Environmental Science and Pollution Research</h3>
-                  <p>As a special issue for the conference ASREEM-2026</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <img src="/awards3.jpg" alt="Bioresource Technology Reports" className="w-32 h-32 object-contain rounded-lg bg-offWhite/20" />
-                <div>
-                  <h3 className="text-xl font-bold text-accent-earthYellow mb-1">3. Bioresource Technology Reports (Elsevier)</h3>
-                </div>
-              </div>
-            </div> */}
+            
           </div>
           <div className="bg-offWhite/5 rounded-xl p-6 shadow-lg">
             <h2 className="text-2xl font-semibold text-[#00c950] mb-4">Awards</h2>
