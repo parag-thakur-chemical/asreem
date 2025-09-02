@@ -17,7 +17,7 @@ export default function IndustryAcademia() {
 				<div className="flex-1">
 					<h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Industry-Academia Interaction Session</h2>
 					<h3 className="text-xl font-semibold text-green-700 mb-3">Industry-Academia Synergy for Green Energy & Environmental Solutions</h3>
-					<p className="text-gray-800 text-lg mb-2">
+					<p className="text-gray-800 text-lg mb-2 text-justify">
 						The Industry-Academia Interaction Session is a unique platform designed to foster collaboration between leading professionals from industry and academia. This session aims to bridge the gap between research and real-world applications, enabling participants to share insights, challenges, and innovative solutions for a sustainable future.
 					</p>
 					<p className="text-gray-700 text-base">
