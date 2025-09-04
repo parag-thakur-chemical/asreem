@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background */}
       <img
         className=" absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
-        src="\9325cf2e-39a4-4fff-b10a-183dab5b6d3c.png"
+        src="\final_hero.png"
         alt="Background"
       />
 
@@ -59,7 +59,7 @@ export default function Hero() {
           {/* Date */}
 <div className="inline-block bg-offWhite bg-opacity-10 backdrop-blur-sm px-2 sm:px-4 py-1 sm:py-2 rounded-md mb-2 mt-2">
   <Link href="/dates-fees">
-    <span className="text-accent-earthYellow font-semibold tracking-wide text-xs sm:text-sm md:text-base flex items-center justify-center">
+    <span className="text-[#0b1439] font-semibold tracking-wide text-xs sm:text-sm md:text-base flex items-center justify-center">
       <CiCalendarDate className="w-5 h-5 sm:w-6 sm:h-6 mr-1 sm:mr-2" />
       FEBRUARY 6-8, 2026
     </span>
@@ -69,32 +69,22 @@ export default function Hero() {
 
           {/* Main heading */}
           <h1
-            className="text-3xl md:text-5xl lg:text-6xl  font-bold leading-tight break-words
-            text-shadow:
-            0 0 4px rgba(255,255,255,0.8),
-            0 0 12px rgba(255,255,255,0.9),
-            0 0 24px rgba(255,255,255,0.8);"
-
-          >
-            <span className="block text-xl md:text-2xl font-medium mb-2 text-accent-earthYellow ">
+            className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight break-words font-[Montserrat]">
+            <span className="block text-xl md:text-2xl font-medium mb-2 text-[#0c284e] font-[Montserrat]">
               2<sup>nd</sup> Edition of The International Conference on
             </span>
-
-            <span className="block text-[#154500] ">
-              Advances in Sustainable Research for Energy and Environmental Management 
+            <span className="block text-[#035e32] font-[Montserrat] font-extrabold">
+              Advances in Sustainable Research for Energy and Environmental Management
             </span>
           </h1>
 
-
           {/* Subheading */}
-          <div className="flex flex-col items-center justify-center  ">
-            <h2 className="text-3xl md:text-4xl font-black tracking-wider text-[#b4d3d1]">
-  ASREEM 2.0
-</h2>
-
-            
-            <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-              Rendevous for sustainable future
+          <div className="flex flex-col items-center justify-center">
+            <h2 className="text-3xl md:text-4xl font-[Montserrat] font-black tracking-wider text-[#023450]">
+              ASREEM 2.0
+            </h2>
+            <p className="text-lg md:text-xl text-[#051f3d] max-w-2xl mx-auto font-[Lora] italic">
+              Rendezvous for sustainable future
             </p>
           </div>
 

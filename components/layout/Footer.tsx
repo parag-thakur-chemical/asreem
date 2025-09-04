@@ -131,7 +131,7 @@ export default function Footer() {
                   href="https://www.svnit.ac.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-green-100 hover:text-white transition-colors"
+                  className="flex items-center text-green-100 hover:text-white transition-colors hover:underline"
                 >
                   <FaGlobe className="mr-2" />
                   www.svnit.ac.in
