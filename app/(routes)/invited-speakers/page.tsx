@@ -103,6 +103,24 @@ const speakers = [
     photo: "/keynote-speakers/priyanand-agale.jpg",
     portfolio: "https://www.linkedin.com/in/priyanandagale/"
   },
+  {
+    name: "Dr. Nguyen D. Duc ",
+    post: "Associate Professor ,Department of Civil and Energy Systems Engineering,Kyonggi University,Korea.",
+    photo: "/keynote-speakers/nguyen.jpg",
+    portfolio: "https://www.kyonggi.ac.kr "
+  },
+  {
+    name: "Dr. Pradeep Kumar",
+    post: "Professor (Retired), Department of Civil Engineering, IIT Roorkee, UK, India, and Distinguished Professor, Department of Civil Engineering, SET, Sharda University, Greater Noida, India.",
+    photo: "/keynote-speakers/pradeep.jpg",
+    portfolio: ""
+  },
+  {
+    name: "Dr. Dhananjay Singh",
+  post: "Director, Rajkiya engineering college, Ambedkar Nagar",
+    photo: "/keynote-speakers/dhananjay.jpg",
+    portfolio: "https://www.recabn.ac.in/?page_id=1034"
+  },
  
 
  
