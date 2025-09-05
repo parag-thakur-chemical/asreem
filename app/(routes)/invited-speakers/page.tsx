@@ -15,18 +15,7 @@ const speakers = [
     photo: "/keynote-speakers/deepakpant.jpg",
     portfolio: "https://vito.be/en/about-vito/employees/deepak-pant"
   },
-  {
-    name: "Dr. Dhananjay Singh",
-  post: "Director, Rajkiya engineering college, Ambedkar Nagar",
-    photo: "/keynote-speakers/dhananjay.jpg",
-    portfolio: "https://www.recabn.ac.in/?page_id=1034"
-  },
-  {
-    name: "Dr. Pradeep Kumar",
-    post: "Professor (Retired), Department of Civil Engineering, IIT Roorkee, UK, India, and Distinguished Professor, Department of Civil Engineering, SET, Sharda University, Greater Noida, India.",
-    photo: "/keynote-speakers/pradeep.jpg",
-    portfolio: ""
-  },
+
   {
     name: "Dr. Athar Hussain",
     post: "Professor, Netaji Subhas University of Technology",
@@ -46,7 +35,12 @@ const speakers = [
     portfolio: "https://iitg.ac.in/chemeng/faculty_profile.php?name=ss"
   },
   
- 
+  {
+    name: "Dr. Dhananjay Singh",
+    post: "Director, Rajkiya engineering college, Ambedkar Nagar",
+    photo: "/keynote-speakers/dhananjay.jpg",
+    portfolio: "https://www.recabn.ac.in/?page_id=1034"
+  },
   {
     name: "Dr. Shirish H. Sonawane",
     post: "Professor , National Institute of Technology, Warangal",

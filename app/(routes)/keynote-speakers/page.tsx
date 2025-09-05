@@ -104,6 +104,12 @@ const speakers = [
     photo: "/keynote-speakers/kola.jpg",
     portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
   },
+    {
+    name: "Dr. Pradeep Kumar",
+    post: "Professor (Retired), Department of Civil Engineering, IIT Roorkee, UK, India, and Distinguished Professor, Department of Civil Engineering, SET, Sharda University, Greater Noida, India.",
+    photo: "/keynote-speakers/pradeep.jpg",
+    portfolio: ""
+  },
   {
     name: "Dr. Dhanesh Chandra",
     post: "Foundation Professor, Emeritus",
