@@ -105,6 +105,12 @@ const speakers = [
     portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
   },
   {
+    name: "Dr. Dhanesh Chandra",
+    post: "Foundation Professor, Emeritus",
+    photo: "/keynote-speakers/dhaneshchandra.jpg",
+    portfolio: "https://www.unr.edu/cme/people/dhanesh-chandra"
+  },
+  {
     name: "Dr. Upendra (Muni) Raval",
     post: "Science and Stewardship",
     photo: "/keynote-speakers/upendra-raval.jpg",

@@ -15,43 +15,23 @@ const speakers = [
     photo: "/keynote-speakers/deepakpant.jpg",
     portfolio: "https://vito.be/en/about-vito/employees/deepak-pant"
   },
-
   {
-    name: "Dr. Dyllon Randall",
-    post: "Associate Professor, University of Capetown, South Africa",
-    photo: "/keynote-speakers/dyllon.jpg",
-    portfolio: "https://ebe.uct.ac.za/department-civil-engineering/aprof-dyllon-randall"
+    name: "Dr. Dhananjay Singh",
+  post: "Director, Rajkiya engineering college, Ambedkar Nagar",
+    photo: "/keynote-speakers/dhananjay.jpg",
+    portfolio: "https://www.recabn.ac.in/?page_id=1034"
   },
   {
-    name: "Dr. Sherub Phuntsho",
-    post: "Associate Professor, University of Technology Sydney, Australia",
-    photo: "/keynote-speakers/sherub.jpg",
-    portfolio: "https://scholar.google.com/citations?user=qTLAA70AAAAJ&hl=en"
+    name: "Dr. Pradeep Kumar",
+    post: "Professor (Retired), Department of Civil Engineering, IIT Roorkee, UK, India, and Distinguished Professor, Department of Civil Engineering, SET, Sharda University, Greater Noida, India.",
+    photo: "/keynote-speakers/pradeep.jpg",
+    portfolio: ""
   },
-  
-
-
-  {
-    name: "Dr. Sage R. Hiibel",
-    post: "Associate Professor ,University of Nevada, Reno",
-    photo: "/keynote-speakers/sagehiibel.jpg",
-    portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
-  },
-
-  {
-    name: "Dr. Eldon R. Rene",
-    post: "Associate Professor ,Resource Recovery Technology, IHE Delft Institute for Water Education, The Netherlands",
-    photo: "/keynote-speakers/eldon-raj.jpg",
-    portfolio: "https://www.un-ihe.org/people/staff/eldon-raj"
-  },
-
-
-  
   {
     name: "Dr. Athar Hussain",
     post: "Professor, Netaji Subhas University of Technology",
     photo: "/keynote-speakers/athar-hussain.jpg",
-    portfolio: "athar-hussain.jpg"
+    portfolio: "https://www.researchgate.net/profile/Athar-Hussain-3"
   },
   {
     name: "Dr. S Senthilmurugan",
@@ -86,6 +66,32 @@ const speakers = [
     portfolio: "https://mnnit.ac.in/profile/sushilk"
   },
   {
+    name: "Dr. Dyllon Randall",
+    post: "Associate Professor, University of Capetown, South Africa",
+    photo: "/keynote-speakers/dyllon.jpg",
+    portfolio: "https://ebe.uct.ac.za/department-civil-engineering/aprof-dyllon-randall"
+  },
+  {
+    name: "Dr. Sherub Phuntsho",
+    post: "Associate Professor, University of Technology Sydney, Australia",
+    photo: "/keynote-speakers/sherub.jpg",
+    portfolio: "https://scholar.google.com/citations?user=qTLAA70AAAAJ&hl=en"
+  },
+  {
+    name: "Dr. Sage R. Hiibel",
+    post: "Associate Professor ,University of Nevada, Reno",
+    photo: "/keynote-speakers/sagehiibel.jpg",
+    portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
+  },
+
+  {
+    name: "Dr. Eldon R. Rene",
+    post: "Associate Professor ,Resource Recovery Technology, IHE Delft Institute for Water Education, The Netherlands",
+    photo: "/keynote-speakers/eldon-raj.jpg",
+    portfolio: "https://www.un-ihe.org/people/staff/eldon-raj"
+  },
+
+  {
     name: "Dr. Sunil A. Patil",
     post: "Associate Professor ,  Indian Institute of Science Education and Research Mohali (IISER Mohali)",
     photo: "/keynote-speakers/sunilpatil.jpg",
@@ -109,21 +115,7 @@ const speakers = [
     photo: "/keynote-speakers/nguyen.jpg",
     portfolio: "https://www.kyonggi.ac.kr "
   },
-  {
-    name: "Dr. Pradeep Kumar",
-    post: "Professor (Retired), Department of Civil Engineering, IIT Roorkee, UK, India, and Distinguished Professor, Department of Civil Engineering, SET, Sharda University, Greater Noida, India.",
-    photo: "/keynote-speakers/pradeep.jpg",
-    portfolio: ""
-  },
-  {
-    name: "Dr. Dhananjay Singh",
-  post: "Director, Rajkiya engineering college, Ambedkar Nagar",
-    photo: "/keynote-speakers/dhananjay.jpg",
-    portfolio: "https://www.recabn.ac.in/?page_id=1034"
-  },
- 
 
- 
 ];
 
 

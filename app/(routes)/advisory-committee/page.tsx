@@ -48,6 +48,10 @@ const internationalAdvisory = [
     post: "Professor, Chemical Engineering, Al-Hussein Bin Talal University, Jordan"
   },
   {
+    name: "Dr. Dhanesh Chandra",
+    post: "Foundation Professor, Emeritus"
+  },
+  {
     name: "Dr. Jaume Puigagut",
     post: "Associate Professor, Polytechnic University of Catalonia, Barcelona, Spain"
   },
