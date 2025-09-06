@@ -118,6 +118,39 @@ export default function CallForAbstracts() {
           </div>
         </div>
 
+        {/* Submission Buttons */}
+        <div className="text-center space-y-6">
+          <h2 className="text-2xl font-bold text-gray-900">
+            Ready to Submit Your Abstract?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+            Submit your abstract through our online submission system. For any
+            queries, please contact the conference secretariat.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="https://forms.gle/B8QHHTja4SRSoTw38"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
+            >
+              Submit Abstract
+            </a>
+            <a
+              href="/abstract-template.doc"
+              download
+              className="px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
+            >
+              Download Template
+            </a>
+            <Link
+              href="/register"
+              className="px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
+            >
+              Register Now
+            </Link>
+          </div>
+        </div>
         {/* Conference Tracks and Topics */}
         <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
@@ -260,39 +293,7 @@ export default function CallForAbstracts() {
           </div>
         </div>
 
-        {/* Submission Buttons */}
-        <div className="text-center space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900">
-            Ready to Submit Your Abstract?
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Submit your abstract through our online submission system. For any
-            queries, please contact the conference secretariat.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://forms.gle/B8QHHTja4SRSoTw38"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
-            >
-              Submit Abstract
-            </a>
-            <a
-              href="/abstract-template.doc"
-              download
-              className="px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
-            >
-              Download Template
-            </a>
-            <Link
-              href="/register"
-              className="px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
-            >
-              Register Now
-            </Link>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
