@@ -77,7 +77,7 @@ const speakers = [
     name: "Dr. Dong Hoon Kim",
     post: "Professor , Inha University, South Korea",
     photo: "/keynote-speakers/dong-hoon.jpg",
-    portfolio: "https://www.unr.edu/cme/people/sage-hiibel"
+    portfolio: "https://eng.inha.ac.kr/eng/3590/subview.do?&enc=Zm5jdDF8QEB8JTJGZGVwYXJ0bWVudEludHJvJTJGZW5nJTJGNjMlMkYxNzMlMkZjb2xsZWdlUHJvZlZpZXcuZG8lM0ZzaXRlSWQlM0RlbmclMjZpbmhhaWQlM0Q5QTREMjIzQjU5OUFGNzlCMzMxNzBFREZDMDc4MTg5OEQxRTlENkNFMDBENUFCMDg1MjlCMzhGRTRDQjA4NEEyQkVEODUxMjVFOTMxNDY0QUY1QUZFQUZGRUFDMzJGMDQ0MEY3MkE0MEM3Q0I1OEIxNDVBQjgyNDJBQzUwQzE1MyUyNg==l"
   },
 
   {
