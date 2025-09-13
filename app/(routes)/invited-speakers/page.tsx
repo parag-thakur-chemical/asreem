@@ -48,6 +48,12 @@ const speakers = [
     portfolio: "https://www.researchgate.net/profile/Shirish-Sonawane"
   },
   {
+    name: "Dr. Anand Kishor Kola",
+    post: "Professor, NIT, Warangal",
+    photo: "/keynote-speakers/kola.jpg",
+    portfolio: "https://erp.nitw.ac.in/ext/profile/ch-kola"
+  },
+  {
     name: "Dr. Anil Kumar Katare",
     post: "Senior Principal Scientist ,CSIR – Indian Institute of Integrative Medicine",
     photo: "/keynote-speakers/anil-katara.jpg",
