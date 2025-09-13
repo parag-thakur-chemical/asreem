@@ -101,7 +101,7 @@ export default function Hero() {
     </button>
   </a>
   <a
-  href="https://drive.google.com/uc?export=preview&id=12Ik5teQ_BhNdciqxkkOxVDr7oqrhOWv7"
+  href="https://drive.google.com/uc?export=preview&id=1c9mTqEvBlYnlm2wLxNK6cbScQ52ysESy"
   target="_blank"
   rel="noopener noreferrer"
   className="w-full sm:w-auto border-2 bg-[oklch(0.73_0.17_60.47)] border-black hover:bg-offWhite hover:bg-opacity-10 font-medium py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-offWhite/10 text-black text-center inline-block"
