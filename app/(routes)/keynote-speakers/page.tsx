@@ -120,7 +120,7 @@ const speakers = [
     name: "Dr. Upendra (Muni) Raval",
     post: "Science and Stewardship",
     photo: "/keynote-speakers/upendra-raval.jpg",
-    portfolio: "..."
+    portfolio: ""
   }
 ];
 
