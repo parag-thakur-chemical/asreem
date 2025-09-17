@@ -168,7 +168,7 @@ const nationalAdvisory = [
   },
   {
     name: "Dr. Parag Sadgir",
-    post: " Dean Engineering and Technology, COEP Technological University Pune"
+    post: " Professor & Dean, Engineering and Technology, COEP Technological University Pune"
   },
   {
     name: "Dr. Surajbhan Sevda",
