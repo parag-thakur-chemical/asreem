@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const committee = [
   {
-    role: "Chief Patron",
+    role: "Patron",
     members: [
       {
         name: "Prof(Dr). Anupam Shukla",
@@ -11,11 +11,6 @@ const committee = [
         photo: "/organizing-committee/anupam-shukla.jpg",
         portfolio: "https://www.svnit.ac.in/web/brief-about-director.php"
       },
-    ],
-  },
-  {
-    role: "Patron",
-    members: [
       {
         name: "Prof(Dr). Meghal Desai",
         post: "Head, Dept. of Chem Engg, SVNIT, Surat",
@@ -52,7 +47,7 @@ const committee = [
       },
       {
         name: "Dr. Alka Mungray",
-        post: "Associate Professor, Dept. of Chem Engg, SVNIT, Surat",
+        post: "Professor, Dept. of Chem Engg, SVNIT, Surat",
         photo: "/organizing-committee/alka-mungray.jpg",
         portfolio: "https://www.svnit.ac.in/facup/aakm.pdf"
       },
@@ -136,47 +131,45 @@ export default function OrganizingCommittee() {
       <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-6">
         
 
-        {/* Chief Patron + Patron in the same row */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12">
-          {[committee[0], committee[1]].map((section, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <h2 className="text-3xl font-bold text-green-800 mb-4 text-center">
-                {section.role}
-              </h2>
-              {section.members.map((member, mIdx) => (
-                <Link
-                  key={mIdx}
-                  href={member.portfolio}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-72 h-72 bg-gradient-to-br from-lime-50 via-white to-emerald-100 
-                             rounded-2xl shadow-lg flex flex-col items-center p-6 
-                             border border-lime-200 hover:scale-105 transition-transform 
-                             duration-200 group cursor-pointer"
-                >
-                  <div className="w-32 h-32 mb-4 relative rounded-md overflow-hidden 
-                                  border-4 border-emerald-600 bg-white shadow-md 
-                                  group-hover:border-lime-500">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      sizes="128px"
-                    />
-                  </div>
-                  <div className="text-lg font-bold text-emerald-900 text-center 
-                                  group-hover:text-lime-700 transition-colors">
-                    {member.name}
-                  </div>
-                  <div className="text-sm text-gray-700 text-center mt-2 
-                                  group-hover:text-emerald-800 transition-colors">
-                    {member.post}
-                  </div>
-                </Link>
-              ))}
-            </div>
-          ))}
+        {/* Patron row with both members */}
+        <div className="flex flex-col items-center mb-12">
+          <h2 className="text-3xl font-bold text-green-800 mb-4 text-center">
+            {committee[0].role}
+          </h2>
+          <div className="flex flex-wrap justify-center gap-8">
+            {committee[0].members.map((member, mIdx) => (
+              <Link
+                key={mIdx}
+                href={member.portfolio}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-72 h-72 bg-gradient-to-br from-lime-50 via-white to-emerald-100 
+                           rounded-2xl shadow-lg flex flex-col items-center p-6 
+                           border border-lime-200 hover:scale-105 transition-transform 
+                           duration-200 group cursor-pointer"
+              >
+                <div className="w-32 h-32 mb-4 relative rounded-md overflow-hidden 
+                                border-4 border-emerald-600 bg-white shadow-md 
+                                group-hover:border-lime-500">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    sizes="128px"
+                  />
+                </div>
+                <div className="text-lg font-bold text-emerald-900 text-center 
+                                group-hover:text-lime-700 transition-colors">
+                  {member.name}
+                </div>
+                <div className="text-sm text-gray-700 text-center mt-2 
+                                group-hover:text-emerald-800 transition-colors">
+                  {member.post}
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
 
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
@@ -186,7 +179,7 @@ export default function OrganizingCommittee() {
 
         {/* Render the rest of the committee */}
         <div className="space-y-12">
-          {committee.slice(2).map((section, idx) => (
+          {committee.slice(1).map((section, idx) => (
             <div key={idx}>
               <h2 className="text-3xl font-bold text-green-800 mb-6 text-center">
                 {section.role}
