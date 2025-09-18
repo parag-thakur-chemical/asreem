@@ -11,12 +11,6 @@ const committee = [
         photo: "/organizing-committee/anupam-shukla.jpg",
         portfolio: "https://www.svnit.ac.in/web/brief-about-director.php"
       },
-      {
-        name: "Prof(Dr). Meghal Desai",
-        post: "Head, Dept. of Chem Engg, SVNIT, Surat",
-        photo: "/organizing-committee/meghal-desai.jpg",
-        portfolio: "https://svnit.ac.in/facup/CV_Meghal_Website_July2025.pdf"
-      },
     ],
   },
   {
