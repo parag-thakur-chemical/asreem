@@ -214,6 +214,14 @@ const nationalAdvisory = [
    name: "Dr. Athar Hussain",
    post: "Professor, Netaji Subhas University of Technology"
   },
+  {
+   name: "Dr. R. V. Taiwade",
+   post: "Department of Metallurgical and Materials Engineering , VNIT Nagpur"
+  },
+  {
+   name: "Dr. R. Kailasham",
+   post: "Department of Chemical Engineering, IIT Indore"
+  },
 ];
 
 
