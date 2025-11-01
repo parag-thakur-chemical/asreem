@@ -67,7 +67,7 @@ export default function CallForAbstracts() {
                 <div className="font-medium text-amber-900">
                   Last Date of Abstract Acceptance:
                 </div>
-                <div className="text-gray-700">15 Nov. 2025</div>
+                <div className="text-gray-700">30 Nov. 2025</div>
               </li>
               <li>
                 <div className="font-medium text-amber-900">
