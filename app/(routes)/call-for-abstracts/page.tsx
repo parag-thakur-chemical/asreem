@@ -162,83 +162,87 @@ export default function CallForAbstracts() {
           <div className="space-y-8">
             {/* Track 1 */}
             <div className="bg-green-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-green-800 mb-4">Track 1: Sustainable Water Governance, Policy, and Management</h3>
+              <h3 className="text-2xl font-bold text-green-800 mb-4">Track 1: Sustainable Energy and Technology</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Water governance and regulatory frameworks at local, regional, and national levels</li>
-                    <li>Integrated Water Resources Management (IWRM) and challenges for efficient urban water management</li>
-                    <li>Water security and access for all (SDG 6)</li>
-                    <li>Water economics, pricing, and financing mechanisms</li>
+                    <li>Advances in renewable energy technologies (solar, wind, hydro, geothermal, biomass, etc.)</li>
+                    <li>Energy efficiency & conversion strategies for buildings, industries, and transportation</li>
+                    <li>Energy storage: electrochemical devices, batteries, impacts, and distribution</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Role of stakeholders and participatory decision-making</li>
-                    <li>Policy implementation for sustainable water and sanitation systems</li>
+                    <li>Sustainable fuels, green hydrogen, and fuel cells</li>
+                    <li>Net-Zero strategies: carbon capture, utilization & storage and pathways to net-zero for cities and industries</li>
+                    <li>Water–Energy–Food Nexus</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 2 */}
             <div className="bg-amber-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-amber-800 mb-4">Track 2: Water Conservation, Treatment, and Resource Recovery</h3>
+              <h3 className="text-2xl font-bold text-amber-800 mb-4">Track 2: Environmental Management & Sustainability</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Sustainable water use and conservation practices</li>
-                    <li>Wastewater treatment technologies and recycling/reuse</li>
-                    <li>Zero Liquid Discharge (ZLD) and reject management</li>
-                    <li>Industrial wastewater regulation and sustainable practices</li>
+                    <li>Pollution control & waste management (air, water, soil)</li>
+                    <li>Solid waste management and recycling innovations</li>
+                    <li>Sustainable water resource management and conservation practices</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Membrane technology advancements for purification and desalination</li>
-                    <li>Circular economy in the water sector</li>
+                    <li>Wastewater treatment technologies, recycling/reuse and resource recovery</li>
+                    <li>Membrane technology advancements for separation, purification & reuse</li>
+                    <li>Advanced and hybrid technologies for waste management</li>
+                    <li>Biodiversity and ecosystem conservation</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 3 */}
             <div className="bg-blue-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-blue-800 mb-4">Track 3: Climate Change, Ecosystems, and the Water–Energy Nexus</h3>
+              <h3 className="text-2xl font-bold text-blue-800 mb-4">Track 3: Innovative Technologies and Digital Solutions for Waste Conservation and Environmental Management</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Impacts of climate change and extreme weather events on water systems</li>
-                    <li>Watershed and wetland management, aquatic habitat protection</li>
-                    <li>Water–Energy Nexus: water use in energy production and renewable energy for water management</li>
+                    <li>Smart systems and Digital Twin technology for Reduce, Reuse & Recycling</li>
+                    <li>Segregation of waste: challenges & innovations</li>
+                    <li>Decentralized and modular treatment systems</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Energy efficiency in water distribution and treatment</li>
-                    <li>Hydropower generation and sustainable management</li>
-                    <li>Ecosystem services and biodiversity conservation</li>
+                    <li>AI and machine learning-driven predictive tools for environmental management</li>
+                    <li>Digitalization and traceability using Blockchain, IoT, and AI towards best practices</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 4 */}
             <div className="bg-purple-50 rounded-lg shadow p-6">
               <h3 className="text-2xl font-bold text-purple-800 mb-4">Track 4: Emerging Materials, Nanotechnology, and Advanced Treatment Technologies</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Nanotechnology for energy conservation and water treatment</li>
+                    <li>Nanotechnology for waste management and energy conservation</li>
+                    <li>Nano-medicine and healthcare: drug delivery, nanotoxicity, and environmental impacts</li>
                     <li>Advanced oxidation processes and sonochemistry for emerging contaminants</li>
-                    <li>Advanced materials and 3D printing for environmental applications</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
+                    <li>Advanced/smart materials and 3D printing for environmental applications</li>
                     <li>Biosensors and green synthesis using biocatalysts and biotechnology</li>
-                    <li>Smart materials for separation, purification, and catalysis</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 5 */}
             <div className="bg-yellow-50 rounded-lg shadow p-6">
               <h3 className="text-2xl font-bold text-yellow-800 mb-4">Track 5: Waste Management and Circular Economy</h3>
@@ -247,17 +251,18 @@ export default function CallForAbstracts() {
                   <ul className="list-disc ml-5 space-y-2">
                     <li>Solid waste, e-waste, and hazardous waste management</li>
                     <li>Waste-to-energy concepts and sustainable practices</li>
-                    <li>Plastics and biodegradable polymers: challenges and innovations</li>
+                    <li>Plastics waste and biodegradable polymers: challenges and innovations</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Digitalization and traceability using Blockchain, IoT, and AI</li>
-                    <li>Industrial symbiosis and resource recovery</li>
+                    <li>Thermochemical and hydrothermal techniques for waste management</li>
+                    <li>Biofuel cells and bioenergetics towards sustainable development</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 6 */}
             <div className="bg-pink-50 rounded-lg shadow p-6">
               <h3 className="text-2xl font-bold text-pink-800 mb-4">Track 6: Sustainable and Green Process Technologies</h3>
@@ -267,51 +272,55 @@ export default function CallForAbstracts() {
                     <li>Sustainable and green chemistry for environmental remediation</li>
                     <li>Catalysis and reaction engineering for clean product formation</li>
                     <li>Refining and petrochemical sustainability</li>
-                    <li>Fuel cells, bioenergy, and renewable fuels</li>
+                    <li>Chemicals derived from biomass and waste valorization using green extraction techniques</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Process intensification, modelling, and simulation (CFD)</li>
-                    <li>Artificial intelligence and machine learning for sustainable process design</li>
+                    <li>Microfluidics and process intensification using microreactors</li>
+                    <li>Process intensification, modelling, and simulation (CFD) for waste management</li>
+                    <li>Techno-economic and environmental impact considerations</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 7 */}
             <div className="bg-gray-50 rounded-lg shadow p-6">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Track 7: Sustainable Development Goals, Policy, and Entrepreneurship</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Sustainable Development Goals (SDGs) and climate-smart cities</li>
-                    <li>Water quality and public health assessment</li>
+                    <li>Sustainable Development Goals (SDGs), smart cities, and climate change</li>
+                    <li>Urban sustainability & planning</li>
                     <li>Entrepreneurship and innovation in environmental management</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Environmental policy, regulation, and implementation strategies</li>
-                    <li>Economic valuation and financing of sustainable infrastructure</li>
-                    <li>Education, awareness, and community engagement for sustainability</li>
+                    <li>Environmental policy, health assessment, regulation, and implementation strategies</li>
+                    <li>Sustainable resource management, life cycle analysis (LCA), Techno-Economic Assessment (TEA) and supply chain issues</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             {/* Track 8 */}
             <div className="bg-indigo-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-indigo-800 mb-4">Track 8: Innovative Technologies and Digital Solutions for Water and Environment</h3>
+              <h3 className="text-2xl font-bold text-indigo-800 mb-4">Track 8: Industrial Best Practices towards Waste Management and Environmental Restoration</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Smart water systems and Digital Twin technology</li>
-                    <li>Remote sensing and data analytics for monitoring</li>
-                    <li>Decentralized and modular water treatment systems</li>
+                    <li>Zero Liquid Discharge (ZLD) practices and reject management</li>
+                    <li>Industrial wastewater management and circular economy models</li>
+                    <li>Environmental monitoring, policies, regulations, and governance</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>AI-driven predictive tools for environmental management</li>
+                    <li>Industry-specific case studies and best practices</li>
+                    <li>Waste-to-Energy (WtE) technologies, innovations & digitalization</li>
+                    <li>Industry–Academia symbiosis towards sustainable practices</li>
                   </ul>
                 </div>
               </div>
