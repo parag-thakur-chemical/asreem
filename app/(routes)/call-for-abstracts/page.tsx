@@ -162,20 +162,20 @@ export default function CallForAbstracts() {
           <div className="space-y-8">
             {/* Track 1 */}
             <div className="bg-green-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-green-800 mb-4">Track 1: Sustainable Energy and Technology</h3>
+              <h3 className="text-2xl font-bold text-green-800 mb-4">Track 1: Sustainable Water Governance, Policy, and Management</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Advances in renewable energy technologies (solar, wind, hydro, geothermal, biomass, etc.)</li>
-                    <li>Energy efficiency & conversion strategies for buildings, industries, and transportation</li>
-                    <li>Energy storage: electrochemical devices, batteries, impacts, and distribution</li>
+                    <li>Water governance and regulatory frameworks at local, regional, and national levels</li>
+                    <li>Integrated Water Resources Management (IWRM) and challenges for efficient urban water management</li>
+                    <li>Water security and access for all (SDG 6)</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Sustainable fuels, green hydrogen, and fuel cells</li>
-                    <li>Net-Zero strategies: carbon capture, utilization & storage and pathways to net-zero for cities and industries</li>
-                    <li>Water–Energy–Food Nexus</li>
+                    <li>Water economics, pricing, and financing mechanisms</li>
+                    <li>Role of stakeholders and participatory decision-making</li>
+                    <li>Policy implementation for sustainable water and sanitation systems</li>
                   </ul>
                 </div>
               </div>
@@ -183,21 +183,20 @@ export default function CallForAbstracts() {
 
             {/* Track 2 */}
             <div className="bg-amber-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-amber-800 mb-4">Track 2: Environmental Management & Sustainability</h3>
+              <h3 className="text-2xl font-bold text-amber-800 mb-4">Track 2: Innovative Technologies and Digital Solutions for Water Conservation and Environmental Management</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Pollution control & waste management (air, water, soil)</li>
-                    <li>Solid waste management and recycling innovations</li>
-                    <li>Sustainable water resource management and conservation practices</li>
+                    <li>Smart systems and Digital Twin technology for Reduce, Reuse & Recycling</li>
+                    <li>Remote sensing and data analytics for monitoring</li>
+                    <li>Decentralized and modular water treatment systems</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Wastewater treatment technologies, recycling/reuse and resource recovery</li>
-                    <li>Membrane technology advancements for separation, purification & reuse</li>
-                    <li>Advanced and hybrid technologies for waste management</li>
-                    <li>Biodiversity and ecosystem conservation</li>
+                    <li>AI and machine learning-driven predictive tools for environmental management</li>
+                    <li>Digitalization and traceability using Blockchain, IoT, and AI towards best practices</li>
+                    <li>Net-Zero strategies (carbon capture, utilization, storage, pathways to net-zero for cities and industries)</li>
                   </ul>
                 </div>
               </div>
@@ -205,19 +204,20 @@ export default function CallForAbstracts() {
 
             {/* Track 3 */}
             <div className="bg-blue-50 rounded-lg shadow p-6">
-              <h3 className="text-2xl font-bold text-blue-800 mb-4">Track 3: Innovative Technologies and Digital Solutions for Waste Conservation and Environmental Management</h3>
+              <h3 className="text-2xl font-bold text-blue-800 mb-4">Track 3: Environmental Conservation, Treatment & Sustainability</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Smart systems and Digital Twin technology for Reduce, Reuse & Recycling</li>
-                    <li>Segregation of waste: challenges & innovations</li>
-                    <li>Decentralized and modular treatment systems</li>
+                    <li>Sustainable water resource management and conservation practices</li>
+                    <li>Pollution control & waste management for air, water, and solid waste</li>
+                    <li>Wastewater treatment technologies and recycling/reuse with resource recovery</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>AI and machine learning-driven predictive tools for environmental management</li>
-                    <li>Digitalization and traceability using Blockchain, IoT, and AI towards best practices</li>
+                    <li>Membrane technology advancements for separation, purification & reuse</li>
+                    <li>Advanced and hybrid technologies for waste management and resource recovery</li>
+                    <li>Sustainable fuels, green hydrogen, fuel cells, and eco-friendly industrial practices</li>
                   </ul>
                 </div>
               </div>
@@ -230,14 +230,14 @@ export default function CallForAbstracts() {
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
                     <li>Nanotechnology for waste management and energy conservation</li>
-                    <li>Nano-medicine and healthcare: drug delivery, nanotoxicity, and environmental impacts</li>
+                    <li>Nano-medicine and healthcare: drug delivery systems, nanotoxicity and environmental impacts</li>
                     <li>Advanced oxidation processes and sonochemistry for emerging contaminants</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Advanced/smart materials and 3D printing for environmental applications</li>
-                    <li>Biosensors and green synthesis using biocatalysts and biotechnology</li>
+                    <li>Smart materials, 3D printing, and energy storage (electrochemical devices, batteries) for environmental applications</li>
+                    <li>Biosensors and green synthesis using Biotechnology, Bioinformatics and Biocatalyst</li>
                   </ul>
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default function CallForAbstracts() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Solid waste, e-waste, and hazardous waste management</li>
+                    <li>Solid waste, E-waste, and hazardous waste management</li>
                     <li>Waste-to-energy concepts and sustainable practices</li>
                     <li>Plastics waste and biodegradable polymers: challenges and innovations</li>
                   </ul>
@@ -258,6 +258,7 @@ export default function CallForAbstracts() {
                   <ul className="list-disc ml-5 space-y-2">
                     <li>Thermochemical and hydrothermal techniques for waste management</li>
                     <li>Biofuel cells and bioenergetics towards sustainable development</li>
+                    <li>Segregation of waste: challenges & innovations</li>
                   </ul>
                 </div>
               </div>
@@ -272,12 +273,12 @@ export default function CallForAbstracts() {
                     <li>Sustainable and green chemistry for environmental remediation</li>
                     <li>Catalysis and reaction engineering for clean product formation</li>
                     <li>Refining and petrochemical sustainability</li>
-                    <li>Chemicals derived from biomass and waste valorization using green extraction techniques</li>
+                    <li>Chemicals derived from biomass, waste valorization using green extraction techniques & environmental impact</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Microfluidics and process intensification using microreactors</li>
+                    <li>Microfluidics, process intensification using microreactors and applications</li>
                     <li>Process intensification, modelling, and simulation (CFD) for waste management</li>
                     <li>Techno-economic and environmental impact considerations</li>
                   </ul>
@@ -292,14 +293,15 @@ export default function CallForAbstracts() {
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
                     <li>Sustainable Development Goals (SDGs), smart cities, and climate change</li>
-                    <li>Urban sustainability & planning</li>
-                    <li>Entrepreneurship and innovation in environmental management</li>
+                    <li>Advances in renewable energy technologies (solar, wind, hydro, geothermal, biomass, etc.)</li>
+                    <li>Energy efficiency & conversion strategies for buildings, industries, & transportation</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
+                    <li>Entrepreneurship and innovation in environmental management</li>
                     <li>Environmental policy, health assessment, regulation, and implementation strategies</li>
-                    <li>Sustainable resource management, life cycle analysis (LCA), Techno-Economic Assessment (TEA) and supply chain issues</li>
+                    <li>Sustainable resource management, life cycle analysis (LCA), Techno-Economic Assessment (TEA) and supply chain topics</li>
                   </ul>
                 </div>
               </div>
@@ -312,15 +314,15 @@ export default function CallForAbstracts() {
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
                     <li>Zero Liquid Discharge (ZLD) practices and reject management</li>
-                    <li>Industrial wastewater management and circular economy models</li>
-                    <li>Environmental monitoring, policies, regulations, and governance</li>
+                    <li>Industrial wastewater management and sustainable practices (circular economy models)</li>
+                    <li>Environmental monitoring, policies, regulations, governance, and Water–Energy Nexus</li>
                   </ul>
                 </div>
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
-                    <li>Industry-specific case studies and best practices</li>
+                    <li>Industry-specific sessions: case studies and best practices from various sectors</li>
                     <li>Waste-to-Energy (WtE) technologies, innovations & digitalization</li>
-                    <li>Industry–Academia symbiosis towards sustainable practices</li>
+                    <li>Industry–Academia symbiosis towards sustainable practices (challenges & solutions)</li>
                   </ul>
                 </div>
               </div>
