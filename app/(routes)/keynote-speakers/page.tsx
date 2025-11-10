@@ -32,10 +32,22 @@ const speakers = [
     portfolio: "https://ghangrekar.com/"
   },
   {
+    name: "Dr. Suresh Bhargava",
+    post: "AcSIR Director, Research & Innovation",
+    photo: "/keynote-speakers/suresh_bhargava.jpg",
+    portfolio: "https://academics.rmit.edu.au/suresh-bhargava"
+  },
+  {
     name: "Dr. Aniruddha B. Pandit",
     post: "Vice-Chancellor, Institute of Chemical Technology, Mumbai",
     photo: "/keynote-speakers/pandit.jpg",
     portfolio: "https://abpandit.weebly.com/"
+  },
+  {
+    name: "Dr. Raul Arenal",
+    post: "Researcher ARAID Foundation; Laboratory of Advanced Microscopies (LMA) - Institute of Nanoscience",
+    photo: "/keynote-speakers/rahul-arenal.jpg",
+    portfolio: "https://scholar.google.com/citations?user=PdeHMyoAAAAJ&hl=fr"
   },
   {
     name: "Dr. Muthupandian Ashokkumar",

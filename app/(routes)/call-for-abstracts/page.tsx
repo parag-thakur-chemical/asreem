@@ -237,7 +237,7 @@ export default function CallForAbstracts() {
                 <div>
                   <ul className="list-disc ml-5 space-y-2">
                     <li>Smart materials, 3D printing, and energy storage (electrochemical devices, batteries) for environmental applications</li>
-                    <li>Biosensors and green synthesis using Biotechnology, Bioinformatics and Biocatalyst</li>
+                    <li>Biotechnology, Bioinformatics and Biocatalyst</li>
                   </ul>
                 </div>
               </div>
