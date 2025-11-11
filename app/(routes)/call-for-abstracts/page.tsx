@@ -79,7 +79,7 @@ export default function CallForAbstracts() {
                 <div className="font-medium text-amber-900">
                   Conference Dates:
                 </div>
-                <div className="text-gray-700">17-19 May 2026</div>
+                <div className="text-gray-700">15-17 May 2026</div>
               </li>
             </ul>
           </div>

@@ -12,7 +12,7 @@ export default function DatesAndFees() {
     { title: "Last Date of Abstract Submission", date: "31 Jan. 2026" },
     { title: "Last Date of Abstract Acceptance", date: "15 Feb. 2026" },
     { title: "Last Date of Fees Payment", date: "28 Feb. 2026" },
-    { title: "Conference Dates", date: "17-19 May 2026" },
+    { title: "Conference Dates", date: "15-17 May 2026" },
   ];
 
   const registrationFeesOffline = [

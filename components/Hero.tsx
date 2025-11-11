@@ -61,7 +61,7 @@ export default function Hero() {
   <Link href="/dates-fees">
     <span className="text-[#0b1439] font-semibold tracking-wide text-xs sm:text-sm md:text-base flex items-center justify-center">
       <CiCalendarDate className="w-5 h-5 sm:w-6 sm:h-6 mr-1 sm:mr-2" />
-      May 17-19, 2026
+      May 15-17, 2026
     </span>
   </Link>
 </div>
