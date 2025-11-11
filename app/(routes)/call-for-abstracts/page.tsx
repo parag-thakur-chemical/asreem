@@ -61,25 +61,25 @@ export default function CallForAbstracts() {
                 <div className="font-medium text-amber-900">
                   Last Date of Abstract Submission:
                 </div>
-                <div className="text-gray-700">30 Nov. 2025</div>
+                <div className="text-gray-700">31 Jan. 2026</div>
               </li>
               <li>
                 <div className="font-medium text-amber-900">
                   Last Date of Abstract Acceptance:
                 </div>
-                <div className="text-gray-700">15 Dec. 2025</div>
+                <div className="text-gray-700">15 Feb. 2026</div>
               </li>
               <li>
                 <div className="font-medium text-amber-900">
                   Last Date of Fees Payment:
                 </div>
-                <div className="text-gray-700">30 Dec. 2025</div>
+                <div className="text-gray-700">28 Feb. 2026</div>
               </li>
               <li>
                 <div className="font-medium text-amber-900">
                   Conference Dates:
                 </div>
-                <div className="text-gray-700">6-8 Feb. 2026</div>
+                <div className="text-gray-700">17-19 May 2026</div>
               </li>
             </ul>
           </div>
