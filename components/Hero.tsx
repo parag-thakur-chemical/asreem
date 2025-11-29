@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { CiCalendarDate } from "react-icons/ci";
 import Link from "next/link";
+import ConferenceMarquee from "@/components/conferenceMarquee";
+
 
 export default function Hero() {
   return (
@@ -74,7 +76,8 @@ export default function Hero() {
               2<sup>nd</sup> Edition of The International Conference on
             </span>
             <span className="block text-[#035e32] font-[Montserrat] font-extrabold">
-              Advances in Sustainable Research for Energy and Environmental Management
+              Advances in Sustainable Research for Energy and Environmental
+              Management
             </span>
           </h1>
 
@@ -88,6 +91,9 @@ export default function Hero() {
             </p>
           </div>
 
+
+        <ConferenceMarquee />
+        
           {/* Buttons */}
 <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
   <a

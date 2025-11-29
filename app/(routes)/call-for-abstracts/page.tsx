@@ -127,25 +127,25 @@ export default function CallForAbstracts() {
             Submit your abstract through our online submission system. For any
             queries, please contact the conference secretariat.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col gap-4 items-center">
             <a
               href="https://forms.gle/B8QHHTja4SRSoTw38"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
+              className="w-full px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
             >
               Submit Abstract
             </a>
             <a
               href="/abstract-template.doc"
               download
-              className="px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
+              className="w-full px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
             >
               Download Template
             </a>
             <Link
               href="/register"
-              className="px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
+              className="w-full px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
             >
               Register Now
             </Link>
