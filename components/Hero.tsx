@@ -54,6 +54,7 @@ export default function Hero() {
         flex flex-col justify-center items-center text-center
         min-h-[calc(100dvh-140px)]
         mt-[clamp(6rem,16vh,9rem)]
+        mb-[clamp(6rem,16vh,9rem)]
         "
       >
         <div className="max-w-5xl w-full mx-auto space-y-6">
