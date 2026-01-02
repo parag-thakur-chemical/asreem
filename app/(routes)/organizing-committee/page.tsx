@@ -11,6 +11,12 @@ const committee = [
         photo: "/organizing-committee/anupam-shukla.jpg",
         portfolio: "https://www.svnit.ac.in/web/brief-about-director.php"
       },
+      {
+        name: "Dr. Shishir Sinha",
+        post: "Director-General, CIPET, Govt of India",
+        photo: "/keynote-speakers/shishirsinha.jpg",
+        portfolio: "https://www.cipet.gov.in/our-team/our-team-dg-profile.php"
+      },
     ],
   },
   {
@@ -66,7 +72,7 @@ const committee = [
         name: "Dr. Shriram Sonawane",
         post: "Professor, VNIT, Nagpur",
         photo: "/keynote-speakers/sonawane.jpg",
-        portfolio: "https://share.google/uih3MoOBY1aRDqIkX " 
+        portfolio: "https://share.google/uih3MoOBY1aRDqIkX "
       },
       {
         name: "Dr. Anand Kishor Kola",
@@ -123,7 +129,7 @@ export default function OrganizingCommittee() {
   return (
     <div className="mt-14 py-12 bg-white min-h-screen">
       <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-6">
-        
+
 
         {/* Patron row with both members */}
         <div className="flex flex-col items-center mb-12">
