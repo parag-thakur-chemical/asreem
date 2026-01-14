@@ -72,86 +72,105 @@ export default function Sponsorships() {
   return (
     <div className="mt-14 py-12 bg-white min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
-          Sponsorships
-        </h1>
-        <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+          <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
+            Sponsorships
+          </h1>
+          <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+{/* Proud Sponsors Section */}
+<div className="flex flex-col items-center justify-center mb-10">
+  <p className="text-lg sm:text-xl font-semibold text-gray-800 mb-4 tracking-wide">
+    Our Proud Sponsors
+  </p>
 
-        {/* Description */}
-        <div className="bg-gradient-to-br from-green-50 via-white to-green-100 rounded-2xl shadow-lg border-2 border-green-200 p-8 mb-8 hover:scale-105 transition-transform duration-200">
-          <p className="text-lg text-gray-700 text-justify mb-6">
-            If you are selling Industrial Products, Instruments, Processors, or Simulation Softwares related to Chemical Engineering, Environmental engineering or Mechanical Engineering then, Advertise your product, process or services through the International Conference on ‘Advances in sustainable research for energy and environmental Management (ASREEM 2.0)’ to reach the right people.
-          </p>
-          <p className="text-lg text-gray-700 text-center">
-            Nearby Hotels and Travel Agencies can also become our official accommodation and Travel partners.
-          </p>
-        </div>
-
-      {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 ">
-  {tiers.map((tier, index) => (
-    <div
-      key={index}
-      className="rounded-xl overflow-hidden shadow-md flex flex-col h-full hover:scale-105 transition-transform duration-200"
-    >
-      {/* Header */}
-      <div
-        className={`bg-gradient-to-b ${tier.gradient} text-white text-center p-4 flex flex-col items-center`}
-      >
-        <img
-          src={tier.svgIcon}
-          alt={`${tier.tier} icon`}
-          className="w-10 h-10 mb-2"
-          style={{ backgroundColor: "transparent" }}
-        />
-        <h2 className="font-semibold text-lg">{tier.tier}</h2>
-      </div>
-
-      {/* Body */}
-      <div
-        className={`bg-gradient-to-b ${tier.bodyGradient} text-center p-6 flex-grow`}
-      >
-        <div className="text-1xl sm:text-3xl font-bold text-blue-900 mb-4">
-          {tier.price}
-        </div>
-
-        <ul className="text-left text-blue-900 space-y-3">
-          {tier.benefits.map((benefit, i) => (
-            <li
-              key={i}
-              className={`flex items-start gap-2 ${
-                i < tier.benefits.length - 1
-                  ? "border-b border-blue-300 pb-2"
-                  : ""
-              }`}
-            >
-              <img
-                src="/tick.webp"
-                alt="tick"
-                className="w-5 h-5 mt-1 bg-transparent"
-              />
-              {benefit}
-            </li>
-          ))}
-        </ul>
-      </div>
+  <div className="flex items-center justify-center gap-6 bg-white border-2 border-green-200 rounded-xl px-8 py-6 shadow-md hover:scale-105 transition-transform duration-200">
+    <img
+      src="/sponsors/bis-logo.png"
+      alt="Bureau of Indian Standards"
+      className="h-16 sm:h-20 object-contain"
+    />
+    <div className="text-left">
+      <p className="text-xl font-bold text-gray-900">Bureau of Indian Standards</p>
+      <p className="text-sm text-gray-600">
+        National Standards Body of India
+      </p>
     </div>
-  ))}
+  </div>
 </div>
 
-{/* Stall Only Note */}
-<p className="mt-4 text-center text-gray-800 bg-yellow-100 border border-yellow-300 rounded-lg p-4 max-w-lg mx-auto">
-  <strong>Stall Only :</strong> If you wish to only put up a stall of dimensions 8×16 ft , you can do so for <strong>₹30,000</strong>.
-  you can get additional space at ₹10,000 per 3×3 ft
-</p>
+          {/* Description */}
+          <div className="bg-gradient-to-br from-green-50 via-white to-green-100 rounded-2xl shadow-lg border-2 border-green-200 p-8 mb-8 hover:scale-105 transition-transform duration-200">
+            <p className="text-lg text-gray-700 text-justify mb-6">
+              If you are selling Industrial Products, Instruments, Processors, or Simulation Softwares related to Chemical Engineering, Environmental engineering or Mechanical Engineering then, Advertise your product, process or services through the International Conference on ‘Advances in sustainable research for energy and environmental Management (ASREEM 2.0)’ to reach the right people.
+            </p>
+            <p className="text-lg text-gray-700 text-center">
+              Nearby Hotels and Travel Agencies can also become our official accommodation and Travel partners.
+            </p>
+          </div>
 
-{/* Disclaimer */}
-<p className="mt-2 text-sm text-gray-600 text-center italic">
-  * All above mentioned prices for sponsorships are exclusive of 18% GST.
-</p>
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 ">
+            {tiers.map((tier, index) => (
+              <div
+                key={index}
+                className="rounded-xl overflow-hidden shadow-md flex flex-col h-full hover:scale-105 transition-transform duration-200"
+              >
+                {/* Header */}
+                <div
+                  className={`bg-gradient-to-b ${tier.gradient} text-white text-center p-4 flex flex-col items-center`}
+                >
+                  <img
+                    src={tier.svgIcon}
+                    alt={`${tier.tier} icon`}
+                    className="w-10 h-10 mb-2"
+                    style={{ backgroundColor: "transparent" }}
+                  />
+                  <h2 className="font-semibold text-lg">{tier.tier}</h2>
+                </div>
+
+                {/* Body */}
+                <div
+                  className={`bg-gradient-to-b ${tier.bodyGradient} text-center p-6 flex-grow`}
+                >
+                  <div className="text-1xl sm:text-3xl font-bold text-blue-900 mb-4">
+                    {tier.price}
+                  </div>
+
+                  <ul className="text-left text-blue-900 space-y-3">
+                    {tier.benefits.map((benefit, i) => (
+                      <li
+                        key={i}
+                        className={`flex items-start gap-2 ${i < tier.benefits.length - 1
+                            ? "border-b border-blue-300 pb-2"
+                            : ""
+                          }`}
+                      >
+                        <img
+                          src="/tick.webp"
+                          alt="tick"
+                          className="w-5 h-5 mt-1 bg-transparent"
+                        />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Stall Only Note */}
+          <p className="mt-4 text-center text-gray-800 bg-yellow-100 border border-yellow-300 rounded-lg p-4 max-w-lg mx-auto">
+            <strong>Stall Only :</strong> If you wish to only put up a stall of dimensions 8×16 ft , you can do so for <strong>₹30,000</strong>.
+            you can get additional space at ₹10,000 per 3×3 ft
+          </p>
+
+          {/* Disclaimer */}
+          <p className="mt-2 text-sm text-gray-600 text-center italic">
+            * All above mentioned prices for sponsorships are exclusive of 18% GST.
+          </p>
 
 
+        </div>
       </div>
-    </div>
-  );
+      );
 }

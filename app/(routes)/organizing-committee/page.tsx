@@ -104,6 +104,72 @@ const committee = [
     role: "Student Coordinators",
     members: [
       {
+        name: "Dr. Zavin R. Gajera",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/zavin.jpg",
+        portfolio: "https://www.linkedin.com/in/dr-zavin-r-gajera-170771168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Pavitra Sarang",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/pavitra.jpg",
+        portfolio: "https://www.linkedin.com/in/pavitra-sarang-616a901b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      // {
+      //   name: "Aaliya Javed",
+      //   post: "Student Coordinator",
+      //   photo: "/organizing-committee/aaliya-javed.jpg",
+      //   portfolio: "https://www.linkedin.com/in/aaliya-javed-42a338204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      // },
+      {
+        name: "Bhargav Shukla",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/bhargava.jpg",
+        portfolio: "https://www.linkedin.com/in/bhargav-shukla-7442a2150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Priti Bansod",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/priti.jpg",
+        portfolio: "https://www.linkedin.com/in/priti-bansod-72aa61238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Jayraj Rana",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/jayraj'.jpg",
+        portfolio: "https://www.linkedin.com/in/jayraj-rana-3502841b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Jay Narang",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/jay-narang.jpg",
+        portfolio: "https://www.linkedin.com/in/jay-narang-937a27144?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Anushriba Rathod",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/anushriba.jpg",
+        portfolio: "https://www.linkedin.com/in/anushriba-rathod-647627222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Raj Parmar",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/raj-parmar.jpg",
+        portfolio: "https://www.linkedin.com/in/rcparmar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Nishit Patel",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/nishit.jpg",
+        portfolio: "https://www.linkedin.com/in/nishit-patel-43835819a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Smit Sachani",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/smit sachnai.jpg",
+        portfolio: "https://www.linkedin.com/in/smit-sachani-2388b321b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
         name: "Dushyant Singh Hada",
         post: "Student Coordinator",
         photo: "/organizing-committee/dushyant-singh-hada.jpg",
@@ -120,6 +186,12 @@ const committee = [
         post: "Student Coordinator",
         photo: "/organizing-committee/shiv-pratap.jpg",
         portfolio: "https://www.linkedin.com/in/shiv-pratap-gupta-u24ch005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        name: "Zohair Nalawala",
+        post: "Student Coordinator",
+        photo: "/organizing-committee/zohair.jpg",
+        portfolio: "https://www.linkedin.com/in/zoher-nalawala-ab09932a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
     ],
   },
