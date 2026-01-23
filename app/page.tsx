@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <main className="min-h-screen">
         <Hero />
+        <GuestSpeakers />
         <IndustryAcademia/>
         <AboutConference />
-        <GuestSpeakers />
         <AboutSVNIT />
         <AboutChED />
     </main>
