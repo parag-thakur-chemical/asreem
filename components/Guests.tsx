@@ -1,176 +1,182 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Linkedin, Twitter, MapPin } from "lucide-react";
 
-interface Speaker {
-  id: number;
-  name: string;
-  position: string;
-  college: string;
-  image: string;
-}
-
-const speakers: Speaker[] = [
+// --- 1. Data Object ---
+const speakers = [
   {
-    id: 1,
-    name: "",
-    position: "",
-    college: "",
-    image:
-      "/comming_soon.jpg",
+    id: 2,
+    name: "Shri Harsh Sanghavi",
+    position:
+      "Minister of State (Home, Sports, Youth, Cultural and Disaster Management), Government of Gujarat",
+    college: "Government of Gujarat",
+    image: "/keynote-speakers/harsh-sanghawi.jpg",
+    role: "Chief Guest",
+    description:
+      "Champions statewide youth, sports, and civic engagement programs while steering flagship entrepreneurship and safety initiatives across Gujarat.",
   },
-  // {
-  //   id: 2,
-  //   name: "",
-  //   position: "",
-  //   college: "",
-  //   image:
-  //     "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png"
-  // },
-  // {
-  //   id: 3,
-  //   name: "",
-  //   position: "",
-  //   college: "",
-  //   image:
-  //     "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png",
-  // },
-  // {
-  //   id: 4,
-  //   name: "",
-  //   position: "",
-  //   college: "",
-  //   image:
-  //     "https://storytrails.in/wp-content/uploads/2022/04/comingsoon-1024x992.png",
-  // },
+  {
+    id: 6,
+    name: "Dr. Shishir Sinha",
+    position: "Director-General, CIPET, Govt of India",
+    college: "CIPET, Government of India",
+    image: "/keynote-speakers/shishirsinha.jpg",
+    role: "Guest of Honour",
+    description:
+      "Seasoned chemical engineer driving national capacity for advanced polymer, materials, and skill development ecosystems across CIPET centres.",
+  },
+  {
+    id: 7,
+    name: "Prof. Yannis Ieropoulos",
+    position:
+      "Professor & Head of Department - Civil, Maritime & Environmental Engineering, University of Southampton, UK",
+    college: "University of Southampton",
+    image: "/keynote-speakers/yannis.jpg",
+    role: "Guest of Honour",
+    description:
+      "Globally recognized for pioneering microbial fuel cells that turn waste streams into clean electricity and circular sanitation solutions.",
+  },
 ];
 
-export function KeynoteSpeakers() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      nextSpeaker();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [currentIndex]);
-
-  const nextSpeaker = () => {
-    setDirection(1);
-    setCurrentIndex((prev) => (prev + 1) % speakers.length);
-  };
-
-  const prevSpeaker = () => {
-    setDirection(-1);
-    setCurrentIndex((prev) => (prev - 1 + speakers.length) % speakers.length);
-  };
-
-  const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 100 : -100,
-      opacity: 0,
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 100 : -100,
-      opacity: 0,
-    }),
-  };
-
+// --- 2. Speaker Card Component (with Framer Motion) ---
+const SpeakerCard = ({ item }: { item: typeof speakers[0] }) => {
   return (
-    <section className="py-10 bg-green-300 text-offWhite">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            Guest Of Honour
-          </h2>
-          <div className="w-16 h-1 bg-accent-earthYellow mx-auto"></div>
-        </div>
+    <motion.div
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="h-full p-3 max-w-md sm:max-w-xl mx-auto"
+    >
+      <Card className="overflow-hidden border-none shadow-lg h-full bg-white dark:bg-zinc-900 group relative rounded-2xl">
+        <CardContent className="p-0 h-full">
+          <div className="flex h-full flex-col sm:flex-row sm:min-h-[360px]">
+            {/* Image Container */}
+            <div className="relative w-full sm:w-1/2 h-80 sm:h-auto sm:min-h-[360px] overflow-hidden">
+              {/* Gradient Overlay (visible on hover) */}
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center gap-4">
+                  <motion.button 
+                      initial={{ scale: 0 }} 
+                      whileHover={{ scale: 1.1 }} 
+                      className="bg-white p-2 rounded-full text-blue-600 hover:bg-blue-50 transition-colors"
+                  >
+                      <Linkedin size={20} />
+                  </motion.button>
+                  <motion.button 
+                      initial={{ scale: 0 }} 
+                      whileHover={{ scale: 1.1 }} 
+                      className="bg-white p-2 rounded-full text-sky-500 hover:bg-sky-50 transition-colors"
+                  >
+                      <Twitter size={20} />
+                  </motion.button>
+              </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="relative h-[500px] md:h-[550px] overflow-hidden">
-            <AnimatePresence initial={false} custom={direction}>
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.4 },
-                }}
-                className="absolute inset-0 flex flex-col items-center justify-center px-4"
-              >
-                <div className="w-4/5 max-w-xs aspect-[3/4] overflow-hidden mb-4 shadow-2xl rounded-lg border-2 border-white/20">
-                  <img
-                    src={speakers[currentIndex].image}
-                    alt={speakers[currentIndex].name}
-                    className="w-full h-full object-cover  py-24"
-                  />
-                </div>
-                <div className="text-center px-2">
-                  <h3 className="text-xl md:text-2xl font-bold mb-1">
-                    {speakers[currentIndex].name}
-                  </h3>
-                  <p className="text-md text-accent-earthYellow font-medium">
-                    {speakers[currentIndex].position}
-                  </p>
-                  <p className="text-sm  mt-1">
-                    {speakers[currentIndex].college}
-                  </p>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          <div className="flex justify-center items-center gap-4 mt-3">
-            <button
-              onClick={prevSpeaker}
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-              aria-label="Previous speaker"
-            >
-              <ArrowLeft className="w-6 h-6" />
-            </button>
-
-            <div className="flex gap-2">
-              {speakers.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    setDirection(index > currentIndex ? 1 : -1);
-                    setCurrentIndex(index);
-                  }}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentIndex
-                      ? "bg-accent-earthYellow scale-125"
-                      : "bg-white/30 hover:bg-white/50"
-                  }`}
-                  aria-label={`Go to speaker ${index + 1}`}
-                />
-              ))}
+              <Image
+                src={item.image} // Ensure you have a placeholder if image fails
+                alt={item.name}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
 
-            <button
-              onClick={nextSpeaker}
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-              aria-label="Next speaker"
-            >
-              <ArrowRight className="w-6 h-6" />
-            </button>
+            {/* Text Content */}
+            <div className="flex w-full sm:w-1/2 flex-col justify-center gap-5 p-6 sm:p-8 text-center sm:text-left sm:min-h-[360px]">
+              {item.role && (
+                <div className="flex flex-col gap-1 text-center sm:text-left">
+                  <span className="mx-auto sm:mx-0 inline-flex items-center justify-center rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+                    {item.role}
+                  </span>
+                  
+                </div>
+              )}
+              <h3 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+                {item.name}
+              </h3>
+              <div className="space-y-1">
+                <p className="text-sm font-medium text-primary uppercase tracking-[0.2em]">
+                  {item.position}
+                </p>
+                <div className="flex items-center justify-center sm:justify-start gap-1 text-muted-foreground text-sm">
+                  <MapPin size={14} />
+                  <span>{item.college}</span>
+                </div>
+              </div>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                {item.description}
+              </p>
+            </div>
           </div>
+        </CardContent>
+      </Card>
+    </motion.div>
+  );
+};
+
+// --- 3. Main Carousel Section ---
+const GuestSpeakers = () => {
+  return (
+    <section className="py-8 lg:py-12 w-full bg-zinc-50 dark:bg-black">
+      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
+        
+        {/* Header */}
+        <div className="mb-8 text-center max-w-2xl mx-auto space-y-4">
+            <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white"
+            >
+                Meet Our <span className="text-primary">Visionaries</span>
+            </motion.h2>
+            <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-muted-foreground text-lg"
+            >
+                Distinguished experts and industry leaders joining us at Asreem.
+            </motion.p>
         </div>
+
+        {/* Carousel */}
+        <div className="relative px-2 sm:px-6">
+            <Carousel
+            opts={{
+                align: "start",
+                loop: true,
+            }}
+          className="w-full max-w-lg sm:max-w-2xl mx-auto"
+            >
+            <CarouselContent className="-ml-2 md:-ml-4">
+                {speakers.map((speaker) => (
+                <CarouselItem
+                    key={speaker.id}
+              className="pl-2 md:pl-4 basis-full"
+                >
+                    <SpeakerCard item={speaker} />
+                </CarouselItem>
+                ))}
+            </CarouselContent>
+            
+            {/* Custom styled navigation buttons */}
+            <CarouselPrevious className="hidden md:flex -left-12 h-12 w-12 border-2 border-zinc-200 hover:border-primary hover:text-primary transition-all" />
+            <CarouselNext className="hidden md:flex -right-12 h-12 w-12 border-2 border-zinc-200 hover:border-primary hover:text-primary transition-all" />
+            </Carousel>
+        </div>
+
       </div>
     </section>
   );
-}
+};
+
+export default GuestSpeakers;

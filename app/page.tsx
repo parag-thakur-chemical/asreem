@@ -1,7 +1,7 @@
 "use client"
 
 import Hero from "@/components/Hero";
-import { KeynoteSpeakers } from "@/components/Guests";
+import  GuestSpeakers  from "@/components/Guests";
 import { AboutConference } from "@/components/AboutConference";
 import { AboutSVNIT } from "@/components/AboutSVNIT";
 import { AboutChED } from "@/components/AboutChED";
@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <IndustryAcademia/>
         <AboutConference />
-        {/* <KeynoteSpeakers /> */}
+        <GuestSpeakers />
         <AboutSVNIT />
         <AboutChED />
     </main>

@@ -188,6 +188,12 @@ const committee = [
         portfolio: "https://www.linkedin.com/in/shiv-pratap-gupta-u24ch005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
       {
+        name: "Moiz Ratlamwala",
+        post: "Student Coordinator (Sponsorships)",
+        photo: "/organizing-committee/moiz-ratlamwala.jpg",
+        portfolio: "https://www.linkedin.com/in/moiz-ratlamwala-983811319/"
+      },
+      {
         name: "Zohair Nalawala",
         post: "Student Coordinator (Website	&	Social	Media	Committee )",
         photo: "/organizing-committee/zohair.jpg",
