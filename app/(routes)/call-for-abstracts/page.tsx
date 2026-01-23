@@ -127,32 +127,32 @@ export default function CallForAbstracts() {
             Submit your abstract through our online submission system. For any
             queries, please contact the conference secretariat.
           </p>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <a
               href="https://forms.gle/B8QHHTja4SRSoTw38"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
+              className="w-full max-w-2xs px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
             >
               Submit Abstract
             </a>
             <a
               href="/abstract-template.doc"
               download
-              className="w-full px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
+              className="w-full max-w-2xs px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
             >
               Download Template
             </a>
             <Link
               href="/register"
-              className="w-full px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
+              className="w-full max-w-2xs px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
             >
               Register Now
             </Link>
           </div>
         </div>
         {/* Conference Tracks and Topics */}
-        <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
+        <div className="bg-white p-8 rounded-lg shadow-lg mb-12 mt-2">
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
             Conference Tracks & Topics
           </h2>
