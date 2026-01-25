@@ -34,7 +34,7 @@ export default function PublicationsAwards() {
             <ul className="list-disc list-inside space-y-2 text-lg">
               <li className="flex items-center gap-4"><img src="/awards4.png" alt="Best Oral Presentation Award" className="w-14 h-14 object-contain rounded-lg bg-offWhite/20" /><span className="font-bold text-accent-earthYellow">Best Oral Presentation Award</span></li>
               <li className="flex items-center gap-4"><img src="/awards5.png" alt="Best Poster Presentation Award" className="w-14 h-14 object-contain rounded-lg bg-offWhite/20" /><span className="font-bold text-accent-earthYellow">Best Poster Presentation Award</span></li>
-              <li className="flex items-center gap-4"><img src="/awards6.png" alt="Best Research Documentary Award" className="w-14 h-14 object-contain rounded-lg bg-offWhite/20" /><span className="font-bold text-accent-earthYellow">Best Research Documentary Award</span> <span className="text-sm">(maximum two minutes video)</span></li>
+              <li className="flex items-center gap-4"><img src="/awards6.png" alt="Best Research Documentary Award" className="w-14 h-14 object-contain rounded-lg bg-offWhite/20" /><span className="font-bold text-accent-earthYellow">Best Research Documentary Award</span> <span className="text-sm">(maximum three minutes video)</span></li>
               <li className="flex items-center gap-4"><img src="/awards7.png" alt="Young Achiever Award" className="w-14 h-14 object-contain rounded-lg bg-offWhite/20" /><span className="font-bold text-accent-earthYellow">Young Achiever Award</span> <span className="text-sm">(age ≤ 35 years)</span></li>
             </ul>
             <div className="mt-6 space-y-4">
