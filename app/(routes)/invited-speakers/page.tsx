@@ -23,6 +23,12 @@ const speakers = [
     portfolio: "https://www.researchgate.net/profile/Athar-Hussain-3"
   },
   {
+    name: "Dr. Mohammad A. Bathia",
+    post: "Professor, Al-Hussein Bin Talal University, Jordan",
+    photo: "/keynote-speakers/athar-hussain.jpg",
+    portfolio: "https://www.researchgate.net/profile/Athar-Hussain-3"
+  },
+  {
     name: "Dr. S Senthilmurugan",
     post: "Professor, Indian Institute of Technology Guwahati",
     photo: "/keynote-speakers/senthlimurugan.jpg",

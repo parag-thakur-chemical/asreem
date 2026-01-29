@@ -19,7 +19,7 @@ const speakers = [
     id: 2,
     name: "Shri Harsh Sanghavi",
     position:
-      "Minister of State (Home, Sports, Youth, Cultural and Disaster Management), Government of Gujarat",
+      "Deputy Chief Minister, Government of Gujarat",
     college: "Government of Gujarat",
     image: "/keynote-speakers/harsh-sanghawi.jpg",
     role: "Chief Guest",
