@@ -28,10 +28,11 @@ export default function RegisterPage() {
   ];
 
   const importantDates = [
-    { event: "Last Date of Abstract Submission", date: "31 Jan. 2026" },
-    { event: "Last Date of Abstract Acceptance", date: "15 Feb. 2026" },
-    { event: "Last Date of Fees Payment", date: "28 Feb. 2026" },
-    { event: "Conference Dates", date: "15-17 May 2026" },
+    { event: "Last Date of Abstract Submission", date: "15th Feb. 2026" },
+    { event: "Last Date of Abstract Acceptance", date: "20th Feb. 2026" },
+    { event: "Last Date of Registration", date: "28th Feb. 2026" },
+    { event: "Last Date of Fees Payment", date: "28th Feb. 2026" },
+    { event: "Conference Dates", date: "15-17 May. 2026" },
   ];
 
   return (

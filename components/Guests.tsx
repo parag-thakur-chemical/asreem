@@ -28,6 +28,18 @@ const speakers = [
     portfolio: "https://x.com/sanghaviharsh",
   },
   {
+    id: 3,
+    name: "Shri Arjun Modhwadia",
+    position:
+      "Cabinet Minister for Forest & Environment, Science & Technology, and Climate Change, Government of Gujarat",
+    college: "Government of Gujarat",
+    image: "/keynote-speakers/arjun-modhwadia.jpg",
+    role: "Cabinet Minister",
+    description:
+      "Senior political leader and Cabinet Minister driving policy initiatives in environment, climate change, and science & technology in Gujarat.",
+    portfolio: "https://en.wikipedia.org/wiki/Arjun_Modhwadia",
+  },
+  {
     id: 6,
     name: "Dr. Shishir Sinha",
     position: "Director-General, CIPET, Govt of India",
@@ -110,37 +122,37 @@ const SpeakerCard = ({ item, showSwipeHint }: { item: typeof speakers[0]; showSw
             {/* Image Container */}
             <div className="relative w-full sm:w-1/2 h-72 sm:h-auto sm:min-h-[320px] overflow-hidden">
               {/* Gradient Overlay (visible on hover) */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center px-4">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="w-full max-w-xs rounded-2xl border border-white/40 bg-white/90 p-4 text-center shadow-2xl backdrop-blur"
-                  >
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Profile</p>
-                    <p className="mt-2 text-base font-semibold text-zinc-900 line-clamp-2">
-                      {item.name}
-                    </p>
-                    <p className="mt-1 text-xs text-zinc-600 line-clamp-2">
-                      {item.position}
-                    </p>
-                    {item.portfolio ? (
-                      <motion.a
-                        href={item.portfolio}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.03 }}
-                        whileTap={{ scale: 0.97 }}
-                        className="mt-4 inline-flex items-center justify-center gap-1 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg"
-                      >
-                        <span>Know more</span>
-                        <span aria-hidden="true">→</span>
-                      </motion.a>
-                    ) : (
-                      <span className="mt-4 inline-flex items-center justify-center rounded-full bg-zinc-200 px-5 py-2 text-xs font-semibold text-zinc-600">
-                        Portfolio coming soon
-                      </span>
-                    )}
-                  </motion.div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center px-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="w-full max-w-xs rounded-2xl border border-white/40 bg-white/90 p-4 text-center shadow-2xl backdrop-blur"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Profile</p>
+                  <p className="mt-2 text-base font-semibold text-zinc-900 line-clamp-2">
+                    {item.name}
+                  </p>
+                  <p className="mt-1 text-xs text-zinc-600 line-clamp-2">
+                    {item.position}
+                  </p>
+                  {item.portfolio ? (
+                    <motion.a
+                      href={item.portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="mt-4 inline-flex items-center justify-center gap-1 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-lg"
+                    >
+                      <span>Know more</span>
+                      <span aria-hidden="true">→</span>
+                    </motion.a>
+                  ) : (
+                    <span className="mt-4 inline-flex items-center justify-center rounded-full bg-zinc-200 px-5 py-2 text-xs font-semibold text-zinc-600">
+                      Portfolio coming soon
+                    </span>
+                  )}
+                </motion.div>
               </div>
 
               <Image
