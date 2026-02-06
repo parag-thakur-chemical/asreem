@@ -98,6 +98,12 @@ const committee = [
         photo: "/keynote-speakers/sushilkumar.jpg",
         portfolio: "https://mnnit.ac.in/profile/sushilk"
       },
+      {
+        name: "Dr.  Parag Sadgir",
+        post: "Dean, Engineering and Technology, COEP, Pune",
+        photo: "/keynote-speakers/parag-sadgir.jpg",
+        portfolio: "https://www.paragsadgir.com/"
+      },
     ],
   },
   {
