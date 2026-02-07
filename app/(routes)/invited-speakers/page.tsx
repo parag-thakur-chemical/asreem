@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LuExternalLink } from "react-icons/lu";
 
 const speakers = [
 
@@ -168,6 +169,9 @@ export default function KeynoteSpeakers() {
 							<div className="text-sm text-gray-700 text-center mt-2 
 							                group-hover:text-green-800 transition-colors">
 								{speaker.post}
+							</div>
+							<div className="block md:hidden mt-2">
+								<LuExternalLink size={16} className="text-gray-500 mx-auto" />
 							</div>
 						</Link>
 					))}

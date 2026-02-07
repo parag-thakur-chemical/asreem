@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LuExternalLink } from "react-icons/lu";
 
 const committee = [
   {
@@ -103,6 +104,12 @@ const committee = [
         post: "Dean, Engineering and Technology, COEP, Pune",
         photo: "/keynote-speakers/parag-sadgir.jpg",
         portfolio: "https://www.paragsadgir.com/"
+      },
+      {
+        name: "Dr. S. Srinath",
+        post: "Professor, NIT, Warangal",
+        photo: "/keynote-speakers/s-srinath.jpg",
+        portfolio: "https://erp.nitw.ac.in/ext/profile/ch-srinath"
       },
     ],
   },
@@ -251,6 +258,9 @@ export default function OrganizingCommittee() {
                                 group-hover:text-emerald-800 transition-colors">
                   {member.post}
                 </div>
+                <div className="block md:hidden mt-2">
+                  <LuExternalLink size={16} className="text-gray-500 mx-auto" />
+                </div>
               </Link>
             ))}
           </div>
@@ -298,6 +308,9 @@ export default function OrganizingCommittee() {
                     <div className="text-sm text-gray-700 text-center mt-2 
                                     group-hover:text-emerald-800 transition-colors">
                       {member.post}
+                    </div>
+                    <div className="block md:hidden mt-2">
+                      <LuExternalLink size={16} className="text-gray-500 mx-auto" />
                     </div>
                   </Link>
                 ))}
