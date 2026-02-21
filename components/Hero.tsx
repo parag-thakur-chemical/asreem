@@ -5,7 +5,7 @@ import Link from "next/link";
 import ConferenceMarquee from "@/components/conferenceMarquee";
 
 export default function Hero() {
-  const googleCalendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=ASREEM%202.0%20Conference&dates=20260515T000000Z/20260517T235900Z&location=SVNIT%20Surat%2C%20Gujarat&details=ASREEM%202.0%20at%20SVNIT%20Surat%20(Gujarat)%20from%2015-17%20May%202026.%20More%20info:%20https://asreem.in";
+  const googleCalendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=ASREEM%202.0%20Conference&dates=20260515/20260518&location=SVNIT%20Surat%2C%20Gujarat&details=ASREEM%202.0%20at%20SVNIT%20Surat%20(Gujarat)%20from%2015-17%20May%202026.%20More%20info:%20https://asreem.in";
 
   return (
     <section
