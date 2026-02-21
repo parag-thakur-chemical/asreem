@@ -233,7 +233,7 @@ const GuestSpeakers = () => {
   }, []);
 
   return (
-    <section className="py-8 lg:py-12 w-full bg-zinc-50 dark:bg-black">
+    <section className="py-6 lg:py-10 w-full bg-zinc-50 dark:bg-black">
       <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
 
         {/* Header */}

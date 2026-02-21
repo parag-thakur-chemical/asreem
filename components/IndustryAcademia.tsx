@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function IndustryAcademia() {
 	return (
-		<section className="w-full py-12 bg-blue-50">
+		<section className="w-full py-10 bg-blue-50">
 			<div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 sm:px-8">
 				<div className="flex-shrink-0">
 					<Image

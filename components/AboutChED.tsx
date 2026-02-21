@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const AboutChED = () => {
   return (
-    <section className="py-12 md:py-16 bg-green-100 text-gray-800 md:px-20">
+    <section className="py-10 md:py-14 bg-green-100 text-gray-800 md:px-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary-forestGreen">
           About ChED, SVNIT

@@ -5,6 +5,8 @@ import Link from "next/link";
 import ConferenceMarquee from "@/components/conferenceMarquee";
 
 export default function Hero() {
+  const googleCalendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=ASREEM%202.0%20Conference&dates=20260515T000000Z/20260517T235900Z&location=SVNIT%20Surat%2C%20Gujarat&details=ASREEM%202.0%20at%20SVNIT%20Surat%20(Gujarat)%20from%2015-17%20May%202026.%20More%20info:%20https://asreem.in";
+
   return (
     <section
       className="relative bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden"
@@ -22,14 +24,14 @@ export default function Hero() {
         className="
           relative z-10
           flex flex-col justify-center items-center
-          min-h-[100dvh]
-          px-2 sm:px-4
-          text-center
-              pt-[65px]
+            min-h-[100dvh]
+            px-2 sm:px-4
+            text-center
+              pt-[52px]
 
         "
       >
-        <div className="w-full max-w-5xl space-y-[clamp(1rem,1.9vh,1.25rem)]">
+        <div className="w-full max-w-5xl space-y-[clamp(0.75rem,1.4vh,1rem)]">
 
 
           {/* Association Section */}
@@ -96,8 +98,6 @@ export default function Hero() {
 
 
           </div>
-
-
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-[Montserrat]">
             <span className="block text-xl md:text-2xl font-medium mb-2 text-[#0c284e]">
@@ -108,6 +108,35 @@ export default function Hero() {
               Management
             </span>
           </h1>
+
+          {/* Date Capsule */}
+          <div className="flex justify-center">
+            <Link
+              href="/dates-fees"
+              className="group inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/15 px-3 py-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-transform duration-300 hover:scale-[1.02] hover:border-white/60 hover:bg-white/25"
+            >
+              <div className="flex items-center justify-center h-10 w-10 rounded-full bg-[#035e32] text-white text-[11px] font-semibold tracking-tight shadow-inner shadow-black/10">
+                <span className="leading-none text-center whitespace-nowrap">15-17<br />May</span>
+              </div>
+
+              <div className="flex flex-col text-left">
+                <span className="text-[10px] uppercase tracking-[0.18em] text-[#0c284e]">Conference Dates</span>
+                <span className="text-[13px] md:text-sm font-semibold text-[#023450]">SVNIT Surat, Gujarat</span>
+              </div>
+
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.open(googleCalendarUrl, "_blank", "noopener,noreferrer");
+                }}
+                className="cursor-pointer text-[10px] font-semibold text-[#035e32] px-2 py-1 rounded-full border border-[#035e32]/30 bg-[#035e32]/10 uppercase tracking-[0.12em] hover:bg-[#035e32]/20"
+                aria-label="Save to Google Calendar"
+              >
+                Save
+              </button>
+            </Link>
+          </div>
 
           {/* Subheading */}
           <div>
