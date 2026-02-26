@@ -30,6 +30,12 @@ export default function PublicationsAwards() {
                     Special Issue on "Frontiers in Energy and Environmental Sustainability towards wastewater" in the journal <strong>Water Environment Research</strong>. This Journal is Q2 Journal indexed in SCIE and Scopus, with an impact Factor of 1.9.
                   </div>
                 </div>
+                <div className="flex items-start gap-4 bg-offWhite/10 rounded-lg p-3">
+                  <img src="/institution_of_engineers.jpeg" alt="Special Issue" className="w-28 h-28 object-contain rounded-lg bg-offWhite/20" />
+                  <div className="text-base font-normal text-gray-800 text-justify">
+                    Special Issue of selected papers from ASREEM 2026  in the journal: <strong> Journal of Institution of Engineers (India)-Series E</strong>. This Journal is Q3 Journal indexed in Scopus, with an impact Score of 2.06.
+                  </div>
+                </div>
                 <span className="text-base text-gray-700 mt-2">More journals will be updated soon.</span>
               </li>
             </ul>
