@@ -138,6 +138,10 @@ export default function RegisterPage() {
                     <span className="font-medium">IFSC Code:</span>{" "}
                     SBIN0003320
                   </p>
+                  <p className="mb-2">
+                    <span className="font-medium">SWIFT Code:</span>{" "}
+                    SBININBB260
+                  </p>
                   <p>
                     <span className="font-medium">Account Name:</span>{" "}
                     Director, SVNIT
