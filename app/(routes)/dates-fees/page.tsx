@@ -144,6 +144,7 @@ export default function DatesAndFees() {
                   <div className="space-y-2">
                     <p className="text-gray-700 break-words"><span className="font-medium">Account Number:</span> 37030749143</p>
                     <p className="text-gray-700 break-words"><span className="font-medium">IFSC Code:</span> SBIN0003320</p>
+                    <p className="text-gray-700 break-words"><span className="font-medium">SWIFT Code:</span> SBININBB260</p>
                     <p className="text-gray-700 break-words"><span className="font-medium">Account Name:</span> Director, SVNIT</p>
                     <p className="text-gray-700 break-words"><span className="font-medium">Bank Name:</span> State Bank of India</p>
                     <p className="text-gray-700 break-words"><span className="font-medium">Branch:</span> SVNIT Campus, Surat</p>
