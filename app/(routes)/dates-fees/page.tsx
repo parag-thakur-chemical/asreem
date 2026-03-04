@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function DatesAndFees() {
   const importantDates = [
-    { title: "Last Date of Abstract Submission", date: "15th Feb. 2026" },
-    { title: "Last Date of Abstract Acceptance", date: "20th Feb. 2026" },
-    { title: "Last Date of Registration", date: "28th Feb. 2026" },
-    { title: "Last Date of Fees Payment", date: "28th Feb. 2026" },
+    { title: "Last Date of Abstract Submission", date: "30th Mar. 2026" },
+    { title: "Last Date of Abstract Acceptance", date: "10th Apr. 2026" },
+    { title: "Last Date of Registration", date: "15th Apr. 2026" },
+    { title: "Last Date of Fees Payment", date: "15th Apr. 2026" },
     { title: "Conference Dates", date: "15-17 May. 2026" },
   ];
 
