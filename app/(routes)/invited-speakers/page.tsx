@@ -120,7 +120,13 @@ const speakers = [
     name: "Dr. Nguyen D. Duc ",
     post: "Associate Professor ,Department of Civil and Energy Systems Engineering,Kyonggi University,Korea.",
     photo: "/keynote-speakers/nguyen.jpg",
-    portfolio: "https://www.kyonggi.ac.kr "
+    portfolio: "https://www.kyonggi.ac.kr"
+  },
+  {
+    name: "Dr. S.A.V.R. Sastry ",
+    post: "Professor, HBTU, chemical engineering department",
+    photo: "/keynote-speakers/savr-sastry.jpeg",
+    portfolio: "https://scholar.google.com/citations?user=GLZmS8gAAAAJ&hl=en"
   },
 
 ];
