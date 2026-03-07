@@ -123,7 +123,7 @@ const speakers = [
     portfolio: "https://www.kyonggi.ac.kr"
   },
   {
-    name: "Dr. S.A.V.R. Sastry ",
+    name: "Dr. S.V.A.R. Sastry ",
     post: "Professor, HBTU, chemical engineering department",
     photo: "/keynote-speakers/savr-sastry.jpeg",
     portfolio: "https://scholar.google.com/citations?user=GLZmS8gAAAAJ&hl=en"
