@@ -68,6 +68,12 @@ export default function PublicationsAwards() {
                     Special Issue of selected papers from ASREEM 2026  in the journal: <strong> Journal of Institution of Engineers (India)-Series E</strong>. This Journal is Q3 Journal indexed in Scopus, with an impact Score of 2.06.
                   </div>
                 </div>
+                <div className="flex items-start gap-4 bg-offWhite/10 rounded-lg p-3">
+                  <img src="/AECM-cover.png" alt="Advances in Energy Conversion and Management" className="w-28 h-28 object-contain rounded-lg bg-offWhite/20" />
+                  <div className="text-base font-normal text-gray-800 text-justify">
+                    <p className="mt-2"><strong>Advances in Energy Conversion and Management</strong> aims to serve as a hub for disseminating original research and critical reviews that advance science, technology, and application of energy conversion, utilization, and management systems.</p>
+                  </div>
+                </div>
                 <span className="text-base text-gray-700 mt-2">More journals will be updated soon.</span>
               </li>
             </ul>
