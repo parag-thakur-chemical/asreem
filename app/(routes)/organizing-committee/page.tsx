@@ -141,6 +141,12 @@ const committee = [
         portfolio: "https://www.linkedin.com/in/bhargav-shukla-7442a2150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
       {
+        name: "Aaliya Javed",
+        post: "Student Coordinator (Student	Coordination Committee )",
+        photo: "/organizing-committee/aaliya.jpg",
+        portfolio: "https://www.linkedin.com/in/aaliya-javed-42a338204/"
+      },
+      {
         name: "Priti Bansod",
         post: "Student Coordinator (Venue	&	Logistics	Committee)",
         photo: "/organizing-committee/priti.jpg",
