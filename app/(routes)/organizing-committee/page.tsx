@@ -128,12 +128,6 @@ const committee = [
         photo: "/organizing-committee/pavitra.jpg",
         portfolio: "https://www.linkedin.com/in/pavitra-sarang-616a901b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
-      // {
-      //   name: "Aaliya Javed",
-      //   post: "Student Coordinator (Student	Coordination Committee)",
-      //   photo: "/organizing-committee/aaliya-javed.jpg",
-      //   portfolio: "https://www.linkedin.com/in/aaliya-javed-42a338204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      // },
       {
         name: "Bhargav Shukla",
         post: "Student Coordinator (Student	Coordination Committee )",
