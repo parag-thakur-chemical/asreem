@@ -96,107 +96,100 @@ export default function PublicationsAwards() {
             <div className="mt-6 space-y-4">
               <div className="space-y-10">
 
-  {/* ================= ACS Section ================= */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-10 shadow-sm">
+                {/* ================= ACS Section ================= */}
+                <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-10 shadow-sm">
 
-    {/* Header */}
-    <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6 md:mb-8">
-      
-      <div className="w-28 h-14 sm:w-36 sm:h-16 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-200 mx-auto sm:mx-0">
-        <img
-          src="/acs/acs_logo.png"
-          alt="ACS Logo"
-          className="max-w-full h-auto object-contain"
-        />
-      </div>
+                  {/* Header */}
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6 md:mb-8">
 
-      <div className="text-center sm:text-left">
-        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
-          American Chemical Society (ACS)
-        </h3>
-        <p className="text-sm text-gray-600 mt-1">
-          Best Paper Awards Sponsored by Leading ACS Journals
-        </p>
-      </div>
-    </div>
+                    <div className="w-28 h-14 sm:w-36 sm:h-16 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-200 mx-auto sm:mx-0">
+                      <img
+                        src="/acs/acs_logo.png"
+                        alt="ACS Logo"
+                        className="max-w-full h-auto object-contain"
+                      />
+                    </div>
 
-    {/* Journals Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div className="text-center sm:text-left">
+                      <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+                        American Chemical Society (ACS)
+                      </h3>
+                      <p className="text-sm text-gray-600 mt-1">
+                        Best Paper Awards Sponsored by Leading ACS Journals
+                      </p>
+                    </div>
+                  </div>
 
-      {journals.map((journal, index) => (
-        <div
-          key={index}
-          className="flex gap-4 p-4 md:p-5 rounded-xl border border-gray-200 hover:shadow-md transition"
-        >
-          <div className="min-w-[48px] h-12 flex items-center justify-center bg-gray-50 rounded-md border border-gray-200 p-1">
-            <img
-              src={journal.img}
-              alt={journal.title}
-              className="max-h-full object-contain"
-            />
-          </div>
+                  {/* Journals Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
-          <div>
-            <h4 className="font-semibold text-gray-900 text-sm md:text-base leading-snug">
-              {journal.title}
-            </h4>
-            <p className="text-xs md:text-sm text-gray-600 mt-1 leading-snug">
-              {journal.details}
-            </p>
-          </div>
-        </div>
-      ))}
+                    {journals.map((journal, index) => (
+                      <div
+                        key={index}
+                        className="flex gap-4 p-4 md:p-5 rounded-xl border border-gray-200 hover:shadow-md transition"
+                      >
+                        <div className="min-w-[48px] h-12 flex items-center justify-center bg-gray-50 rounded-md border border-gray-200 p-1">
+                          <img
+                            src={journal.img}
+                            alt={journal.title}
+                            className="max-h-full object-contain"
+                          />
+                        </div>
 
-    </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 text-sm md:text-base leading-snug">
+                            {journal.title}
+                          </h4>
+                          <p className="text-xs md:text-sm text-gray-600 mt-1 leading-snug">
+                            {journal.details}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
 
-    {/* Award Benefits */}
-    <div className="mt-8 md:mt-10 pt-6 border-t border-gray-200">
-      <h4 className="text-base md:text-lg font-semibold text-gray-900 mb-4">
-        Award Benefits
-      </h4>
+                  </div>
 
-      <ul className="space-y-2 text-sm text-gray-700">
-        <li className="flex items-start gap-3">
-          <span className="w-2 h-2 bg-green-600 rounded-full mt-1"></span>
-          Official Journal Certificate
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="w-2 h-2 bg-green-600 rounded-full mt-1"></span>
-          One-Year ACS Membership (Fully Sponsored)
-        </li>
-      </ul>
-    </div>
-  </div>
+                  {/* Award Benefits */}
+                  <div className="mt-8 md:mt-10 pt-6 border-t border-gray-200">
+                    <h4 className="text-base md:text-lg font-semibold text-gray-900 mb-4">
+                      Award Benefits
+                    </h4>
+
+                    <ul className="space-y-2 text-sm text-gray-700">
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-green-600 rounded-full mt-1"></span>
+                        Official Journal Certificate
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="w-2 h-2 bg-green-600 rounded-full mt-1"></span>
+                        One-Year ACS Membership (Fully Sponsored)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
 
-  {/* ================= Eco-Needs Section ================= */}
-  <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-10 shadow-sm">
+                {/* ================= Eco-Needs Section ================= */}
+                <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-10 shadow-sm">
 
-    <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 md:mb-6">
-      Eco-Needs Foundation
-    </h3>
+                  <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 md:mb-6">
+                    Eco-Needs Foundation
+                  </h3>
 
-    <ul className="space-y-3 text-sm md:text-base text-gray-700">
-      <li className="flex items-start gap-3">
-        <span className="w-2 h-2 bg-amber-500 rounded-full mt-1"></span>
-        Ten Best Oral Presentation Awards
-      </li>
-      <li className="flex items-start gap-3">
-        <span className="w-2 h-2 bg-amber-500 rounded-full mt-1"></span>
-        Ten Best Poster Presentation Awards
-      </li>
-    </ul>
+                  <ul className="space-y-3 text-sm md:text-base text-gray-700">
+                    <li className="flex items-start gap-3">
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mt-1"></span>
+                      Ten Best Oral Presentation Awards
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mt-1"></span>
+                      Ten Best Poster Presentation Awards
+                    </li>
+                  </ul>
 
-  </div>
-
-</div>
-              <div>
-                <h3 className="text-lg font-bold text-green-400 mb-1">Eco-Needs Foundation</h3>
-                <ul className="list-disc list-inside ml-5 text-base space-y-1">
-                  <li>Ten Best Oral Presentation Awards</li>
-                  <li>Ten Best Poster Presentation Awards</li>
-                </ul>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
