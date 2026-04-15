@@ -197,7 +197,7 @@ const committee = [
       {
         name: "Yash Dumbhare",
         post: "Student Coordinator (Website	&	Social	Media	Committee )",
-        photo: "/organizing-committee/yash-dumbhare.jpg",
+        photo: "/organizing-committee/yash-dumbhare.webp",
         portfolio: "https://www.linkedin.com/in/yash-dumbhare-95225b2b4/"
       },
       {
