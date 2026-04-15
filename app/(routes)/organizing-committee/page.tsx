@@ -114,7 +114,7 @@ const committee = [
       {
         name: "Prof. G L Devnani",
         post: "HoD, Chemical Engg, HBTU, Kanpur",
-        photo: "/keynote-speakers/gl-devnani.jpg",
+        photo: "/keynote-speakers/gl-devnani.jpeg",
         portfolio: "https://scholar.google.com/citations?user=yqx4DYgAAAAJ"
       },
     ],
