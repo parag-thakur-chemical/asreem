@@ -74,12 +74,7 @@ export default function PublicationsAwards() {
                     <p className="mt-2"><strong>Advances in Energy Conversion and Management</strong> aims to serve as a hub for disseminating original research and critical reviews that advance science, technology, and application of energy conversion, utilization, and management systems.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 bg-offWhite/10 rounded-lg p-3">
-                  <img src="/discover_nano.webp" alt="Discover Nano - Special Issue" className="w-28 h-28 object-contain rounded-lg bg-offWhite/20" />
-                  <div className="text-base font-normal text-gray-800 text-justify">
-                    <p className="mt-2"><strong>Discover Nano</strong> — Special Issue. Q2 Journal (Scopus & SCIE) • Impact Factor 4.06. Discover Nano is an open access journal publishing research from across all areas of nanoscience and nanotechnology. Indexed in DOAJ, SCIE, PubMedCentral and Scopus with a CiteScore 2024 of 2.9</p>
-                  </div>
-                </div>
+                
                 <span className="text-base text-gray-700 mt-2">More journals will be updated soon.</span>
               </li>
             </ul>
