@@ -81,23 +81,10 @@ const speakers = [
     portfolio: "https://web.iitd.ac.in/~anilverma/"
   },
   {
-    name: "Dr. Treavor Boyer",
-    post: "Professor, School of Sustainable Engineering and the Built Environment (SSEBE) at ASU",
-    photo: "/keynote-speakers/treavor-boyer.jpg",
-    portfolio: "https://newsroom.asu.edu/experts/treavor-boyer"
-  },
-  {
     name: "Dr. Dong Hoon Kim",
     post: "Professor , Inha University, South Korea",
     photo: "/keynote-speakers/dong-hoon.jpg",
     portfolio: "https://eng.inha.ac.kr/eng/3590/subview.do?&enc=Zm5jdDF8QEB8JTJGZGVwYXJ0bWVudEludHJvJTJGZW5nJTJGNjMlMkYxNzMlMkZjb2xsZWdlUHJvZlZpZXcuZG8lM0ZzaXRlSWQlM0RlbmclMjZpbmhhaWQlM0Q5QTREMjIzQjU5OUFGNzlCMzMxNzBFREZDMDc4MTg5OEQxRTlENkNFMDBENUFCMDg1MjlCMzhGRTRDQjA4NEEyQkVEODUxMjVFOTMxNDY0QUY1QUZFQUZGRUFDMzJGMDQ0MEY3MkE0MEM3Q0I1OEIxNDVBQjgyNDJBQzUwQzE1MyUyNg==l"
-  },
-
-  {
-    name: "Dr. Salim Hiziroglu",
-    post: "Professor, Emeritus Oklahoma State University, Natural Resource Ecology & Management, Stillwater, Oklahoma, United States",
-    photo: "/keynote-speakers/salim-hiziroglu.jpg",
-    portfolio: "https://experts.okstate.edu/salim.hiziroglu"
   },
   {
     name: "Dr. Mohammad Ali Abdelkareem",
@@ -122,12 +109,6 @@ const speakers = [
     post: "Professor (Retired), Department of Civil Engineering, IIT Roorkee, UK, India, and Distinguished Professor, Department of Civil Engineering, SET, Sharda University, Greater Noida, India.",
     photo: "/keynote-speakers/pradeep.jpg",
     portfolio: ""
-  },
-  {
-    name: "Dr. Dhanesh Chandra",
-    post: "Foundation Professor, Emeritus",
-    photo: "/keynote-speakers/dhaneshchandra.jpg",
-    portfolio: "https://www.unr.edu/cme/people/dhanesh-chandra"
   },
   {
     name: "Dr. Upendra (Muni) Raval",
