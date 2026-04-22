@@ -41,7 +41,7 @@ const speakers = [
     photo: "/keynote-speakers/hiralal-pramanik.jpg",
     portfolio: "https://iitg.ac.in/chemeng/faculty_profile.php?name=ss"
   },
-  
+
   {
     name: "Dr. Dhananjay Singh",
     post: "Director, Rajkiya engineering college, Ambedkar Nagar",
@@ -111,6 +111,12 @@ const speakers = [
     portfolio: "https://erp.nitw.ac.in/ext/profile/bt-sevdasuraj"
   },
   {
+    name: "Prof. G L Devnani",
+    post: "HoD, Chemical Engg, HBTU, Kanpur",
+    photo: "/keynote-speakers/gl-devanani.jpeg",
+    portfolio: "https://scholar.google.com/citations?user=yqx4DYgAAAAJ"
+  },
+  {
     name: "Dr. Priyanand Agale",
     post: "Founder President & Pioneer of Eco Revolution Movement, Water Hero of India",
     photo: "/keynote-speakers/priyanand-agale.jpg",
@@ -133,56 +139,56 @@ const speakers = [
 
 
 export default function KeynoteSpeakers() {
-	return (
-		<div className="mt-14 py-12 bg-white min-h-screen">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
-					Invited Speakers
-				</h1>
-				<div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-				<p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-2">
-					ASREEM 2026 features an exceptional lineup of invited speakers representing leading research institutions, academia, and industry.
-				</p>
-				<p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-10">
-					They will share their cutting-edge work, diverse perspectives, and valuable experiences to foster collaboration and spark meaningful discussions among participants.
-				</p>
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-					{speakers.map((speaker, idx) => (
-						<Link
-							key={idx}
-							href={speaker.portfolio}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="bg-gradient-to-br from-green-50 via-white to-amber-50 rounded-2xl 
+  return (
+    <div className="mt-14 py-12 bg-white min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
+          Invited Speakers
+        </h1>
+        <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-2">
+          ASREEM 2026 features an exceptional lineup of invited speakers representing leading research institutions, academia, and industry.
+        </p>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-10">
+          They will share their cutting-edge work, diverse perspectives, and valuable experiences to foster collaboration and spark meaningful discussions among participants.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {speakers.map((speaker, idx) => (
+            <Link
+              key={idx}
+              href={speaker.portfolio}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-br from-green-50 via-white to-amber-50 rounded-2xl 
 							           shadow-lg flex flex-col items-center p-6 border border-green-100 
 							           hover:scale-105 transition-transform duration-200 group cursor-pointer"
-						>
-							<div className="w-32 h-32 mb-4 relative rounded-full overflow-hidden 
+            >
+              <div className="w-32 h-32 mb-4 relative rounded-full overflow-hidden 
 							                border-4 border-green-600 bg-white shadow-md 
 							                group-hover:border-amber-500">
-								<Image
-									src={speaker.photo}
-									alt={speaker.name}
-									fill
-									style={{ objectFit: "cover" }}
-									sizes="128px"
-								/>
-							</div>
-							<div className="text-lg font-bold text-green-900 text-center 
+                <Image
+                  src={speaker.photo}
+                  alt={speaker.name}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  sizes="128px"
+                />
+              </div>
+              <div className="text-lg font-bold text-green-900 text-center 
 							                group-hover:text-amber-700 transition-colors">
-								{speaker.name}
-							</div>
-							<div className="text-sm text-gray-700 text-center mt-2 
+                {speaker.name}
+              </div>
+              <div className="text-sm text-gray-700 text-center mt-2 
 							                group-hover:text-green-800 transition-colors">
-								{speaker.post}
-							</div>
-							<div className="block md:hidden mt-2">
-								<LuExternalLink size={16} className="text-gray-500 mx-auto" />
-							</div>
-						</Link>
-					))}
-				</div>
-			</div>
-		</div>
-	);
+                {speaker.post}
+              </div>
+              <div className="block md:hidden mt-2">
+                <LuExternalLink size={16} className="text-gray-500 mx-auto" />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
