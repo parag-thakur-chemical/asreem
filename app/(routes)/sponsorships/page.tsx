@@ -82,18 +82,23 @@ export default function Sponsorships() {
     Our Proud Sponsors
   </p>
 
-  <div className="flex items-center justify-center gap-6 bg-white border-2 border-green-200 rounded-xl px-8 py-6 shadow-md hover:scale-105 transition-transform duration-200">
-    <img
-      src="/sponsors/bis-logo.png"
-      alt="Bureau of Indian Standards"
-      className="h-16 sm:h-20 object-contain"
-    />
-    <div className="text-left">
-      <p className="text-xl font-bold text-gray-900">Bureau of Indian Standards</p>
-      <p className="text-sm text-gray-600">
-        National Standards Body of India
-      </p>
-    </div>
+  <div className="flex flex-wrap items-center justify-center gap-6 bg-white border-2 border-green-200 rounded-xl px-6 py-6 shadow-md hover:scale-105 transition-transform duration-200">
+    {[
+      { src: '/sponsors/gcst.jpeg', alt: 'GUJCOST', name: 'GUJCOST' },
+      { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: 'ANRF' },
+      { src: '/sponsors/csir.jpeg', alt: 'CSIR', name: 'CSIR' },
+    ].map((sponsor) => (
+      <div key={sponsor.name} className="flex items-center gap-4 bg-white p-2 rounded-md">
+        <img
+          src={sponsor.src}
+          alt={sponsor.alt}
+          className="object-contain max-h-20 sm:max-h-28"
+        />
+        <div className="text-left">
+          <p className="text-lg font-semibold text-gray-900">{sponsor.name}</p>
+        </div>
+      </div>
+    ))}
   </div>
 </div>
 
