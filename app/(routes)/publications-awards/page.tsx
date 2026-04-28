@@ -81,6 +81,74 @@ export default function PublicationsAwards() {
 
           </div>
           <div className="bg-offWhite/5 rounded-xl p-6 shadow-lg">
+            <h2 className="text-2xl font-semibold text-[#00c950] ">Conference Proceedings Section</h2>
+            <p className="text-lg mt-2">
+              Conference Proceedings will be published by Taylor & Francis Publications. Please ensure that you follow the policy for proceedings publications.
+            </p>
+            <ol className="list-decimal list-inside space-y-3 text-lg mt-4">
+              <li>
+                <span className="font-semibold">Peer Review and Editorial Policy (ASREEM 2.0)</span>
+                <div className="text-base text-gray-800 mt-1">
+                  All submissions to ASREEM 2.0 will undergo a rigorous peer review and editorial process to ensure high scientific quality and adherence to ethical standards.
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold">Review Process</span>
+                <div className="text-base text-gray-800 mt-1">
+                  Each full paper will be subjected to a double-blind peer review process, where both reviewers and authors remain anonymous. Every manuscript will be evaluated by a minimum of two independent expert reviewers with relevant subject expertise.
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold">Reviewer Selection</span>
+                <div className="text-base text-gray-800 mt-1">
+                  Reviewers will be selected from the Scientific Committee and an extended pool of external experts from academia, research institutions, and industry based on their domain knowledge and publication record.
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold">Evaluation Criteria</span>
+                <ul className="list-disc list-inside text-base text-gray-800 mt-1 space-y-1">
+                  <li>Originality and novelty</li>
+                  <li>Technical and scientific quality</li>
+                  <li>Relevance to conference themes</li>
+                  <li>Clarity of presentation</li>
+                  <li>Practical and research significance</li>
+                </ul>
+              </li>
+              <li>
+                <span className="font-semibold">Editorial Decision</span>
+                <div className="text-base text-gray-800 mt-1">
+                  Based on reviewers' comments, manuscripts/abstracts may be:
+                </div>
+                <ul className="list-disc list-inside text-base text-gray-800 mt-1 space-y-1">
+                  <li>Accepted without revision</li>
+                  <li>Accepted with minor/major revisions</li>
+                  <li>Rejected</li>
+                </ul>
+                <div className="text-base text-gray-800 mt-1">
+                  The final decision regarding acceptance or rejection will rest with the Editorial Team.
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold">Plagiarism and Ethical Compliance</span>
+                <div className="text-base text-gray-800 mt-1">
+                  All submissions will be screened using plagiarism detection software. Extended abstracts/manuscripts with significant similarity or ethical concerns will be rejected. Authors must confirm that their work is original and not under consideration elsewhere.
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold">Conflict of Interest</span>
+                <div className="text-base text-gray-800 mt-1">
+                  Editors and reviewers will declare any conflict of interest. Submissions with potential conflicts will be reassigned to unbiased reviewers or editors.
+                </div>
+              </li>
+              <li>
+                <span className="font-semibold">Revisions and Final Acceptance</span>
+                <div className="text-base text-gray-800 mt-1">
+                  Authors must address all reviewer comments satisfactorily within the stipulated time. Final acceptance will be granted only after verification of revisions by the editorial team.
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div className="bg-offWhite/5 rounded-xl p-6 shadow-lg">
             <h2 className="text-2xl font-semibold text-[#00c950] mb-4">Awards</h2>
             <ul className="list-disc list-inside space-y-2 text-lg">
               <li className="flex items-center gap-4"><img src="/awards4.png" alt="Best Oral Presentation Award" className="w-14 h-14 object-contain rounded-lg bg-offWhite/20" /><span className="font-bold text-accent-earthYellow">Best Oral Presentation Award</span></li>
