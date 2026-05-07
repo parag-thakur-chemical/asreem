@@ -89,36 +89,41 @@ export default function Sponsorships() {
       { src: '/sponsors/gcst.jpeg', alt: 'GUJCOST', name: 'GUJCOST' },
       { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: '' },
       { src: '/sponsors/csir.jpeg', alt: 'CSIR', name: 'CSIR' },
-      { src: '/sponsors/gepil.jpg', alt: 'GEPIL', name: '' },
     ];
 
+    const isDiamondFn = (s: { src: string; alt: string; name: string }) => s.alt === 'Luthra' || s.name === 'Luthra';
+    const diamond = sponsors.find(isDiamondFn);
+    const others = sponsors.filter((s) => !isDiamondFn(s));
+
     return (
-      <div className="flex flex-wrap items-center justify-center gap-6 bg-white border-2 border-green-200 rounded-xl px-6 py-6 shadow-md transition-transform duration-200">
-        {sponsors.map((sponsor) => {
-          const isDiamond = sponsor.alt === 'Luthra' || sponsor.name === 'Luthra';
-          return (
-            <div
-              key={sponsor.alt}
-              className={`relative flex items-center gap-4 bg-white p-3 rounded-md ${isDiamond ? 'transform scale-105 md:scale-110 border-2 border-purple-300 shadow-xl bg-gradient-to-r from-purple-50 to-white' : ''}`}
-            >
-              {isDiamond && (
-                <div className="absolute -top-3 left-3 bg-gradient-to-r from-purple-500 to-purple-400 text-white text-xs font-bold px-2 py-0.5 rounded-md shadow-md">
-                  Diamond Sponsor
-                </div>
-              )}
-
+      <div className="w-full bg-white border-2 border-green-200 rounded-xl px-6 py-6 shadow-md transition-transform duration-200">
+        {/* Diamond sponsor in its own first row */}
+        {diamond && (
+          <div className="w-full flex items-center justify-center mb-6">
+            <div className="relative w-full max-w-3xl flex items-center justify-center bg-gradient-to-r from-purple-50 to-white p-6 rounded-lg border-2 border-purple-200 shadow-xl">
+              <div className="absolute -top-3 left-3 bg-gradient-to-r from-purple-500 to-purple-400 text-white text-xs font-bold px-2 py-0.5 rounded-md shadow-md">
+                Diamond Sponsor
+              </div>
               <img
-                src={sponsor.src}
-                alt={sponsor.alt}
-                className={`${isDiamond ? 'object-contain max-h-28 sm:max-h-36' : 'object-contain max-h-20 sm:max-h-28'}`}
+                src={diamond.src}
+                alt={diamond.alt}
+                className="object-contain max-h-36 sm:max-h-44 w-auto"
               />
+            </div>
+          </div>
+        )}
 
+        {/* Other sponsors below */}
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          {others.map((sponsor) => (
+            <div key={sponsor.alt} className="flex items-center gap-4 bg-white p-3 rounded-md">
+              <img src={sponsor.src} alt={sponsor.alt} className="object-contain max-h-20 sm:max-h-28" />
               <div className="text-left">
-                <p className={`text-lg font-semibold ${isDiamond ? 'text-gray-900' : 'text-gray-900'}`}>{sponsor.name}</p>
+                <p className="text-lg font-semibold text-gray-900">{sponsor.name}</p>
               </div>
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
     );
   })()}

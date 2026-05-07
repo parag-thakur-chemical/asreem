@@ -23,49 +23,64 @@ export default function Hero() {
       <div className="relative z-10 flex min-h-[100dvh] flex-col items-center justify-center px-3 sm:px-6 text-center pt-[52px]">
         <div className="w-full max-w-5xl space-y-[clamp(0.75rem,1.6vh,1.25rem)]">
           {/* Association Section */}
-          <div className="flex flex-row flex-wrap items-stretch justify-center gap-2 sm:gap-3 lg:gap-4">
-            {/* Organizer */}
-            <div className="flex flex-col items-center gap-2 bg-white/50 backdrop-blur-md px-2 sm:px-4 py-3 rounded-xl border border-white/30">
-              <span className="text-[clamp(0.6rem,1.6vw,0.85rem)] font-medium text-[#0c284e]">Organized by</span>
+          <div className="flex flex-row flex-nowrap w-full gap-[clamp(0.3rem,1vw,0.75rem)]">
+
+            {/* Organizer — 1 unit */}
+            <div className="flex min-w-0 flex-col items-center justify-between gap-1 bg-white/50 backdrop-blur-md px-[clamp(0.3rem,1vw,0.75rem)] py-[clamp(0.4rem,1vw,0.75rem)] rounded-xl border border-white/30"
+              style={{ flex: '0.5 1 0' }}
+            >
+              <span className="text-[clamp(0.4rem,1.2vw,0.8rem)] font-medium text-[#0c284e] whitespace-nowrap text-center">
+                Organized by
+              </span>
               <Image
                 src="/nit-surat-logo.png"
                 alt="SVNIT Logo"
                 width={120}
                 height={120}
-                className="h-auto w-[clamp(2.25rem,8vw,5rem)] object-contain"
+                className="object-contain w-auto"
+                style={{ height: 'clamp(1.5rem, 5vw, 4rem)' }}
                 priority
               />
             </div>
 
-            {/* Association */}
-            <div className="flex flex-col items-center gap-2 bg-white/50 backdrop-blur-md px-2 sm:px-4 py-3 rounded-xl border border-white/30">
-              <span className="text-[clamp(0.6rem,1.6vw,0.85rem)] font-medium text-[#0c284e]">In association with</span>
-              <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center bg-white rounded-md px-2">
-                  <Image
-                    src="/cipet-logo.jpg"
-                    alt="CIPET Logo"
-                    width={128}
-                    height={128}
-                    className="h-auto w-[clamp(2.25rem,8vw,5rem)] object-contain"
-                    priority
-                  />
-                </div>
+            {/* Association — 1 unit */}
+            <div className="flex min-w-0 flex-col items-center justify-between gap-1 bg-white/50 backdrop-blur-md px-[clamp(0.3rem,1vw,0.75rem)] py-[clamp(0.4rem,1vw,0.75rem)] rounded-xl border border-white/30"
+              style={{ flex: '0.5 1 0' }}
+            >
+              <span className="text-[clamp(0.4rem,1.2vw,0.8rem)] font-medium text-[#0c284e] whitespace-nowrap text-center">
+                In association with
+              </span>
+              <div className="bg-white rounded-md px-1 flex items-center justify-center">
+                <Image
+                  src="/cipet-logo.jpg"
+                  alt="CIPET Logo"
+                  width={128}
+                  height={128}
+                  className="object-contain w-auto"
+                  style={{ height: 'clamp(1.5rem, 5vw, 4rem)' }}
+                  priority
+                />
               </div>
             </div>
 
-            {/* Sponsor */}
-            <div className="flex flex-col items-center gap-2 bg-white/60 backdrop-blur-md px-2 sm:px-4 py-3 rounded-xl border border-white/30">
-              <span className="text-[clamp(0.6rem,1.6vw,0.85rem)] font-medium text-[#0c284e]">Sponsored by</span>
+            {/* Sponsor — 2.5 units */}
+            <div className="flex min-w-0 flex-col items-center justify-between gap-1 bg-white/60 backdrop-blur-md px-[clamp(0.3rem,1vw,0.75rem)] py-[clamp(0.4rem,1vw,0.75rem)] rounded-xl border border-white/30"
+              style={{ flex: '0.8 1 0' }}
+            >
+              <span className="text-[clamp(0.4rem,1.2vw,0.8rem)] font-medium text-[#0c284e] whitespace-nowrap text-center">
+                Sponsored by
+              </span>
               <Image
-                src="/sponsors/luthra_vertical.png"
+                src="/sponsors/luthra.jpg"
                 alt="Luthra Group Logo"
-                width={200}
+                width={220}
                 height={120}
-                className="h-auto max-h-[clamp(2.25rem,7vw,4.75rem)] w-[clamp(2.5rem,10vw,6rem)] object-contain"
+                className="object-contain w-auto"
+                style={{ height: 'clamp(1.5rem, 5vw, 4rem)' }}
                 priority
               />
             </div>
+
           </div>
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-[Montserrat]">
