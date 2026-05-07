@@ -20,83 +20,52 @@ export default function Hero() {
       />
 
       {/* CONTENT */}
-      <div
-        className="
-          relative z-10
-          flex flex-col justify-center items-center
-            min-h-[100dvh]
-            px-2 sm:px-4
-            text-center
-              pt-[52px]
-
-        "
-      >
-        <div className="w-full max-w-5xl space-y-[clamp(0.75rem,1.4vh,1rem)]">
-
-
+      <div className="relative z-10 flex min-h-[100dvh] flex-col items-center justify-center px-3 sm:px-6 text-center pt-[52px]">
+        <div className="w-full max-w-5xl space-y-[clamp(0.75rem,1.6vh,1.25rem)]">
           {/* Association Section */}
-          <div className="flex flex-row items-center justify-center gap-4">
-
+          <div className="flex flex-row flex-wrap items-stretch justify-center gap-2 sm:gap-3 lg:gap-4">
             {/* Organizer */}
-            <div className="flex flex-col items-center gap-2 
-                  bg-white/50 backdrop-blur-md 
-                  px-4 py-3 rounded-lg 
-                  border border-white/30
-                  min-h-[96px]">
-              <span className="text-sm font-medium text-[#0c284e]">
-                Organized by
-              </span>
+            <div className="flex flex-col items-center gap-2 bg-white/50 backdrop-blur-md px-2 sm:px-4 py-3 rounded-xl border border-white/30">
+              <span className="text-[clamp(0.6rem,1.6vw,0.85rem)] font-medium text-[#0c284e]">Organized by</span>
               <Image
                 src="/nit-surat-logo.png"
                 alt="SVNIT Logo"
-                width={80}
-                height={80}
-                className="w-12 h-12 sm:w-20 sm:h-20"
+                width={120}
+                height={120}
+                className="h-auto w-[clamp(2.25rem,8vw,5rem)] object-contain"
                 priority
               />
             </div>
 
             {/* Association */}
-            <div
-              className="flex flex-col items-center gap-2
-             bg-white/50 backdrop-blur-md
-             px-4 py-3 rounded-lg
-             border border-white/30
-             min-h-[104px]"
-            >
-              <span className="text-sm font-medium text-[#0c284e]">
-                In association with
-              </span>
-
-              <div className="flex items-center gap-6">
-                {/* CISR NEERI */}
-                {/* <div className="w-12 h-12 sm:w-20 sm:h-20 flex items-center justify-center">
-                  <Image
-                    src="/cisr-neeri-logo.png"
-                    alt="CISR NEERI Logo"
-                    width={128}
-                    height={128}
-                    className="max-w-full max-h-full object-contain"
-                    priority
-                  />
-                </div> */}
-
-                {/* CIPET */}
-                <div className="w-12 h-12 sm:w-20 sm:h-20 flex items-center justify-center bg-white">
+            <div className="flex flex-col items-center gap-2 bg-white/50 backdrop-blur-md px-2 sm:px-4 py-3 rounded-xl border border-white/30">
+              <span className="text-[clamp(0.6rem,1.6vw,0.85rem)] font-medium text-[#0c284e]">In association with</span>
+              <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center bg-white rounded-md px-2">
                   <Image
                     src="/cipet-logo.jpg"
                     alt="CIPET Logo"
                     width={128}
                     height={128}
-                    className="max-w-full max-h-full object-contain"
+                    className="h-auto w-[clamp(2.25rem,8vw,5rem)] object-contain"
                     priority
                   />
                 </div>
               </div>
             </div>
 
-
-
+            {/* Sponsor */}
+            <div className="flex flex-col items-center gap-2 bg-white/60 backdrop-blur-md px-2 sm:px-4 py-3 rounded-xl border border-white/30">
+              <span className="text-[clamp(0.6rem,1.6vw,0.85rem)] font-medium text-[#0c284e]">Sponsored by</span>
+              <Image
+                src="/sponsors/luthra_vertical.png"
+                alt="Luthra Group Logo"
+                width={200}
+                height={120}
+                className="h-auto max-h-[clamp(2.25rem,7vw,4.75rem)] w-[clamp(2.5rem,10vw,6rem)] object-contain"
+                priority
+              />
+            </div>
           </div>
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-[Montserrat]">
