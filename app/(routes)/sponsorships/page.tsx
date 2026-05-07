@@ -85,10 +85,12 @@ export default function Sponsorships() {
   <div className="flex flex-wrap items-center justify-center gap-6 bg-white border-2 border-green-200 rounded-xl px-6 py-6 shadow-md hover:scale-105 transition-transform duration-200">
     {[
       { src: '/sponsors/gcst.jpeg', alt: 'GUJCOST', name: 'GUJCOST' },
-      { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: 'ANRF' },
+      { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: '' },
       { src: '/sponsors/csir.jpeg', alt: 'CSIR', name: 'CSIR' },
+      { src: '/sponsors/luthra.jpg', alt: 'Luthra', name: '' },
+      { src: '/sponsors/gepil.jpg', alt: 'GEPIL', name: '' },
     ].map((sponsor) => (
-      <div key={sponsor.name} className="flex items-center gap-4 bg-white p-2 rounded-md">
+      <div key={sponsor.alt} className="flex items-center gap-4 bg-white p-2 rounded-md">
         <img
           src={sponsor.src}
           alt={sponsor.alt}
