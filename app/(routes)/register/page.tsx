@@ -53,11 +53,7 @@ export default function RegisterPage() {
           {/* How to Apply */}
           <div className="bg-white p-3 rounded-lg shadow-md">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">How to Apply</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
-              <li>Abstract submission is closed for ASREEM 2026.</li>
-              
-              <li>After receiving confirmation from the organizing committee of ASREEM 2.0, participants need to pay registration fees as given below.</li>
-            </ul>
+            
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Registration Fees (inclusive of 18% GST)</h2>
 
