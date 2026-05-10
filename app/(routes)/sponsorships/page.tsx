@@ -95,7 +95,9 @@ export default function Sponsorships() {
 
     const isDiamondFn = (s: { src: string; alt: string; name: string }) => s.alt === 'Luthra' || s.name === 'Luthra';
     const diamond = sponsors.find(isDiamondFn);
-    const others = sponsors.filter((s) => !isDiamondFn(s));
+    const byAlt = (alt: string) => sponsors.find((s) => s.alt === alt);
+    const row2 = [byAlt('Ultratech'), byAlt('ANRF')].filter(Boolean) as typeof sponsors;
+    const row3 = [byAlt('CSIR'), byAlt('GUJCOST'), byAlt('pinachem')].filter(Boolean) as typeof sponsors;
 
     return (
       <div className="w-full bg-white border-2 border-green-200 rounded-xl px-6 py-6 shadow-md transition-transform duration-200">
@@ -116,16 +118,18 @@ export default function Sponsorships() {
         )}
 
         {/* Other sponsors below */}
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          {others.map((sponsor) => (
-            <div key={sponsor.alt} className="flex flex-col items-center gap-4 bg-white p-3 rounded-md">
-              <img src={sponsor.src} alt={sponsor.alt} className="object-contain max-h-20 sm:max-h-28" />
-              <div className="text-left">
-                <p className="text-lg font-semibold text-gray-900">{sponsor.name}</p>
+        {[row2, row3].map((row, rowIndex) => (
+          <div key={`sponsor-row-${rowIndex}`} className="flex flex-wrap items-center justify-center gap-6 mb-6 last:mb-0">
+            {row.map((sponsor) => (
+              <div key={sponsor.alt} className="flex flex-col items-center gap-4 bg-white p-3 rounded-md">
+                <img src={sponsor.src} alt={sponsor.alt} className="object-contain max-h-20 sm:max-h-28" />
+                <div className="text-left">
+                  <p className="text-lg font-semibold text-gray-900">{sponsor.name}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ))}
       </div>
     );
   })()}
