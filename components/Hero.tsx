@@ -137,16 +137,11 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <a
-              href="https://forms.gle/B8QHHTja4SRSoTw38"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto"
-            >
+            <Link href="/register" className="w-full sm:w-auto">
               <button className="w-full border-black border-2 bg-[oklch(0.73_0.17_60.47)] text-darkCharcoal font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-earthYellow/30">
-                Submit Abstract
+                Register Now
               </button>
-            </a>
+            </Link>
 
             <a
               href="https://drive.google.com/file/d/1c9mTqEvBlYnlm2wLxNK6cbScQ52ysESy/view"

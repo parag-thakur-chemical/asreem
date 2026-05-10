@@ -61,14 +61,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/call-for-abstracts"
-                  className="text-green-100 hover:text-white transition-colors"
-                >
-                  Call for Abstracts
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/keynote-speakers"
                   className="text-green-100 hover:text-white transition-colors"
                 >

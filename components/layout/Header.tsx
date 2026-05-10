@@ -24,7 +24,6 @@ const mainLinks = [
   { name: "Home", href: "/" },
   { name: "Keynote Speakers", href: "/keynote-speakers" },
   { name: "Invited Speakers", href: "/invited-speakers" },
-  { name: "Call for Abstracts", href: "/call-for-abstracts" },
   { name: "Dates and Fees", href: "/dates-fees" },
   { name: "Sponsorships", href: "/sponsorships" },
   { name: "Publications & Awards", href: "/publications-awards" },

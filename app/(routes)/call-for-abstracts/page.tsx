@@ -1,12 +1,18 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Call for Abstracts | ASREEM 2026",
   description: "Submit your abstract for ASREEM 2026 International Conference",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function CallForAbstracts() {
+  notFound();
 
   return (
     <div className="py-12 bg-white">
@@ -124,31 +130,16 @@ export default function CallForAbstracts() {
           </div>
         </div>
 
-        {/* Submission Buttons */}
+        {/* Submission Status */}
         <div className="text-center space-y-6">
           <h2 className="text-2xl font-bold text-gray-900">
-            Ready to Submit Your Abstract?
+            Abstract Submission Is Closed
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Submit your abstract through our online submission system. For any
-            queries, please contact the conference secretariat.
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Thank you for the excellent response. Abstract submissions are now closed, but
+            registration remains open for attendees and participants who are not presenting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <a
-              href="https://forms.gle/B8QHHTja4SRSoTw38"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full max-w-2xs px-8 py-3 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors text-center"
-            >
-              Submit Abstract
-            </a>
-            <a
-              href="/abstract-template.doc"
-              download
-              className="w-full max-w-2xs px-8 py-3 border-2 border-green-600 text-green-600 font-medium rounded-md hover:bg-green-50 transition-colors text-center"
-            >
-              Download Template
-            </a>
             <Link
               href="/register"
               className="w-full max-w-2xs px-8 py-3 bg-amber-500 text-white font-medium rounded-md hover:bg-amber-600 transition-colors text-center"
