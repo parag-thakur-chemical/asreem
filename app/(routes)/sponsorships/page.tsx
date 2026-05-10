@@ -86,9 +86,10 @@ export default function Sponsorships() {
   {(() => {
     const sponsors = [
       { src: '/sponsors/luthra.jpg', alt: 'Luthra', name: '' },
-      { src: '/sponsors/gcst.jpeg', alt: 'GUJCOST', name: 'GUJCOST' },
-      { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: '' },
+      { src: '/sponsors/ultratech.jpg', alt: 'Ultratech', name: 'Ultratech Cements' },
+      { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: 'ANRF' },
       { src: '/sponsors/csir.jpeg', alt: 'CSIR', name: 'CSIR' },
+      { src: '/sponsors/gcst.jpeg', alt: 'GUJCOST', name: 'GUJCOST' },
     ];
 
     const isDiamondFn = (s: { src: string; alt: string; name: string }) => s.alt === 'Luthra' || s.name === 'Luthra';
@@ -116,7 +117,7 @@ export default function Sponsorships() {
         {/* Other sponsors below */}
         <div className="flex flex-wrap items-center justify-center gap-6">
           {others.map((sponsor) => (
-            <div key={sponsor.alt} className="flex items-center gap-4 bg-white p-3 rounded-md">
+            <div key={sponsor.alt} className="flex flex-col items-center gap-4 bg-white p-3 rounded-md">
               <img src={sponsor.src} alt={sponsor.alt} className="object-contain max-h-20 sm:max-h-28" />
               <div className="text-left">
                 <p className="text-lg font-semibold text-gray-900">{sponsor.name}</p>
