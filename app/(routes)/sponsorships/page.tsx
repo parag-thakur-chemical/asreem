@@ -90,6 +90,7 @@ export default function Sponsorships() {
       { src: '/sponsors/anrf.jpeg', alt: 'ANRF', name: 'ANRF' },
       { src: '/sponsors/csir.jpeg', alt: 'CSIR', name: 'CSIR' },
       { src: '/sponsors/gcst.jpeg', alt: 'GUJCOST', name: 'GUJCOST' },
+      { src: '/sponsors/pinachem.jpeg', alt: 'pinachem', name: 'Pinachem Industries' },
     ];
 
     const isDiamondFn = (s: { src: string; alt: string; name: string }) => s.alt === 'Luthra' || s.name === 'Luthra';
