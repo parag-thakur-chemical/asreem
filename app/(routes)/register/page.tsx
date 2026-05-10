@@ -52,8 +52,8 @@ export default function RegisterPage() {
         <div className="space-y-8">
           {/* How to Apply */}
           <div className="bg-white p-3 rounded-lg shadow-md">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">How to Apply</h2>
-            
+
+
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Registration Fees (inclusive of 18% GST)</h2>
 
@@ -63,18 +63,18 @@ export default function RegisterPage() {
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                      <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
-                    </tr>
+                      <tr>
+                        <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                        <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
+                      </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                    {registrationFeesOffline.map((item, index) => (
-                      <tr key={`offline-${index}`}>
-                        <td className="py-3 text-sm text-gray-700">{item.category}</td>
-                        <td className="py-3 text-sm font-medium text-gray-900 text-right">{item.fee}</td>
-                      </tr>
-                    ))}
+                      {registrationFeesOffline.map((item, index) => (
+                        <tr key={`offline-${index}`}>
+                          <td className="py-3 text-sm text-gray-700">{item.category}</td>
+                          <td className="py-3 text-sm font-medium text-gray-900 text-right">{item.fee}</td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
@@ -85,18 +85,18 @@ export default function RegisterPage() {
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
-                      <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
-                    </tr>
+                      <tr>
+                        <th className="px-4 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                        <th className="px-4 py-3 text-right text-sm font-medium text-gray-500 uppercase tracking-wider">Fee (INR)</th>
+                      </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                    {registrationFeesOnline.map((item, index) => (
-                      <tr key={`online-${index}`}>
-                        <td className="py-3 text-sm text-gray-700">{item.category}</td>
-                        <td className="py-3 text-sm font-medium text-gray-900 text-right">{item.fee}</td>
-                      </tr>
-                    ))}
+                      {registrationFeesOnline.map((item, index) => (
+                        <tr key={`online-${index}`}>
+                          <td className="py-3 text-sm text-gray-700">{item.category}</td>
+                          <td className="py-3 text-sm font-medium text-gray-900 text-right">{item.fee}</td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
