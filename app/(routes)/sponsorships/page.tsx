@@ -55,7 +55,7 @@ export default function Sponsorships() {
     {
       icon: "fas fa-star",
       tier: "Silver",
-      price: "₹1,00,000",
+      price: "₹2,00,000",
       benefits: [
         "1 conference delegate",
         "Logo on all conference banners",
