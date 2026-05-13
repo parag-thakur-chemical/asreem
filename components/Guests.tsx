@@ -28,18 +28,6 @@ const speakers = [
     portfolio: "https://x.com/sanghaviharsh",
   },
   {
-    id: 3,
-    name: "Shri Arjun Modhwadia",
-    position:
-      "Cabinet Minister for Forest & Environment, Science & Technology, and Climate Change, Government of Gujarat",
-    college: "Government of Gujarat",
-    image: "/keynote-speakers/arjun-modhwadia.jpg",
-    role: "Cabinet Minister",
-    description:
-      "Senior political leader and Cabinet Minister driving policy initiatives in environment, climate change, and science & technology in Gujarat.",
-    portfolio: "https://en.wikipedia.org/wiki/Arjun_Modhwadia",
-  },
-  {
     id: 6,
     name: "Dr. Shishir Sinha",
     position: "Director-General, CIPET, Govt of India",
