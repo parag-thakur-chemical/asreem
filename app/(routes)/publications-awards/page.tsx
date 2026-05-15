@@ -83,7 +83,7 @@ export default function PublicationsAwards() {
           <div className="bg-offWhite/5 rounded-xl p-6 shadow-lg">
             <h2 className="text-2xl font-semibold text-[#00c950] ">Conference Proceedings Section</h2>
             <p className="text-lg mt-2">
-              Conference Proceedings will be published by Taylor & Francis Publications. Please ensure that you follow the policy for proceedings publications.
+              Conference Proceedings will be published by reputed Publications. Please ensure that you follow the policy for proceedings publications.
             </p>
             <ol className="list-decimal list-inside space-y-3 text-lg mt-4">
               <li>
