@@ -7,6 +7,37 @@ import ConferenceMarquee from "@/components/conferenceMarquee";
 export default function Hero() {
   const googleCalendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=ASREEM%202.0%20Conference&dates=20260515/20260518&location=SVNIT%20Surat%2C%20Gujarat&details=ASREEM%202.0%20at%20SVNIT%20Surat%20(Gujarat)%20from%2015-17%20May%202026.%20More%20info:%20https://asreem.in";
 
+  const scheduleButtons = [
+    {
+      label: "Online",
+      href: "/schedule_online.pdf",
+      accent: "#0f6f3a",
+      accentBg: "bg-[#e9f6ee]",
+      labelText: "text-[#0f6f3a]",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f6f3a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+        </svg>
+      ),
+    },
+    {
+      label: "Offline",
+      href: "/schedule_offline.pdf",
+      accent: "#1f5ea8",
+      accentBg: "bg-[#e7f0fb]",
+      labelText: "text-[#1f5ea8]",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f5ea8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14,2 14,8 20,8" />
+          <line x1="9" y1="13" x2="15" y2="13" />
+          <line x1="9" y1="17" x2="15" y2="17" />
+        </svg>
+      ),
+    },
+  ];
+
   return (
     <section
       className="relative bg-gradient-to-br from-primary-darkGreen via-primary-forestGreen to-primary-sageGreen text-offWhite overflow-hidden"
@@ -132,86 +163,44 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Schedule Button */}
-          <div className="flex justify-center pt-6">
-            <style>{`
-              @keyframes glow-pulse {
-                0%, 100% {
-                  box-shadow: 0 0 20px rgba(3, 94, 50, 0.4), 0 0 40px rgba(4, 125, 61, 0.2);
-                }
-                50% {
-                  box-shadow: 0 0 30px rgba(3, 94, 50, 0.6), 0 0 60px rgba(4, 125, 61, 0.3);
-                }
-              }
-              @keyframes float-bounce {
-                0%, 100% {
-                  transform: translateY(0px);
-                }
-                50% {
-                  transform: translateY(-4px);
-                }
-              }
-              .schedule-button:hover {
-                animation: float-bounce 2s ease-in-out infinite;
-              }
-            `}</style>
-            <button
-              onClick={() => window.open("/schedule.pdf", "_blank")}
-              className="schedule-button group relative inline-flex items-center justify-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-semibold text-white transition-all duration-500 cursor-pointer overflow-hidden"
-              style={{
-                background: "linear-gradient(135deg, #035e32 0%, #047d3d 50%, #0a5c36 100%)",
-                boxShadow: "0 0 20px rgba(3, 94, 50, 0.4), 0 0 40px rgba(4, 125, 61, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
-                animation: "glow-pulse 3s ease-in-out infinite"
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = "0 15px 40px rgba(3, 94, 50, 0.8), 0 0 60px rgba(4, 125, 61, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.3)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = "0 0 20px rgba(3, 94, 50, 0.4), 0 0 40px rgba(4, 125, 61, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2)";
-              }}
-              aria-label="View Conference Schedule"
-            >
-              {/* Background shimmer effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -skew-x-12 group-hover:skew-x-12" />
-              
-              {/* Animated border gradient */}
-              <div className="absolute inset-0 rounded-2xl border border-white/20 group-hover:border-white/40 transition-all duration-500" />
-
-              {/* Content */}
-              <div className="relative flex items-center gap-3">
-                <svg
-                  className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-                <span className="text-base md:text-lg font-bold tracking-wide">View Schedule</span>
-                <svg
-                  className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:translate-x-2 group-hover:scale-110"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+          {/* Schedule Buttons */}
+          <div className="flex justify-center pt-5">
+            <div className="w-full max-w-md rounded-2xl border border-[#0c284e]/10 bg-[#e7f0ed]/80 backdrop-blur-sm px-3 py-3 shadow-[0_10px_28px_rgba(2,52,80,0.12)]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {scheduleButtons.map(({ label, href, icon, accent, accentBg, labelText }) => (
+                  <button
+                    key={label}
+                    onClick={() => window.open(href, "_blank")}
+                    aria-label={`View ${label} Schedule`}
+                    className="group relative flex items-center gap-2.5 rounded-xl border border-transparent bg-[#f4f8f6] px-3 py-2.5 shadow-[0_8px_18px_rgba(2,52,80,0.12)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f0f6f2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0c284e]/25"
+                    style={{ borderLeftWidth: 4, borderLeftColor: accent }}
+                  >
+                    <span className={`w-8 h-8 rounded-[10px] ${accentBg} flex items-center justify-center shrink-0`}>
+                      {icon}
+                    </span>
+                    <span className="flex flex-col items-start">
+                      <span className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${labelText}`}>
+                        {label}
+                      </span>
+                      <span className="text-[13px] font-semibold text-[#0c284e]">Schedule</span>
+                    </span>
+                    <svg
+                      className="ml-auto w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke={accent}
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                ))}
               </div>
-
-              {/* Hover effect background */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500" />
-            </button>
+            </div>
           </div>
+
 
           {/* Marquee */}
           {/* <ConferenceMarquee /> */}
