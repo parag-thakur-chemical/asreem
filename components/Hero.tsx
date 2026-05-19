@@ -132,6 +132,87 @@ export default function Hero() {
             </p>
           </div>
 
+          {/* Schedule Button */}
+          <div className="flex justify-center pt-6">
+            <style>{`
+              @keyframes glow-pulse {
+                0%, 100% {
+                  box-shadow: 0 0 20px rgba(3, 94, 50, 0.4), 0 0 40px rgba(4, 125, 61, 0.2);
+                }
+                50% {
+                  box-shadow: 0 0 30px rgba(3, 94, 50, 0.6), 0 0 60px rgba(4, 125, 61, 0.3);
+                }
+              }
+              @keyframes float-bounce {
+                0%, 100% {
+                  transform: translateY(0px);
+                }
+                50% {
+                  transform: translateY(-4px);
+                }
+              }
+              .schedule-button:hover {
+                animation: float-bounce 2s ease-in-out infinite;
+              }
+            `}</style>
+            <button
+              onClick={() => window.open("/schedule.pdf", "_blank")}
+              className="schedule-button group relative inline-flex items-center justify-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-semibold text-white transition-all duration-500 cursor-pointer overflow-hidden"
+              style={{
+                background: "linear-gradient(135deg, #035e32 0%, #047d3d 50%, #0a5c36 100%)",
+                boxShadow: "0 0 20px rgba(3, 94, 50, 0.4), 0 0 40px rgba(4, 125, 61, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
+                animation: "glow-pulse 3s ease-in-out infinite"
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = "0 15px 40px rgba(3, 94, 50, 0.8), 0 0 60px rgba(4, 125, 61, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.3)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = "0 0 20px rgba(3, 94, 50, 0.4), 0 0 40px rgba(4, 125, 61, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2)";
+              }}
+              aria-label="View Conference Schedule"
+            >
+              {/* Background shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -skew-x-12 group-hover:skew-x-12" />
+              
+              {/* Animated border gradient */}
+              <div className="absolute inset-0 rounded-2xl border border-white/20 group-hover:border-white/40 transition-all duration-500" />
+
+              {/* Content */}
+              <div className="relative flex items-center gap-3">
+                <svg
+                  className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                <span className="text-base md:text-lg font-bold tracking-wide">View Schedule</span>
+                <svg
+                  className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:translate-x-2 group-hover:scale-110"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </div>
+
+              {/* Hover effect background */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500" />
+            </button>
+          </div>
+
           {/* Marquee */}
           {/* <ConferenceMarquee /> */}
 
