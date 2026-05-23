@@ -105,14 +105,24 @@ export default function RegisterPage() {
 
             <div className="mt-6 sm:mt-8 text-center px-2">
               <p className="text-gray-700 mb-4">For confirmation of registration, fill out the following Google form:</p>
-              <a
-                href="https://forms.gle/VoHdkZ5edvM88vqQ8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 sm:px-6 rounded-md transition-colors text-sm sm:text-base"
-              >
-                Google Form for Registration
-              </a>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href="https://forms.gle/VoHdkZ5edvM88vqQ8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 sm:px-6 rounded-md transition-colors text-sm sm:text-base"
+                >
+                  Google Form for Registration
+                </a>
+                <a
+                  href="/abstract-template.doc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white hover:bg-gray-100 text-green-700 border border-green-600 font-medium py-2 px-4 sm:px-6 rounded-md transition-colors text-sm sm:text-base"
+                >
+                  View Abstract Template
+                </a>
+              </div>
             </div>
           </div>
 
